@@ -1,0 +1,711 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15796
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 19 2025 14:52:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (66) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (73) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (79) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (86) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (92) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (99) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (105) boot:  7 reserved         unknown          06 06 003e0000 0001a000[0m
+[0;32mI (112) boot:  8 fctry            WiFi data        01 02 003fa000 00006000[0m
+[0;32mI (119) boot: End of partition table[0m
+[0;32mI (122) boot: No factory image, trying OTA 0[0m
+[0;32mI (126) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=412ech (266988) map[0m
+[0;32mI (225) esp_image: segment 1: paddr=00061314 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=00061338 vaddr=3ffbdb60 size=05e38h ( 24120) load[0m
+[0;32mI (238) esp_image: segment 3: paddr=00067178 vaddr=40080000 size=08ea0h ( 36512) load[0m
+[0;32mI (252) esp_image: segment 4: paddr=00070020 vaddr=400d0020 size=fb218h (1028632) map[0m
+[0;32mI (604) esp_image: segment 5: paddr=0016b240 vaddr=40088ea0 size=13cf8h ( 81144) load[0m
+[0;32mI (649) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (650) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (650) boot: Disabling RNG early entropy source...[0m
+[0;32mI (664) cpu_start: Multicore app[0m
+[0;32mI (673) cpu_start: Pro cpu start user code[0m
+[0;32mI (673) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (673) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     HTN_project[0m
+[0;32mI (677) app_init: App version:      1.0[0m
+[0;32mI (681) app_init: Compile time:     Apr 19 2025 14:49:59[0m
+[0;32mI (686) app_init: ELF file SHA256:  a10efd5d2...[0m
+[0;32mI (690) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (694) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (712) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (717) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (722) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (727) heap_init: At 3FFCB498 len 00014B68 (82 KiB): DRAM[0m
+[0;32mI (733) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (738) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (744) heap_init: At 4009CB98 len 00003468 (13 KiB): IRAM[0m
+[0;32mI (751) spi_flash: detected chip: generic[0m
+[0;32mI (752) spi_flash: flash io: dio[0m
+[0;32mI (757) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (761) main_task: Started on CPU0[0m
+[0;32mI (771) main_task: Calling app_main()[0m
+[0;32mI (771) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[1;31mE (771) esp_rmaker_param: Param handle cannot be NULL.[0m
+[1;31mE (801) esp_rmaker_param: Param handle cannot be NULL.[0m
+[1;31mE (801) esp_rmaker_param: Param handle cannot be NULL.[0m
+[1;31mE (801) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;32mI (811) SENSOR: PPM: 72.15 | Temp: 28.0°C | Humidity: 50.0% | LJ12A3: DETECTED[0m
+[0;32mI (831) wifi:wifi driver task: 3ffd4c44, prio:23, stack:6656, core=0[0m
+[0;32mI (831) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (831) wifi:wifi certification version: v7.0[0m
+[0;32mI (831) wifi:config NVS flash: enabled[0m
+[0;32mI (831) wifi:config nano formatting: disabled[0m
+[0;32mI (841) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (841) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (851) wifi:Init management short buffer num: 32[0m
+[0;32mI (851) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (851) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (861) wifi:Init static rx buffer num: 10[0m
+[0;32mI (861) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (871) wifi_init: rx ba win: 6[0m
+[0;32mI (871) wifi_init: accept mbox: 6[0m
+[0;32mI (871) wifi_init: tcpip mbox: 32[0m
+[0;32mI (871) wifi_init: udp mbox: 6[0m
+[0;32mI (881) wifi_init: tcp mbox: 6[0m
+[0;32mI (881) wifi_init: tcp tx win: 5760[0m
+[0;32mI (881) wifi_init: tcp rx win: 5760[0m
+[0;32mI (891) wifi_init: tcp mss: 1440[0m
+[0;32mI (891) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (891) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (911) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (911) esp_claim: Initialising Assisted Claiming. This may take time.[0m
+[0;33mW (921) esp_claim: Generating the private key. This may take time.[0m
+[1;31mE (3771) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;32mI (3791) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 50.0% | LJ12A3: DETECTED[0m
+[0;32mI (4581) esp_rmaker_node: Node ID ----- CCDBA734EECC[0m
+[0;32mI (4591) esp_rmaker_ota_using_topics: OTA enabled with Topics[0m
+[0;32mI (4591) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (4591) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (4601) app_insights: Enable CONFIG_ESP_INSIGHTS_ENABLED to get Insights.[0m
+[0;32mI (4601) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (4611) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (4611) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (4621) esp_claim: Waiting for assisted claim to finish.[0m
+[0;32mI (4631) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (4631) app_wifi: Starting provisioning[0m
+[0;32mI (4641) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (4641) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;33mW (4721) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+[0;32mI (4741) wifi:mode : sta (cc:db:a7:34:ee:cc)[0m
+[0;32mI (4741) wifi:enable tsf[0m
+[0;32mI (4741) BTDM_INIT: BT controller compile version [20b459d][0m
+[0;32mI (4751) BTDM_INIT: Bluetooth MAC: cc:db:a7:34:ee:ce[0m
+[0;32mI (4991) protocomm_nimble: BLE Host Task Started[0m
+[0;32mI (5001) network_prov_mgr: Provisioning started with service name : PROV_9cd08e [0m
+[0;32mI (5011) app_wifi: Provisioning started[0m
+[0;32mI (5011) esp_rmaker_local: Event 1[0m
+[0;32mI (5011) app_network: Scan this QR code from the ESP RainMaker phone app for Provisioning.[0m
+[0;32mI (5041) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (5041) NimBLE: disc_mode=2[0m
+[0;32mI (5041) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=256[0m
+[0;32mI (5051) NimBLE: [0m
+
+                                      
+  █▀▀▀▀▀█ ▀▀▀█▄█    ▄▄█▀█   █▀▀▀▀▀█   
+  █ ███ █  ▀▄█ █▄ ▀▄▀ ▀██▀█ █ ███ █   
+  █ ▀▀▀ █  ▄▀█▀▄▀ ▀██▀█▀█▄  █ ▀▀▀ █   
+  ▀▀▀▀▀▀▀ █▄▀ █▄█▄█ ▀ ▀ ▀ █ ▀▀▀▀▀▀▀   
+  ██▄█▀ ▀  ▀▄ ▀▄ ▄▀▀▀██▄▀█▄ ▀▄▄ ▄▄▀   
+  ▀█▄██▀▀▄█▀  ▀▀▀▀▄█▄▄█▀▄▀ █  ▄█▄█▀   
+  ▄▀▄ ▄▀▀  ▀█ ▄▄██▄▄▀▀▀    ▄▀█ ▀▄▄▀   
+  █▄  ▄█▀▀▄ ▄ ▄ ▄█▄ ██▄▀ ▄▀▄▄█  ▄     
+    ▀▀█▄▀█▄█ █▀▀ █▀▄▀▄▀ ▄█  ███▄ ██   
+  ▄▀▄▄▀▄▀█ █▀▄▀▄███▀▄▀█ ▀█ █▀▀ ▀▄▄▀   
+  █▀▄  ▀▀▄▀▄█▀▄▄█▄▀▀█▄█▄█▀▀█ ▀▄ ▄▀    
+  █ ▀▀▀▄▀▀ ▄▀█▄  ▀█▄█▄▀▀█▀█ ▄█ ▀▄▄█   
+  ▀▀▀  ▀▀ ▄▀█▀▀▄▄██▄█▀█ ▀██▀▀▀█▄▄▀    
+  █▀▀▀▀▀█    █▀▀▀██ ▄▀▄ █▄█ ▀ █ ▄ ▄   
+  █ ███ █ █▄ ▄█▀▀█▀▄█▄▄ ▀██▀▀▀▀▄▄▀▀   
+  █ ▀▀▀ █ ▄ ▀▀ ▄█▀█ █▀ ▀▀███▄▀█ █▄█   
+  ▀▀▀▀▀▀▀ ▀▀▀▀  ▀▀ ▀     ▀▀▀▀▀▀       
+                                      
+
+[0;32mI (5251) app_network: If QR code is not visible, copy paste the below URL in a browser.[0m
+https://rainmaker.espressif.com/qrcode.html?data={"ver":"v1","name":"PROV_9cd08e","pop":"f768a484","transport":"ble"}
+[0;32mI (5271) app_network: Provisioning will auto stop after 30 minute(s).[0m
+[0;32mI (6791) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 50.0% | LJ12A3: DETECTED[0m
+[0;32mI (9791) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 50.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (12791) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (13181) protocomm_nimble: mtu update event; conn_handle=0 cid=4 mtu=256[0m
+[0;32mI (14261) app_network: Secured session established![0m
+[0;32mI (14371) esp_claim: Assisted Claiming Started.[0m
+[0;32mI (15791) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (16871) esp_rmaker_core: New Node ID ----- htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (18791) SENSOR: PPM: 7.20 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (21791) SENSOR: PPM: 157.10 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (22241) esp_claim: Storing received MQTT Host: a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (22261) esp_claim: Assisted Claiming was Successful.[0m
+[0;33mW (22261) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (24791) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (27791) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (30061) esp_rmaker_user_mapping: Received request for node details[0m
+[0;32mI (30061) esp_rmaker_user_mapping: Got user_id = Google_oBTjJ5sKe2xCH33his2SLg, secret_key = a6d2b38f-b752-4ec9-af30-457922cb5cfa[0m
+[0;32mI (30071) esp_rmaker_user_mapping: User Node mapping reset detected.[0m
+[0;32mI (30081) esp_rmaker_user_mapping: Sending status SUCCESS[0m
+[0;33mW (30341) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (30381) app_wifi: Received Wi-Fi credentials[0m
+	SSID     : Wifi HHH
+	Password : hoang123
+[0;32mI (30791) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (33791) SENSOR: PPM: 0.25 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (36481) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (36491) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (36521) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (36521) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (36551) wifi:connected with Wifi HHH, aid = 2, channel 6, BW20, bssid = 3e:9c:0f:e8:98:60[0m
+[0;32mI (36551) wifi:security: WPA2-PSK, phy: bgn, rssi: -38[0m
+[0;32mI (36571) wifi:pm start, type: 1[0m
+
+[0;32mI (36571) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (36631) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (36791) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (37651) esp_netif_handlers: sta ip: 192.168.137.160, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (37651) app_network: Connected with IP Address:192.168.137.160[0m
+[0;32mI (37651) network_prov_mgr: STA Got IP[0m
+[0;32mI (37651) app_wifi: Provisioning successful[0m
+[0;32mI (37661) main_task: Returned from app_main()[0m
+[0;32mI (37671) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|CCDBA734EECC[0m
+[0;32mI (37671) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (37681) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (37691) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (37691) esp_rmaker_node: Node attribute cmd-resp created[0m
+[0;32mI (37701) esp_rmaker_local: Enabling Local Control[0m
+[0;33mW (37701) event: handler already registered, overwriting[0m
+[0;33mW (37711) event: handler already registered, overwriting[0m
+[0;32mI (37711) esp_rmaker_local: Couldn't find POP in NVS. Generating a new one.[0m
+[0;32mI (37721) esp_rmaker_local: Local Control Service Enabled[0m
+[0;32mI (37721) esp_rmaker_local: Waiting for Wi-Fi provisioning to finish.[0m
+[0;32mI (37731) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (37741) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (38251) esp_rmaker_time: SNTP Synchronised.[0m
+[0;32mI (38251) esp_rmaker_time: The current time is: Sat Apr 19 17:27:56 2025 +0800[CST], DST: No.[0m
+[0;32mI (38831) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (40451) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (41731) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (41741) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (41751) esp_rmaker_node_config: Generated Node config of length 1487[0m
+[0;32mI (41761) esp_rmaker_core: Waiting for User Node Association.[0m
+[0;32mI (41761) esp_rmaker_ota_using_topics: Subscribing to: node/htVVE7aBtXXsgnGh4yvLKr/otaurl[0m
+[0;32mI (41771) esp_rmaker_user_mapping: MQTT Publish: {"node_id":"htVVE7aBtXXsgnGh4yvLKr","user_id":"Google_oBTjJ5sKe2xCH33his2SLg","secret_key":"a6d2b38f-b752-4ec9-af30-457922cb5cfa","reset":true}[0m
+[0;32mI (42591) esp_rmaker_user_mapping: User Node association message published successfully.[0m
+[0;32mI (42591) wifi:<ba-add>idx:0 (ifx:0, 3e:9c:0f:e8:98:60), tid:0, ssn:31, winSize:64[0m
+[0;32mI (42601) esp_rmaker_param: Params MQTT Init done.[0m
+[0;32mI (42611) esp_rmaker_param: Reporting params (init): {"LED":{"LED":false},"LED2":{"LED2":false},"Temperature":{"Temperature":0.00000},"Humidity":{"Humidity":49.00000},"MQ135":{"MQ135":0.00000},"Metal Detector":{"Metal Detection":"Detected"},"Local Control":{"POP":"f5a32286","Type":1}}[0m
+[0;32mI (42771) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":49.00000},"MQ135":{"MQ135":49.60000},"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[0;32mI (42801) SENSOR: PPM: 49.60 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (43821) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (43821) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (43821) NimBLE: GAP procedure initiated: terminate connection; conn_handle=0 hci_reason=19[0m
+
+[1;31mE (43861) protocomm_nimble: Error setting advertisement data; rc = 30[0m
+[0;32mI (43871) network_prov_mgr: Provisioning stopped[0m
+[0;32mI (43871) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (43871) esp_rmaker_local: Event 6[0m
+[0;32mI (43871) esp_rmaker_local: Starting ESP Local control with HTTP Transport and security version: 1[0m
+[0;32mI (43891) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (43891) esp_https_server: Starting server[0m
+[0;32mI (43901) esp_https_server: Server listening on port 8080[0m
+[0;32mI (43901) esp_rmaker_local: esp_local_ctrl service started with name : htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (45771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":12.50000}}[0m
+[0;32mI (45801) SENSOR: PPM: 12.50 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (46761) esp_rmaker_ota_using_topics: Fetching OTA details, if any.[0m
+[0;32mI (48771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (48801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[0;32mI (48801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (51771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (51801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[0;32mI (51801) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (54771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (54801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[0;32mI (54801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (57771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (57801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[0;32mI (57801) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (60771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (60801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[0;32mI (60801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (63771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (63801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":51.00000}}[0m
+[0;32mI (63801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[0;32mI (63801) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 51.0% | LJ12A3: DETECTED[0m
+[0;32mI (66771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (66801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":55.00000}}[0m
+[0;32mI (66801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 55.0% | LJ12A3: DETECTED[0m
+[0;32mI (69771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (69801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":59.00000}}[0m
+[0;32mI (69801) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 59.0% | LJ12A3: DETECTED[0m
+[0;32mI (72771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (72801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":62.00000}}[0m
+[0;32mI (72801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 62.0% | LJ12A3: DETECTED[0m
+[0;32mI (75771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":203.55000}}[0m
+[0;32mI (75801) SENSOR: PPM: 203.55 | Temp: 28.0°C | Humidity: 62.0% | LJ12A3: DETECTED[0m
+[0;32mI (78771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (78801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":60.00000}}[0m
+[0;32mI (78801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 60.0% | LJ12A3: DETECTED[0m
+[0;32mI (81771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (81801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":59.00000}}[0m
+[0;32mI (81801) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 59.0% | LJ12A3: DETECTED[0m
+[0;32mI (84771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (84801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":58.00000}}[0m
+[0;32mI (84801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 58.0% | LJ12A3: DETECTED[0m
+[0;32mI (87771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":170.35001}}[0m
+[0;32mI (87801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":57.00000}}[0m
+[0;32mI (87801) SENSOR: PPM: 170.35 | Temp: 28.0°C | Humidity: 57.0% | LJ12A3: DETECTED[0m
+[0;32mI (90771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (90801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":56.00000}}[0m
+[0;32mI (90801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 56.0% | LJ12A3: DETECTED[0m
+[0;32mI (93771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":144.89999}}[0m
+[0;32mI (93801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":55.00000}}[0m
+[0;32mI (93801) SENSOR: PPM: 144.90 | Temp: 28.0°C | Humidity: 55.0% | LJ12A3: DETECTED[0m
+[0;32mI (96771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":6.30000}}[0m
+[0;32mI (96801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[0;32mI (96801) SENSOR: PPM: 6.30 | Temp: 28.0°C | Humidity: 55.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (99771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":117.80000}}[0m
+[0;32mI (99801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":54.00000}}[0m
+[0;32mI (99801) SENSOR: PPM: 117.80 | Temp: 28.0°C | Humidity: 54.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (102771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":24.00000}}[0m
+[0;32mI (102801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":53.00000}}[0m
+[0;32mI (102801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[0;32mI (102801) SENSOR: PPM: 24.00 | Temp: 28.0°C | Humidity: 53.0% | LJ12A3: DETECTED[0m
+[0;32mI (105771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[1;31mE (105791) dht: Initialization error, problem in phase 'C'[0m
+[0;33mW (105791) DHT: Failed to read from DHT11[0m
+[0;32mI (105791) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 53.0% | LJ12A3: DETECTED[0m
+[0;32mI (108771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":24.30000}}[0m
+[0;32mI (108801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":56.00000}}[0m
+[0;32mI (108801) SENSOR: PPM: 24.30 | Temp: 28.0°C | Humidity: 56.0% | LJ12A3: DETECTED[0m
+[0;32mI (111771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (111801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":61.00000}}[0m
+[0;32mI (111801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[0;32mI (111811) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 61.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (114771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":63.00000}}[0m
+[0;32mI (114801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[0;32mI (114801) SENSOR: PPM: 63.00 | Temp: 28.0°C | Humidity: 61.0% | LJ12A3: DETECTED[0m
+[0;32mI (117771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (117801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":60.00000}}[0m
+[0;32mI (117801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[0;32mI (117811) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 60.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (120771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":66.60000}}[0m
+[0;32mI (120801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":59.00000}}[0m
+[0;32mI (120801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[0;32mI (120811) SENSOR: PPM: 66.60 | Temp: 28.0°C | Humidity: 59.0% | LJ12A3: DETECTED[0m
+[0;32mI (121641) esp_rmaker_param: Received params: {"LED":{"LED":true}}[0m
+[0;32mI (121641) esp_rmaker_param: Found 1 params in write request for LED[0m
+[0;32mI (121641) app_main: Received write request via : Cloud[0m
+[0;32mI (121651) esp_rmaker_param: Reporting params: {"LED":{"LED":true}}[0m
+[0;32mI (123771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (123791) esp_rmaker_param: Received params: {"LED":{"LED":false}}[0m
+[0;32mI (123791) esp_rmaker_param: Found 1 params in write request for LED[0m
+[0;32mI (123791) app_main: Received write request via : Cloud[0m
+[1;31mE (123791) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (123791) esp_rmaker_param: Reporting params: {"LED":{"LED":false}}[0m
+[0;33mW (123811) DHT: Failed to read from DHT11[0m
+[0;32mI (123811) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 59.0% | LJ12A3: DETECTED[0m
+[0;32mI (126771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":35.40000}}[0m
+[0;32mI (126801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":57.00000}}[0m
+[0;32mI (126801) SENSOR: PPM: 35.40 | Temp: 28.0°C | Humidity: 57.0% | LJ12A3: DETECTED[0m
+[0;32mI (129771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":104.15000}}[0m
+[0;32mI (129801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":56.00000}}[0m
+[0;32mI (129801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[0;32mI (129811) SENSOR: PPM: 104.15 | Temp: 28.0°C | Humidity: 56.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (132771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[1;31mE (132791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (132791) DHT: Failed to read from DHT11[0m
+[0;32mI (132791) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 56.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (135771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (135801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":62.00000}}[0m
+[0;32mI (135801) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 62.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (138771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (138801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":65.00000}}[0m
+[0;32mI (138801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[0;32mI (138801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 65.0% | LJ12A3: DETECTED[0m
+[0;32mI (141771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (141801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":68.00000}}[0m
+[0;32mI (141801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[0;32mI (141811) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 68.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (144771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (144801) esp_rmaker_param: Reporting params: {"Temperature":{"Temperature":29.00000}}[0m
+[0;32mI (144801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":69.00000}}[0m
+[0;32mI (144811) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[0;32mI (144811) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 69.0% | LJ12A3: DETECTED[0m
+[0;32mI (147771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":164.00000}}[0m
+[0;32mI (147801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":68.00000}}[0m
+[0;32mI (147801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[0;32mI (147811) SENSOR: PPM: 164.00 | Temp: 29.0°C | Humidity: 68.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (150771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (150801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":67.00000}}[0m
+[0;32mI (150801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[0;32mI (150801) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 67.0% | LJ12A3: DETECTED[0m
+[0;32mI (153771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":179.14999}}[0m
+[0;32mI (153801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":65.00000}}[0m
+[0;32mI (153801) SENSOR: PPM: 179.15 | Temp: 29.0°C | Humidity: 65.0% | LJ12A3: DETECTED[0m
+[0;32mI (156771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (156801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":64.00000}}[0m
+[0;32mI (156801) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 64.0% | LJ12A3: DETECTED[0m
+[0;32mI (159791) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":62.00000}}[0m
+[0;32mI (159801) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 62.0% | LJ12A3: DETECTED[0m
+[0;32mI (162771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (162801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":60.00000}}[0m
+[0;32mI (162801) SENSOR: PPM: 204.75 | Temp: 29.0°C | Humidity: 60.0% | LJ12A3: DETECTED[0m
+[0;32mI (165771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (165801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":59.00000}}[0m
+[0;32mI (165801) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 59.0% | LJ12A3: DETECTED[0m
+[0;32mI (165851) esp_rmaker_param: Received params: {"LED":{"LED":true}}[0m
+[0;32mI (165851) esp_rmaker_param: Found 1 params in write request for LED[0m
+[0;32mI (165851) app_main: Received write request via : Cloud[0m
+[0;32mI (165851) esp_rmaker_param: Reporting params: {"LED":{"LED":true}}[0m
+[0;32mI (168771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":187.64999}}[0m
+[0;32mI (168801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":58.00000}}[0m
+[0;32mI (168801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[0;32mI (168811) SENSOR: PPM: 187.65 | Temp: 29.0°C | Humidity: 58.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (171771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":40.90000}}[0m
+[1;31mE (171791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (171791) DHT: Failed to read from DHT11[0m
+[0;32mI (171791) SENSOR: PPM: 40.90 | Temp: 29.0°C | Humidity: 58.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (171801) esp_rmaker_param: Received params: {"LED":{"LED":false}}[0m
+[0;32mI (171811) esp_rmaker_param: Found 1 params in write request for LED[0m
+[0;32mI (171811) app_main: Received write request via : Cloud[0m
+[0;32mI (171821) esp_rmaker_param: Reporting params: {"LED":{"LED":false}}[0m
+[0;32mI (173221) esp_rmaker_param: Received params: {"LED2":{"LED2":true}}[0m
+[0;32mI (173221) esp_rmaker_param: Found 1 params in write request for LED2[0m
+[0;32mI (173221) app_main: Received write request via : Cloud[0m
+[0;32mI (173231) esp_rmaker_param: Reporting params: {"LED2":{"LED2":true}}[0m
+[0;32mI (174771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (174801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":56.00000}}[0m
+[0;32mI (174801) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 56.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (176941) esp_rmaker_param: Received params: {"LED2":{"LED2":false}}[0m
+[0;32mI (176941) esp_rmaker_param: Found 1 params in write request for LED2[0m
+[0;32mI (176941) app_main: Received write request via : Cloud[0m
+[0;32mI (176941) esp_rmaker_param: Reporting params: {"LED2":{"LED2":false}}[0m
+[0;32mI (177771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":95.20000}}[0m
+[0;32mI (177801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":55.00000}}[0m
+[0;32mI (177801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[0;32mI (177801) SENSOR: PPM: 95.20 | Temp: 29.0°C | Humidity: 55.0% | LJ12A3: DETECTED[0m
+[0;32mI (180771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (180801) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 55.0% | LJ12A3: DETECTED[0m
+[0;32mI (183551) esp_rmaker_param: Reporting params: {"LED":{"LED":true}}[0m
+[0;32mI (183561) LED: ON[0m
+[0;32mI (183561) esp_rmaker_param: Reporting params: {"LED2":{"LED2":true}}[0m
+[0;32mI (183561) LED2: ON[0m
+[0;32mI (183771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (183801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":54.00000}}[0m
+[0;32mI (183801) SENSOR: PPM: 204.75 | Temp: 29.0°C | Humidity: 54.0% | LJ12A3: DETECTED[0m
+[0;32mI (184441) esp_rmaker_param: Reporting params: {"LED":{"LED":false}}[0m
+[0;32mI (184441) LED: OFF[0m
+[0;32mI (186211) esp_rmaker_param: Reporting params: {"LED":{"LED":true}}[0m
+[0;32mI (186211) LED: ON[0m
+[0;32mI (186771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (186801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[0;32mI (186801) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 54.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (189771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (189801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":53.00000}}[0m
+[0;32mI (189801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[0;32mI (189811) SENSOR: PPM: 204.75 | Temp: 29.0°C | Humidity: 53.0% | LJ12A3: DETECTED[0m
+[0;32mI (189971) esp_rmaker_param: Reporting params: {"LED":{"LED":false}}[0m
+[0;32mI (189971) LED: OFF[0m
+[0;32mI (190221) esp_rmaker_param: Reporting params: {"LED":{"LED":true}}[0m
+[0;32mI (190221) LED: ON[0m
+[0;32mI (190221) esp_rmaker_param: Reporting params: {"LED":{"LED":false}}[0m
+[0;32mI (190221) LED: OFF[0m
+[0;32mI (190221) esp_rmaker_param: Reporting params: {"LED":{"LED":true}}[0m
+[0;32mI (190231) LED: ON[0m
+[0;32mI (190961) esp_rmaker_param: Reporting params: {"LED":{"LED":false}}[0m
+[0;32mI (190971) LED: OFF[0m
+[0;32mI (191161) esp_rmaker_param: Reporting params: {"LED":{"LED":true}}[0m
+[0;32mI (191171) LED: ON[0m
+[0;32mI (191171) esp_rmaker_param: Reporting params: {"LED":{"LED":false}}[0m
+[0;32mI (191171) LED: OFF[0m
+[0;32mI (192771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":19.30000}}[0m
+[0;32mI (192801) SENSOR: PPM: 19.30 | Temp: 29.0°C | Humidity: 53.0% | LJ12A3: DETECTED[0m
+[0;32mI (195771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (195801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":52.00000}}[0m
+[0;32mI (195801) SENSOR: PPM: 204.75 | Temp: 29.0°C | Humidity: 52.0% | LJ12A3: DETECTED[0m
+[0;32mI (196711) esp_rmaker_param: Reporting params: {"LED":{"LED":true}}[0m
+[1;31mE (196711) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (196711) LED: ON[0m
+[0;32mI (196711) esp_rmaker_param: Reporting params: {"LED2":{"LED2":false}}[0m
+[1;31mE (196721) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (196731) LED2: OFF[0m
+[0;32mI (196931) esp_rmaker_param: Reporting params: {"LED":{"LED":false}}[0m
+[1;31mE (196931) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (196931) LED: OFF[0m
+[0;32mI (196941) esp_rmaker_param: Reporting params: {"LED":{"LED":true}}[0m
+[1;31mE (196941) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (196951) LED: ON[0m
+[0;32mI (197471) esp_rmaker_param: Reporting params: {"LED":{"LED":false}}[0m
+[1;31mE (197471) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (197471) LED: OFF[0m
+[0;32mI (197681) esp_rmaker_param: Reporting params: {"LED":{"LED":true}}[0m
+[1;31mE (197681) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (197681) LED: ON[0m
+[0;32mI (197691) esp_rmaker_param: Reporting params: {"LED":{"LED":false}}[0m
+[1;31mE (197691) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (197701) LED: OFF[0m
+[0;32mI (198771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":35.75000}}[0m
+[0;32mI (198801) SENSOR: PPM: 35.75 | Temp: 29.0°C | Humidity: 52.0% | LJ12A3: DETECTED[0m
+[0;32mI (201771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":48.35000}}[0m
+[1;31mE (201771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (201791) SENSOR: PPM: 48.35 | Temp: 29.0°C | Humidity: 52.0% | LJ12A3: DETECTED[0m
+[0;32mI (202111) esp_rmaker_param: Reporting params: {"LED":{"LED":true}}[0m
+[1;31mE (202111) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (202111) LED: ON[0m
+[0;32mI (204771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":88.95000}}[0m
+[0;32mI (204801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":51.00000}}[0m
+[1;31mE (204801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (204801) SENSOR: PPM: 88.95 | Temp: 29.0°C | Humidity: 51.0% | LJ12A3: DETECTED[0m
+[0;32mI (204891) esp_rmaker_param: Reporting params: {"LED":{"LED":false}}[0m
+[1;31mE (204891) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (204901) LED: OFF[0m
+[0;32mI (205101) esp_rmaker_param: Reporting params: {"LED":{"LED":true}}[0m
+[1;31mE (205101) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (205101) LED: ON[0m
+[0;32mI (206511) esp_rmaker_param: Reporting params: {"LED":{"LED":false}}[0m
+[1;31mE (206511) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (206511) LED: OFF[0m
+[0;32mI (206701) esp_rmaker_param: Reporting params: {"LED":{"LED":true}}[0m
+[1;31mE (206701) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (206711) LED: ON[0m
+[0;32mI (207361) esp_rmaker_param: Reporting params: {"LED":{"LED":false}}[0m
+[1;31mE (207361) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (207361) LED: OFF[0m
+[0;32mI (207771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (207801) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 51.0% | LJ12A3: DETECTED[0m
+[0;32mI (210771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":99.10000}}[0m
+[1;31mE (210771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (210791) SENSOR: PPM: 99.10 | Temp: 29.0°C | Humidity: 51.0% | LJ12A3: DETECTED[0m
+[0;32mI (213771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (213801) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 51.0% | LJ12A3: DETECTED[0m
+[0;32mI (216251) esp_rmaker_param: Received params: {"LED2":{"LED2":false}}[0m
+[0;32mI (216261) esp_rmaker_param: Found 1 params in write request for LED2[0m
+[0;32mI (216261) app_main: Received write request via : Cloud[0m
+[0;32mI (216261) esp_rmaker_param: Reporting params: {"LED2":{"LED2":false}}[0m
+[1;31mE (216271) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (216771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[1;31mE (216771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (216791) SENSOR: PPM: 204.75 | Temp: 29.0°C | Humidity: 51.0% | LJ12A3: DETECTED[0m
+[0;32mI (219771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (219801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":50.00000}}[0m
+[1;31mE (219801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (219801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (219811) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (219821) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 50.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (222771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (222801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (222801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (222801) SENSOR: PPM: 204.75 | Temp: 29.0°C | Humidity: 50.0% | LJ12A3: DETECTED[0m
+[0;32mI (225771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[1;31mE (225771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (225791) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (225791) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (225801) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 50.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (228771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":186.45000}}[0m
+[0;32mI (228801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (228801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (228801) SENSOR: PPM: 186.45 | Temp: 29.0°C | Humidity: 50.0% | LJ12A3: DETECTED[0m
+[0;32mI (231771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":4.60000}}[0m
+[1;31mE (231771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (231791) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (231791) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (231801) SENSOR: PPM: 4.60 | Temp: 29.0°C | Humidity: 50.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (234771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":155.20000}}[0m
+[0;32mI (234801) esp_rmaker_param: Reporting params: {"Temperature":{"Temperature":28.00000}}[0m
+[1;31mE (234801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (234801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (234811) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (234821) SENSOR: PPM: 155.20 | Temp: 28.0°C | Humidity: 50.0% | LJ12A3: DETECTED[0m
+[0;32mI (237771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":3.25000}}[0m
+[0;32mI (237801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (237801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (237801) SENSOR: PPM: 3.25 | Temp: 28.0°C | Humidity: 50.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (240771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":170.45000}}[0m
+[1;31mE (240771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (240791) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (240791) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (240801) SENSOR: PPM: 170.45 | Temp: 28.0°C | Humidity: 50.0% | LJ12A3: DETECTED[0m
+[0;32mI (243771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (243801) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":49.00000}}[0m
+[1;31mE (243801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (243801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (246771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":151.35001}}[0m
+[1;31mE (246771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (246791) SENSOR: PPM: 151.35 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (249771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":17.70000}}[0m
+[0;32mI (249801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (249801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (249801) SENSOR: PPM: 17.70 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (252771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (252801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (252801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (252801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (255771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[1;31mE (255771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (255791) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (258771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (258801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (258801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (258801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (261771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[1;31mE (261771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (261791) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (261791) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (261801) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (264771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (264801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (264801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (264801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (267771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (267801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (267801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (267801) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (270771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[1;31mE (270771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (270791) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (273771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (273801) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (276771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[1;31mE (276771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (276791) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (279771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (279801) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (282771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (282801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (282801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (282801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (285791) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (285791) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (285801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (288771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":88.45000}}[0m
+[0;32mI (288801) SENSOR: PPM: 88.45 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (291771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[1;31mE (291771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (291791) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (294771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (294801) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (297771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (297801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (297801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (297801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (300771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[1;31mE (300771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (300791) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (300791) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (300801) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (303771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":5.90000}}[0m
+[0;32mI (303801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (303801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (303801) SENSOR: PPM: 5.90 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (306791) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (306791) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (306801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (309771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":90.05000}}[0m
+[0;32mI (309801) SENSOR: PPM: 90.05 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (312771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (312801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (315771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":108.95000}}[0m
+[1;31mE (315771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (315791) SENSOR: PPM: 108.95 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (318771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (318801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (321771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[1;31mE (321771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (321791) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (324771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (324801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (324801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (324801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (327771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (327801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (327801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (327801) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (330771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[1;31mE (330771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (330791) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (330791) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (330801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (333771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":142.64999}}[0m
+[0;32mI (333801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (333801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (333801) SENSOR: PPM: 142.65 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (336771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":37.60000}}[0m
+[1;31mE (336771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (336791) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (336791) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (336801) SENSOR: PPM: 37.60 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (339771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (339801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (339801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (339801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (342771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":68.00000}}[0m
+[0;32mI (342801) SENSOR: PPM: 68.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (345771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[1;31mE (345771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (345791) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (348771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":108.95000}}[0m
+[0;32mI (348801) SENSOR: PPM: 108.95 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (351771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[1;31mE (351771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (351791) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (354771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":102.85000}}[0m
+[0;32mI (354801) SENSOR: PPM: 102.85 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (357771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (357801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (360771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[1;31mE (360771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (360791) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (363771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (363801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (363801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (363801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (366771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[1;31mE (366771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (366791) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (366791) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (366801) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (369771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (369801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (369801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (369801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (372771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":155.95000}}[0m
+[0;32mI (372801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (372801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (372801) SENSOR: PPM: 155.95 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (375771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":57.60000}}[0m
+[1;31mE (375771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (375791) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[1;31mE (375791) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (375801) SENSOR: PPM: 57.60 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (378771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (378801) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[1;31mE (378801) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (378801) SENSOR: PPM: 0.00 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m
+[0;32mI (381771) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[1;31mE (381771) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (381791) SENSOR: PPM: 204.75 | Temp: 28.0°C | Humidity: 49.0% | LJ12A3: DETECTED[0m

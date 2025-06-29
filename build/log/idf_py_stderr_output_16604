@@ -1,0 +1,42 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM7 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081a69: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/esp_system/panic.c:454
+0x40090665: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/esp_system/port/esp_system_chip.c:92
+0x400960e1: __assert_func at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/newlib/assert.c:80
+0x40093a34: block_locate_free at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/heap/tlsf/tlsf_control_functions.h:618 (discriminator 1)
+ (inlined by) tlsf_malloc at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/heap/tlsf/tlsf.c:443 (discriminator 1)
+0x4009340d: multi_heap_malloc_impl at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/heap/multi_heap.c:209
+0x4008226d: aligned_or_unaligned_alloc at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/heap/heap_caps_base.c:77
+0x40082379: heap_caps_aligned_alloc_base at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/heap/heap_caps_base.c:150
+0x400823a9: heap_caps_malloc_base at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/heap/heap_caps_base.c:170
+0x40081ff0: heap_caps_malloc at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/heap/heap_caps.c:84
+0x40082025: heap_caps_malloc_default at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/heap/heap_caps.c:110
+0x40096158: _calloc_r at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/newlib/heap.c:65
+0x4009617c: calloc at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/newlib/heap.c:29 (discriminator 1)
+0x400e3871: json_parse_start at D:/esp/esp-rainmaker/components/json_parser/src/json_parser.c:415
+0x400de700: handle_assisted_claim_init_response at D:/esp/esp-rainmaker/components/esp_rainmaker/src/core/esp_rmaker_claim.c:569 (discriminator 1)
+0x400dec29: esp_rmaker_assisted_claim_handle_init at D:/esp/esp-rainmaker/components/esp_rainmaker/src/core/esp_rmaker_claim.c:690
+0x400dee2d: esp_rmaker_claiming_handler at D:/esp/esp-rainmaker/components/esp_rainmaker/src/core/esp_rmaker_claim.c:804
+0x400eeed7: protocomm_req_handle at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/protocomm/src/common/protocomm.c:214
+0x400f19fd: gatt_svr_chr_access at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/protocomm/src/transports/protocomm_nimble.c:389 (discriminator 1)
+0x400f9bf9: ble_gatts_val_access at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/bt/host/nimble/nimble/nimble/host/src/ble_gatts.c:499
+0x400f9c3a: ble_gatts_chr_val_access at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/bt/host/nimble/nimble/nimble/host/src/ble_gatts.c:525
+0x40100a0d: ble_att_svr_write at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/bt/host/nimble/nimble/nimble/host/src/ble_att_svr.c:586
+0x40101275: ble_att_svr_write_handle at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/bt/host/nimble/nimble/nimble/host/src/ble_att_svr.c:617
+0x40101c39: ble_att_svr_rx_write at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/bt/host/nimble/nimble/nimble/host/src/ble_att_svr.c:2304
+0x400f4235: ble_att_rx at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/bt/host/nimble/nimble/nimble/host/src/ble_att.c:517
+0x400f40b6: ble_hs_hci_evt_acl_process at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/bt/host/nimble/nimble/nimble/host/src/ble_hs_hci_evt.c:1251
+0x400f35d9: ble_hs_process_rx_data_queue at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c:248
+0x400f35eb: ble_hs_event_rx_data at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/bt/host/nimble/nimble/nimble/host/src/ble_hs.c:545
+0x401bd277: npl_freertos_event_run at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/bt/host/nimble/nimble/porting/npl/freertos/src/npl_os_freertos.c:451
+0x400836e2: ble_npl_event_run at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/bt/host/nimble/nimble/porting/npl/freertos/include/nimble/nimble_npl_os.h:185
+ (inlined by) nimble_port_run at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/bt/host/nimble/nimble/porting/nimble/src/nimble_port.c:309
+0x400f12f6: nimble_host_task at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/protocomm/src/transports/protocomm_nimble.c:517
+0x40090a12: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m

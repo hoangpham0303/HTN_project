@@ -1,0 +1,2674 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15796
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 19 2025 14:52:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (66) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (73) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (79) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (86) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (92) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (99) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (105) boot:  7 reserved         unknown          06 06 003e0000 0001a000[0m
+[0;32mI (112) boot:  8 fctry            WiFi data        01 02 003fa000 00006000[0m
+[0;32mI (119) boot: End of partition table[0m
+[0;32mI (122) boot: No factory image, trying OTA 0[0m
+[0;32mI (126) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=413bch (267196) map[0m
+[0;32mI (225) esp_image: segment 1: paddr=000613e4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=00061408 vaddr=3ffbdb60 size=05e38h ( 24120) load[0m
+[0;32mI (238) esp_image: segment 3: paddr=00067248 vaddr=40080000 size=08dd0h ( 36304) load[0m
+[0;32mI (252) esp_image: segment 4: paddr=00070020 vaddr=400d0020 size=fb264h (1028708) map[0m
+[0;32mI (604) esp_image: segment 5: paddr=0016b28c vaddr=40088dd0 size=13f6ch ( 81772) load[0m
+[0;32mI (650) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (650) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (651) boot: Disabling RNG early entropy source...[0m
+[0;32mI (665) cpu_start: Multicore app[0m
+[0;32mI (673) cpu_start: Pro cpu start user code[0m
+[0;32mI (673) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (673) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     HTN_project[0m
+[0;32mI (677) app_init: App version:      1.0[0m
+[0;32mI (681) app_init: Compile time:     May  9 2025 12:56:35[0m
+[0;32mI (686) app_init: ELF file SHA256:  929b9556d...[0m
+[0;32mI (690) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (718) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (723) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (728) heap_init: At 3FFCB4B0 len 00014B50 (82 KiB): DRAM[0m
+[0;32mI (733) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (738) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (744) heap_init: At 4009CD3C len 000032C4 (12 KiB): IRAM[0m
+[0;32mI (751) spi_flash: detected chip: generic[0m
+[0;32mI (753) spi_flash: flash io: dio[0m
+[0;32mI (757) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (761) main_task: Started on CPU0[0m
+[0;32mI (771) main_task: Calling app_main()[0m
+[0;32mI (771) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (811) wifi:wifi driver task: 3ffd4db0, prio:23, stack:6656, core=0[0m
+[0;32mI (821) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (821) wifi:wifi certification version: v7.0[0m
+[0;32mI (821) wifi:config NVS flash: enabled[0m
+[0;32mI (821) wifi:config nano formatting: disabled[0m
+[0;32mI (831) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (831) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (831) wifi:Init management short buffer num: 32[0m
+[0;32mI (841) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (841) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (851) wifi:Init static rx buffer num: 10[0m
+[0;32mI (851) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (861) wifi_init: rx ba win: 6[0m
+[0;32mI (861) wifi_init: accept mbox: 6[0m
+[0;32mI (861) wifi_init: tcpip mbox: 32[0m
+[0;32mI (861) wifi_init: udp mbox: 6[0m
+[0;32mI (871) wifi_init: tcp mbox: 6[0m
+[0;32mI (871) wifi_init: tcp tx win: 5760[0m
+[0;32mI (871) wifi_init: tcp rx win: 5760[0m
+[0;32mI (881) wifi_init: tcp mss: 1440[0m
+[0;32mI (881) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (881) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (901) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (911) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|CCDBA734EECC[0m
+[0;32mI (921) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (921) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (931) esp_rmaker_node: Node ID ----- htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (931) esp_rmaker_ota_using_topics: OTA enabled with Topics[0m
+[0;32mI (941) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (941) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (951) app_insights: Enable CONFIG_ESP_INSIGHTS_ENABLED to get Insights.[0m
+[0;32mI (951) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (961) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (961) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (971) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (971) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (981) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (981) esp_rmaker_local: Event 6[0m
+[0;32mI (991) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1081) wifi:mode : sta (cc:db:a7:34:ee:cc)[0m
+[0;32mI (1081) wifi:enable tsf[0m
+[0;32mI (3501) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3501) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3511) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3511) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3531) wifi:connected with Wifi HHH, aid = 1, channel 1, BW20, bssid = 3e:9c:0f:e8:98:60[0m
+[0;32mI (3531) wifi:security: WPA2-PSK, phy: bgn, rssi: -24[0m
+[0;32mI (3531) wifi:pm start, type: 1[0m
+
+[0;32mI (3531) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3591) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[1;31mE (3791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (3791) DHT: Failed to read from DHT11[0m
+[0;32mI (3791) LIGHT: Raw ADC Light: 375 | Light %: 90.8[0m
+[0;32mI (3791) SENSOR: PPM: 29.05 | Temp: 0.0°C | Humidity: 0.0% | Light: 90.8%[0m
+[0;32mI (4561) esp_netif_handlers: sta ip: 192.168.137.110, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (4561) app_network: Connected with IP Address:192.168.137.110[0m
+[0;32mI (4561) main_task: Returned from app_main()[0m
+[0;32mI (4561) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (4571) esp_rmaker_node: Node attribute cmd-resp created[0m
+[0;32mI (4571) esp_rmaker_local: Enabling Local Control[0m
+[0;32mI (4581) esp_rmaker_local: Local Control Service Enabled[0m
+[0;32mI (4581) esp_rmaker_local: Starting ESP Local control with HTTP Transport and security version: 1[0m
+[0;32mI (4601) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (4601) esp_https_server: Starting server[0m
+[0;32mI (4611) esp_https_server: Server listening on port 8080[0m
+[0;32mI (4611) esp_rmaker_local: esp_local_ctrl service started with name : htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (4621) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (4621) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (4921) esp_rmaker_time: SNTP Synchronised.[0m
+[0;32mI (4921) esp_rmaker_time: The current time is: Tue May 27 14:19:17 2025 +0800[CST], DST: No.[0m
+[0;32mI (6151) wifi:<ba-add>idx:0 (ifx:0, 3e:9c:0f:e8:98:60), tid:0, ssn:8, winSize:64[0m
+[0;32mI (6791) LIGHT: Raw ADC Light: 460 | Light %: 88.8[0m
+[0;32mI (6791) SENSOR: PPM: 28.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.8%[0m
+[0;32mI (6961) wifi:<ba-add>idx:1 (ifx:0, 3e:9c:0f:e8:98:60), tid:1, ssn:8, winSize:64[0m
+[0;32mI (7011) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (9791) LIGHT: Raw ADC Light: 464 | Light %: 88.7[0m
+[0;32mI (9791) SENSOR: PPM: 28.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.7%[0m
+[0;32mI (9951) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (9951) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (9961) esp_rmaker_node_config: Generated Node config of length 1627[0m
+[0;32mI (9981) esp_rmaker_ota_using_topics: Subscribing to: node/htVVE7aBtXXsgnGh4yvLKr/otaurl[0m
+[0;32mI (12791) LIGHT: Raw ADC Light: 381 | Light %: 90.7[0m
+[0;32mI (12791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.7%[0m
+[0;32mI (14981) esp_rmaker_ota_using_topics: Fetching OTA details, if any.[0m
+[0;32mI (15791) LIGHT: Raw ADC Light: 401 | Light %: 90.2[0m
+[0;32mI (15791) SENSOR: PPM: 28.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[0;32mI (18791) LIGHT: Raw ADC Light: 455 | Light %: 88.9[0m
+[0;32mI (18791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.9%[0m
+[0;32mI (21791) LIGHT: Raw ADC Light: 482 | Light %: 88.2[0m
+[0;32mI (21791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.2%[0m
+[0;32mI (24801) LIGHT: Raw ADC Light: 1692 | Light %: 58.7[0m
+[0;32mI (24801) SENSOR: PPM: 28.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 58.7%[0m
+[0;32mI (27791) LIGHT: Raw ADC Light: 1754 | Light %: 57.2[0m
+[0;32mI (27791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 57.2%[0m
+[0;32mI (30791) LIGHT: Raw ADC Light: 1648 | Light %: 59.8[0m
+[0;32mI (30791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 59.8%[0m
+[0;32mI (33801) LIGHT: Raw ADC Light: 2595 | Light %: 36.6[0m
+[0;32mI (33801) LED: Bật LED1 do ánh sáng thấp[0m
+[0;32mI (33801) SENSOR: PPM: 29.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 36.6%[0m
+[0;32mI (36801) LIGHT: Raw ADC Light: 2872 | Light %: 29.9[0m
+[0;32mI (36801) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 52.0% | Light: 29.9%[0m
+[0;32mI (39801) LIGHT: Raw ADC Light: 2880 | Light %: 29.7[0m
+[0;32mI (39801) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 54.0% | Light: 29.7%[0m
+[0;32mI (42801) LIGHT: Raw ADC Light: 2962 | Light %: 27.7[0m
+[0;32mI (42801) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 55.0% | Light: 27.7%[0m
+[0;32mI (45801) LIGHT: Raw ADC Light: 397 | Light %: 90.3[0m
+[0;32mI (45811) LED: Tắt LED1 do ánh sáng đủ[0m
+[0;32mI (45811) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 56.0% | Light: 90.3%[0m
+[0;32mI (48791) LIGHT: Raw ADC Light: 394 | Light %: 90.4[0m
+[0;32mI (48791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 56.0% | Light: 90.4%[0m
+[0;32mI (51801) LIGHT: Raw ADC Light: 392 | Light %: 90.4[0m
+[0;32mI (51801) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 55.0% | Light: 90.4%[0m
+[0;32mI (54801) LIGHT: Raw ADC Light: 392 | Light %: 90.4[0m
+[0;32mI (54801) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 54.0% | Light: 90.4%[0m
+[0;32mI (57801) LIGHT: Raw ADC Light: 393 | Light %: 90.4[0m
+[0;32mI (57801) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 53.0% | Light: 90.4%[0m
+[0;32mI (60791) LIGHT: Raw ADC Light: 396 | Light %: 90.3[0m
+[0;32mI (60791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 53.0% | Light: 90.3%[0m
+[0;32mI (63801) LIGHT: Raw ADC Light: 391 | Light %: 90.5[0m
+[0;32mI (63801) SENSOR: PPM: 28.65 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.5%[0m
+[0;32mI (66801) LIGHT: Raw ADC Light: 392 | Light %: 90.4[0m
+[0;32mI (66801) SENSOR: PPM: 28.40 | Temp: 30.0°C | Humidity: 51.0% | Light: 90.4%[0m
+[0;32mI (69791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (69791) SENSOR: PPM: 29.30 | Temp: 30.0°C | Humidity: 51.0% | Light: 90.3%[0m
+[0;32mI (72791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (72791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 51.0% | Light: 90.3%[0m
+[0;32mI (75791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (75791) SENSOR: PPM: 28.85 | Temp: 30.0°C | Humidity: 51.0% | Light: 90.3%[0m
+[0;32mI (78801) LIGHT: Raw ADC Light: 411 | Light %: 90.0[0m
+[0;32mI (78801) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.0%[0m
+[0;32mI (81801) LIGHT: Raw ADC Light: 1423 | Light %: 65.3[0m
+[0;32mI (81801) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 65.3%[0m
+[0;32mI (84801) LIGHT: Raw ADC Light: 1417 | Light %: 65.4[0m
+[0;32mI (84801) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 52.0% | Light: 65.4%[0m
+[0;32mI (87801) LIGHT: Raw ADC Light: 1430 | Light %: 65.1[0m
+[0;32mI (87801) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 54.0% | Light: 65.1%[0m
+[0;32mI (90801) LIGHT: Raw ADC Light: 3054 | Light %: 25.4[0m
+[0;32mI (90811) LED: Bật LED1 do ánh sáng thấp[0m
+[0;32mI (90811) SENSOR: PPM: 28.70 | Temp: 30.0°C | Humidity: 55.0% | Light: 25.4%[0m
+[0;32mI (93801) LIGHT: Raw ADC Light: 397 | Light %: 90.3[0m
+[0;32mI (93801) LED: Tắt LED1 do ánh sáng đủ[0m
+[0;32mI (93801) SENSOR: PPM: 28.40 | Temp: 30.0°C | Humidity: 55.0% | Light: 90.3%[0m
+[0;32mI (96791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (96791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 55.0% | Light: 90.2%[0m
+[0;32mI (99791) LIGHT: Raw ADC Light: 535 | Light %: 86.9[0m
+[0;32mI (99791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 55.0% | Light: 86.9%[0m
+[0;32mI (102801) LIGHT: Raw ADC Light: 521 | Light %: 87.3[0m
+[0;32mI (102801) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 54.0% | Light: 87.3%[0m
+[0;32mI (105791) LIGHT: Raw ADC Light: 509 | Light %: 87.6[0m
+[0;32mI (105791) SENSOR: PPM: 28.85 | Temp: 30.0°C | Humidity: 54.0% | Light: 87.6%[0m
+[0;32mI (108801) LIGHT: Raw ADC Light: 3668 | Light %: 10.4[0m
+[0;32mI (108811) LED: Bật LED1 do ánh sáng thấp[0m
+[0;32mI (108811) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 53.0% | Light: 10.4%[0m
+[0;32mI (111801) LIGHT: Raw ADC Light: 3613 | Light %: 11.8[0m
+[0;32mI (111801) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 54.0% | Light: 11.8%[0m
+[0;32mI (114801) LIGHT: Raw ADC Light: 1231 | Light %: 69.9[0m
+[0;32mI (114801) LED: Tắt LED1 do ánh sáng đủ[0m
+[0;32mI (114801) SENSOR: PPM: 28.85 | Temp: 30.0°C | Humidity: 54.0% | Light: 69.9%[0m
+[0;32mI (117811) LIGHT: Raw ADC Light: 3835 | Light %: 6.3[0m
+[0;32mI (117811) LED: Bật LED1 do ánh sáng thấp[0m
+[0;32mI (117811) SENSOR: PPM: 29.00 | Temp: 30.0°C | Humidity: 55.0% | Light: 6.3%[0m
+[0;32mI (120801) LIGHT: Raw ADC Light: 371 | Light %: 90.9[0m
+[0;32mI (120801) LED: Tắt LED1 do ánh sáng đủ[0m
+[0;32mI (120801) SENSOR: PPM: 28.65 | Temp: 30.0°C | Humidity: 55.0% | Light: 90.9%[0m
+[0;32mI (123791) LIGHT: Raw ADC Light: 434 | Light %: 89.4[0m
+[0;32mI (123791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 55.0% | Light: 89.4%[0m
+[0;32mI (126801) LIGHT: Raw ADC Light: 373 | Light %: 90.9[0m
+[0;32mI (126801) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 54.0% | Light: 90.9%[0m
+[0;32mI (129791) LIGHT: Raw ADC Light: 386 | Light %: 90.6[0m
+[0;32mI (129791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 54.0% | Light: 90.6%[0m
+[0;32mI (132801) LIGHT: Raw ADC Light: 396 | Light %: 90.3[0m
+[0;32mI (132801) SENSOR: PPM: 29.00 | Temp: 30.0°C | Humidity: 53.0% | Light: 90.3%[0m
+[0;32mI (135801) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (135801) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.3%[0m
+[0;32mI (138791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (138791) SENSOR: PPM: 28.85 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.2%[0m
+[0;32mI (141791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (141791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.3%[0m
+[0;32mI (144801) LIGHT: Raw ADC Light: 393 | Light %: 90.4[0m
+[0;32mI (144801) SENSOR: PPM: 28.70 | Temp: 30.0°C | Humidity: 51.0% | Light: 90.4%[0m
+[0;32mI (147791) LIGHT: Raw ADC Light: 403 | Light %: 90.2[0m
+[0;32mI (147791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 51.0% | Light: 90.2%[0m
+[0;32mI (150791) LIGHT: Raw ADC Light: 407 | Light %: 90.1[0m
+[0;32mI (150791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 51.0% | Light: 90.1%[0m
+[0;32mI (153791) LIGHT: Raw ADC Light: 405 | Light %: 90.1[0m
+[0;32mI (153791) SENSOR: PPM: 28.75 | Temp: 30.0°C | Humidity: 51.0% | Light: 90.1%[0m
+[0;32mI (156791) LIGHT: Raw ADC Light: 404 | Light %: 90.1[0m
+[0;32mI (156791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 51.0% | Light: 90.1%[0m
+[0;32mI (159791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (159801) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[0;32mI (162791) LIGHT: Raw ADC Light: 402 | Light %: 90.2[0m
+[0;32mI (162791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[0;32mI (165791) LIGHT: Raw ADC Light: 410 | Light %: 90.0[0m
+[0;32mI (165791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.0%[0m
+[0;32mI (168791) LIGHT: Raw ADC Light: 411 | Light %: 90.0[0m
+[0;32mI (168791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.0%[0m
+[0;32mI (171791) LIGHT: Raw ADC Light: 394 | Light %: 90.4[0m
+[0;32mI (171791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[0;32mI (174791) LIGHT: Raw ADC Light: 404 | Light %: 90.1[0m
+[0;32mI (174791) SENSOR: PPM: 28.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.1%[0m
+[0;32mI (177791) LIGHT: Raw ADC Light: 403 | Light %: 90.2[0m
+[0;32mI (177791) SENSOR: PPM: 28.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[0;32mI (180791) LIGHT: Raw ADC Light: 406 | Light %: 90.1[0m
+[0;32mI (180791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.1%[0m
+[0;32mI (183791) LIGHT: Raw ADC Light: 405 | Light %: 90.1[0m
+[0;32mI (183791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.1%[0m
+[0;32mI (186791) LIGHT: Raw ADC Light: 404 | Light %: 90.1[0m
+[0;32mI (186791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.1%[0m
+[0;32mI (189791) LIGHT: Raw ADC Light: 403 | Light %: 90.2[0m
+[0;32mI (189791) SENSOR: PPM: 28.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[0;32mI (192791) LIGHT: Raw ADC Light: 403 | Light %: 90.2[0m
+[0;32mI (192791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[0;32mI (195791) LIGHT: Raw ADC Light: 402 | Light %: 90.2[0m
+[0;32mI (195791) SENSOR: PPM: 28.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[0;32mI (198791) LIGHT: Raw ADC Light: 403 | Light %: 90.2[0m
+[0;32mI (198791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[0;32mI (201791) LIGHT: Raw ADC Light: 405 | Light %: 90.1[0m
+[0;32mI (201791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.1%[0m
+[0;32mI (204791) LIGHT: Raw ADC Light: 396 | Light %: 90.3[0m
+[0;32mI (204791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[0;32mI (207801) LIGHT: Raw ADC Light: 393 | Light %: 90.4[0m
+[0;32mI (207801) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[0;32mI (210791) LIGHT: Raw ADC Light: 389 | Light %: 90.5[0m
+[0;32mI (210791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.5%[0m
+[0;32mI (213791) LIGHT: Raw ADC Light: 391 | Light %: 90.5[0m
+[0;32mI (213791) SENSOR: PPM: 28.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.5%[0m
+[0;32mI (216791) LIGHT: Raw ADC Light: 486 | Light %: 88.1[0m
+[0;32mI (216791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.1%[0m
+[0;32mI (219791) LIGHT: Raw ADC Light: 479 | Light %: 88.3[0m
+[0;32mI (219791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.3%[0m
+[0;32mI (222791) LIGHT: Raw ADC Light: 436 | Light %: 89.4[0m
+[0;32mI (222791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.4%[0m
+[0;32mI (225791) LIGHT: Raw ADC Light: 392 | Light %: 90.4[0m
+[0;32mI (225791) SENSOR: PPM: 28.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[0;32mI (228801) LIGHT: Raw ADC Light: 389 | Light %: 90.5[0m
+[0;32mI (228801) SENSOR: PPM: 27.65 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.5%[0m
+[0;32mI (231791) LIGHT: Raw ADC Light: 382 | Light %: 90.7[0m
+[0;32mI (231791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.7%[0m
+[0;32mI (234791) LIGHT: Raw ADC Light: 378 | Light %: 90.8[0m
+[0;32mI (234791) SENSOR: PPM: 28.60 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.8%[0m
+[0;32mI (237791) LIGHT: Raw ADC Light: 378 | Light %: 90.8[0m
+[0;32mI (237791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.8%[0m
+[0;32mI (240801) LIGHT: Raw ADC Light: 374 | Light %: 90.9[0m
+[0;32mI (240801) SENSOR: PPM: 29.15 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.9%[0m
+[0;32mI (243791) LIGHT: Raw ADC Light: 377 | Light %: 90.8[0m
+[0;32mI (243791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.8%[0m
+[0;32mI (246791) LIGHT: Raw ADC Light: 372 | Light %: 90.9[0m
+[0;32mI (246791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.9%[0m
+[0;32mI (249801) LIGHT: Raw ADC Light: 373 | Light %: 90.9[0m
+[0;32mI (249801) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.9%[0m
+[0;32mI (252791) LIGHT: Raw ADC Light: 377 | Light %: 90.8[0m
+[0;32mI (252791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.8%[0m
+[0;32mI (255791) LIGHT: Raw ADC Light: 375 | Light %: 90.8[0m
+[0;32mI (255791) SENSOR: PPM: 28.85 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.8%[0m
+[0;32mI (258791) LIGHT: Raw ADC Light: 374 | Light %: 90.9[0m
+[0;32mI (258791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.9%[0m
+[0;32mI (261791) LIGHT: Raw ADC Light: 366 | Light %: 91.1[0m
+[0;32mI (261791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 49.0% | Light: 91.1%[0m
+[0;32mI (264791) LIGHT: Raw ADC Light: 365 | Light %: 91.1[0m
+[0;32mI (264791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 49.0% | Light: 91.1%[0m
+[0;32mI (267791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (267791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 49.0% | Light: 91.0%[0m
+[0;32mI (270791) LIGHT: Raw ADC Light: 369 | Light %: 91.0[0m
+[0;32mI (270791) SENSOR: PPM: 28.70 | Temp: 30.0°C | Humidity: 49.0% | Light: 91.0%[0m
+[0;32mI (273791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (273791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 49.0% | Light: 91.0%[0m
+[0;32mI (276791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (276791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 49.0% | Light: 91.0%[0m
+[0;32mI (279791) LIGHT: Raw ADC Light: 381 | Light %: 90.7[0m
+[0;32mI (279791) SENSOR: PPM: 28.90 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.7%[0m
+[0;32mI (282791) LIGHT: Raw ADC Light: 375 | Light %: 90.8[0m
+[0;32mI (282791) SENSOR: PPM: 28.75 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.8%[0m
+[0;32mI (285791) LIGHT: Raw ADC Light: 373 | Light %: 90.9[0m
+[0;32mI (285791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.9%[0m
+[0;32mI (288791) LIGHT: Raw ADC Light: 375 | Light %: 90.8[0m
+[0;32mI (288791) SENSOR: PPM: 28.60 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.8%[0m
+[0;32mI (291791) LIGHT: Raw ADC Light: 375 | Light %: 90.8[0m
+[0;32mI (291791) SENSOR: PPM: 28.75 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.8%[0m
+[0;32mI (294791) LIGHT: Raw ADC Light: 377 | Light %: 90.8[0m
+[0;32mI (294791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 49.0% | Light: 90.8%[0m
+[0;32mI (297801) LIGHT: Raw ADC Light: 280 | Light %: 93.2[0m
+[0;32mI (297801) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 93.2%[0m
+[1;31mE (300791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (300791) DHT: Failed to read from DHT11[0m
+[0;32mI (300791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (300791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.5%[0m
+[1;31mE (303791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (303791) DHT: Failed to read from DHT11[0m
+[0;32mI (303791) LIGHT: Raw ADC Light: 345 | Light %: 91.6[0m
+[0;32mI (303791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (306791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (306791) DHT: Failed to read from DHT11[0m
+[0;32mI (306791) LIGHT: Raw ADC Light: 345 | Light %: 91.6[0m
+[0;32mI (306791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (309791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (309791) DHT: Failed to read from DHT11[0m
+[0;32mI (309791) LIGHT: Raw ADC Light: 342 | Light %: 91.6[0m
+[0;32mI (309791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (312791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (312791) DHT: Failed to read from DHT11[0m
+[0;32mI (312791) LIGHT: Raw ADC Light: 343 | Light %: 91.6[0m
+[0;32mI (312791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (315791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (315791) DHT: Failed to read from DHT11[0m
+[0;32mI (315791) LIGHT: Raw ADC Light: 342 | Light %: 91.6[0m
+[0;32mI (315791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (318791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (318791) DHT: Failed to read from DHT11[0m
+[0;32mI (318791) LIGHT: Raw ADC Light: 342 | Light %: 91.6[0m
+[0;32mI (318791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (321791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (321791) DHT: Failed to read from DHT11[0m
+[0;32mI (321791) LIGHT: Raw ADC Light: 342 | Light %: 91.6[0m
+[0;32mI (321791) SENSOR: PPM: 28.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (324791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (324791) DHT: Failed to read from DHT11[0m
+[0;32mI (324791) LIGHT: Raw ADC Light: 343 | Light %: 91.6[0m
+[0;32mI (324791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (327791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (327791) DHT: Failed to read from DHT11[0m
+[0;32mI (327791) LIGHT: Raw ADC Light: 340 | Light %: 91.7[0m
+[0;32mI (327791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (330791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (330791) DHT: Failed to read from DHT11[0m
+[0;32mI (330791) LIGHT: Raw ADC Light: 343 | Light %: 91.6[0m
+[0;32mI (330791) SENSOR: PPM: 28.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (333791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (333791) DHT: Failed to read from DHT11[0m
+[0;32mI (333791) LIGHT: Raw ADC Light: 341 | Light %: 91.7[0m
+[0;32mI (333791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (336791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (336791) DHT: Failed to read from DHT11[0m
+[0;32mI (336791) LIGHT: Raw ADC Light: 341 | Light %: 91.7[0m
+[0;32mI (336791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (339791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (339791) DHT: Failed to read from DHT11[0m
+[0;32mI (339791) LIGHT: Raw ADC Light: 341 | Light %: 91.7[0m
+[0;32mI (339791) SENSOR: PPM: 28.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (342791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (342791) DHT: Failed to read from DHT11[0m
+[0;32mI (342791) LIGHT: Raw ADC Light: 340 | Light %: 91.7[0m
+[0;32mI (342791) SENSOR: PPM: 28.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (345791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (345791) DHT: Failed to read from DHT11[0m
+[0;32mI (345791) LIGHT: Raw ADC Light: 342 | Light %: 91.6[0m
+[0;32mI (345791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (348791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (348791) DHT: Failed to read from DHT11[0m
+[0;32mI (348791) LIGHT: Raw ADC Light: 342 | Light %: 91.6[0m
+[0;32mI (348791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (351791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (351791) DHT: Failed to read from DHT11[0m
+[0;32mI (351791) LIGHT: Raw ADC Light: 341 | Light %: 91.7[0m
+[0;32mI (351791) SENSOR: PPM: 28.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (354791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (354791) DHT: Failed to read from DHT11[0m
+[0;32mI (354791) LIGHT: Raw ADC Light: 342 | Light %: 91.6[0m
+[0;32mI (354791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (357791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (357791) DHT: Failed to read from DHT11[0m
+[0;32mI (357791) LIGHT: Raw ADC Light: 340 | Light %: 91.7[0m
+[0;32mI (357791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (360791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (360791) DHT: Failed to read from DHT11[0m
+[0;32mI (360791) LIGHT: Raw ADC Light: 343 | Light %: 91.6[0m
+[0;32mI (360791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (363791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (363791) DHT: Failed to read from DHT11[0m
+[0;32mI (363791) LIGHT: Raw ADC Light: 359 | Light %: 91.2[0m
+[0;32mI (363791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.2%[0m
+[1;31mE (366791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (366791) DHT: Failed to read from DHT11[0m
+[0;32mI (366791) LIGHT: Raw ADC Light: 340 | Light %: 91.7[0m
+[0;32mI (366791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (369791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (369791) DHT: Failed to read from DHT11[0m
+[0;32mI (369791) LIGHT: Raw ADC Light: 340 | Light %: 91.7[0m
+[0;32mI (369791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (372791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (372791) DHT: Failed to read from DHT11[0m
+[0;32mI (372791) LIGHT: Raw ADC Light: 340 | Light %: 91.7[0m
+[0;32mI (372791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (375791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (375791) DHT: Failed to read from DHT11[0m
+[0;32mI (375791) LIGHT: Raw ADC Light: 338 | Light %: 91.7[0m
+[0;32mI (375791) SENSOR: PPM: 28.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (378791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (378791) DHT: Failed to read from DHT11[0m
+[0;32mI (378791) LIGHT: Raw ADC Light: 340 | Light %: 91.7[0m
+[0;32mI (378791) SENSOR: PPM: 28.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (381791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (381791) DHT: Failed to read from DHT11[0m
+[0;32mI (381791) LIGHT: Raw ADC Light: 351 | Light %: 91.4[0m
+[0;32mI (381791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.4%[0m
+[1;31mE (384791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (384791) DHT: Failed to read from DHT11[0m
+[0;32mI (384791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (384791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.5%[0m
+[1;31mE (387791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (387791) DHT: Failed to read from DHT11[0m
+[0;32mI (387791) LIGHT: Raw ADC Light: 338 | Light %: 91.7[0m
+[0;32mI (387791) SENSOR: PPM: 27.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (390791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (390791) DHT: Failed to read from DHT11[0m
+[0;32mI (390791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (390791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (393791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (393791) DHT: Failed to read from DHT11[0m
+[0;32mI (393791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (393791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (396791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (396791) DHT: Failed to read from DHT11[0m
+[0;32mI (396791) LIGHT: Raw ADC Light: 340 | Light %: 91.7[0m
+[0;32mI (396791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (399791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (399791) DHT: Failed to read from DHT11[0m
+[0;32mI (399791) LIGHT: Raw ADC Light: 339 | Light %: 91.7[0m
+[0;32mI (399791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (402791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (402791) DHT: Failed to read from DHT11[0m
+[0;32mI (402791) LIGHT: Raw ADC Light: 339 | Light %: 91.7[0m
+[0;32mI (402791) SENSOR: PPM: 27.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (405791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (405791) DHT: Failed to read from DHT11[0m
+[0;32mI (405791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (405791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (408791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (408791) DHT: Failed to read from DHT11[0m
+[0;32mI (408791) LIGHT: Raw ADC Light: 339 | Light %: 91.7[0m
+[0;32mI (408791) SENSOR: PPM: 28.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (411791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (411791) DHT: Failed to read from DHT11[0m
+[0;32mI (411791) LIGHT: Raw ADC Light: 338 | Light %: 91.7[0m
+[0;32mI (411791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (414791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (414791) DHT: Failed to read from DHT11[0m
+[0;32mI (414791) LIGHT: Raw ADC Light: 338 | Light %: 91.7[0m
+[0;32mI (414791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (417791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (417791) DHT: Failed to read from DHT11[0m
+[0;32mI (417791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (417791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (420791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (420791) DHT: Failed to read from DHT11[0m
+[0;32mI (420791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (420791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (423791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (423791) DHT: Failed to read from DHT11[0m
+[0;32mI (423791) LIGHT: Raw ADC Light: 338 | Light %: 91.7[0m
+[0;32mI (423791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (426791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (426791) DHT: Failed to read from DHT11[0m
+[0;32mI (426791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (426791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (429791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (429791) DHT: Failed to read from DHT11[0m
+[0;32mI (429791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (429791) SENSOR: PPM: 28.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (432791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (432791) DHT: Failed to read from DHT11[0m
+[0;32mI (432791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (432791) SENSOR: PPM: 28.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (435791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (435791) DHT: Failed to read from DHT11[0m
+[0;32mI (435791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (435791) SENSOR: PPM: 28.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (438791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (438791) DHT: Failed to read from DHT11[0m
+[0;32mI (438791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (438791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (441791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (441791) DHT: Failed to read from DHT11[0m
+[0;32mI (441791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (441791) SENSOR: PPM: 28.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (444791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (444791) DHT: Failed to read from DHT11[0m
+[0;32mI (444791) LIGHT: Raw ADC Light: 339 | Light %: 91.7[0m
+[0;32mI (444791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (447791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (447791) DHT: Failed to read from DHT11[0m
+[0;32mI (447791) LIGHT: Raw ADC Light: 355 | Light %: 91.3[0m
+[0;32mI (447791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.3%[0m
+[1;31mE (450791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (450791) DHT: Failed to read from DHT11[0m
+[0;32mI (450791) LIGHT: Raw ADC Light: 339 | Light %: 91.7[0m
+[0;32mI (450791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (453791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (453791) DHT: Failed to read from DHT11[0m
+[0;32mI (453791) LIGHT: Raw ADC Light: 347 | Light %: 91.5[0m
+[0;32mI (453791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.5%[0m
+[1;31mE (456791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (456791) DHT: Failed to read from DHT11[0m
+[0;32mI (456791) LIGHT: Raw ADC Light: 356 | Light %: 91.3[0m
+[0;32mI (456791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.3%[0m
+[1;31mE (459791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (459791) DHT: Failed to read from DHT11[0m
+[0;32mI (459791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (459791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (462791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (462791) DHT: Failed to read from DHT11[0m
+[0;32mI (462791) LIGHT: Raw ADC Light: 343 | Light %: 91.6[0m
+[0;32mI (462791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (465791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (465791) DHT: Failed to read from DHT11[0m
+[0;32mI (465791) LIGHT: Raw ADC Light: 342 | Light %: 91.6[0m
+[0;32mI (465791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (468791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (468791) DHT: Failed to read from DHT11[0m
+[0;32mI (468791) LIGHT: Raw ADC Light: 351 | Light %: 91.4[0m
+[0;32mI (468791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.4%[0m
+[1;31mE (471791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (471791) DHT: Failed to read from DHT11[0m
+[0;32mI (471791) LIGHT: Raw ADC Light: 352 | Light %: 91.4[0m
+[0;32mI (471791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.4%[0m
+[1;31mE (474791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (474791) DHT: Failed to read from DHT11[0m
+[0;32mI (474791) LIGHT: Raw ADC Light: 350 | Light %: 91.5[0m
+[0;32mI (474791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.5%[0m
+[1;31mE (477791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (477791) DHT: Failed to read from DHT11[0m
+[0;32mI (477791) LIGHT: Raw ADC Light: 353 | Light %: 91.4[0m
+[0;32mI (477791) SENSOR: PPM: 27.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.4%[0m
+[1;31mE (480791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (480791) DHT: Failed to read from DHT11[0m
+[0;32mI (480791) LIGHT: Raw ADC Light: 352 | Light %: 91.4[0m
+[0;32mI (480791) SENSOR: PPM: 28.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.4%[0m
+[1;31mE (483791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (483791) DHT: Failed to read from DHT11[0m
+[0;32mI (483791) LIGHT: Raw ADC Light: 347 | Light %: 91.5[0m
+[0;32mI (483791) SENSOR: PPM: 27.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.5%[0m
+[1;31mE (486791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (486791) DHT: Failed to read from DHT11[0m
+[0;32mI (486791) LIGHT: Raw ADC Light: 338 | Light %: 91.7[0m
+[0;32mI (486791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (489791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (489791) DHT: Failed to read from DHT11[0m
+[0;32mI (489791) LIGHT: Raw ADC Light: 335 | Light %: 91.8[0m
+[0;32mI (489791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (492791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (492791) DHT: Failed to read from DHT11[0m
+[0;32mI (492791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (492791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.5%[0m
+[1;31mE (495791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (495791) DHT: Failed to read from DHT11[0m
+[0;32mI (495791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (495791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (498791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (498791) DHT: Failed to read from DHT11[0m
+[0;32mI (498791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (498791) SENSOR: PPM: 28.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (501791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (501791) DHT: Failed to read from DHT11[0m
+[0;32mI (501791) LIGHT: Raw ADC Light: 343 | Light %: 91.6[0m
+[0;32mI (501791) SENSOR: PPM: 27.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (504791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (504791) DHT: Failed to read from DHT11[0m
+[0;32mI (504791) LIGHT: Raw ADC Light: 342 | Light %: 91.6[0m
+[0;32mI (504791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (507791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (507791) DHT: Failed to read from DHT11[0m
+[0;32mI (507791) LIGHT: Raw ADC Light: 346 | Light %: 91.6[0m
+[0;32mI (507791) SENSOR: PPM: 27.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (510791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (510791) DHT: Failed to read from DHT11[0m
+[0;32mI (510791) LIGHT: Raw ADC Light: 343 | Light %: 91.6[0m
+[0;32mI (510791) SENSOR: PPM: 28.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (513791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (513791) DHT: Failed to read from DHT11[0m
+[0;32mI (513791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (513791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.5%[0m
+[1;31mE (516791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (516791) DHT: Failed to read from DHT11[0m
+[0;32mI (516791) LIGHT: Raw ADC Light: 356 | Light %: 91.3[0m
+[0;32mI (516791) SENSOR: PPM: 28.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.3%[0m
+[1;31mE (519791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (519791) DHT: Failed to read from DHT11[0m
+[0;32mI (519791) LIGHT: Raw ADC Light: 341 | Light %: 91.7[0m
+[0;32mI (519791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (522791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (522791) DHT: Failed to read from DHT11[0m
+[0;32mI (522791) LIGHT: Raw ADC Light: 340 | Light %: 91.7[0m
+[0;32mI (522791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (525791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (525791) DHT: Failed to read from DHT11[0m
+[0;32mI (525791) LIGHT: Raw ADC Light: 339 | Light %: 91.7[0m
+[0;32mI (525791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (528791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (528791) DHT: Failed to read from DHT11[0m
+[0;32mI (528791) LIGHT: Raw ADC Light: 338 | Light %: 91.7[0m
+[0;32mI (528791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (531791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (531791) DHT: Failed to read from DHT11[0m
+[0;32mI (531791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (531791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (534791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (534791) DHT: Failed to read from DHT11[0m
+[0;32mI (534791) LIGHT: Raw ADC Light: 339 | Light %: 91.7[0m
+[0;32mI (534791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (537791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (537791) DHT: Failed to read from DHT11[0m
+[0;32mI (537791) LIGHT: Raw ADC Light: 339 | Light %: 91.7[0m
+[0;32mI (537791) SENSOR: PPM: 28.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (540791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (540791) DHT: Failed to read from DHT11[0m
+[0;32mI (540791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (540791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (543791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (543791) DHT: Failed to read from DHT11[0m
+[0;32mI (543791) LIGHT: Raw ADC Light: 339 | Light %: 91.7[0m
+[0;32mI (543791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (546791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (546791) DHT: Failed to read from DHT11[0m
+[0;32mI (546791) LIGHT: Raw ADC Light: 338 | Light %: 91.7[0m
+[0;32mI (546791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (549791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (549791) DHT: Failed to read from DHT11[0m
+[0;32mI (549791) LIGHT: Raw ADC Light: 340 | Light %: 91.7[0m
+[0;32mI (549791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (552791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (552791) DHT: Failed to read from DHT11[0m
+[0;32mI (552791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (552791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (555791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (555791) DHT: Failed to read from DHT11[0m
+[0;32mI (555791) LIGHT: Raw ADC Light: 379 | Light %: 90.7[0m
+[0;32mI (555791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.7%[0m
+[1;31mE (558791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (558791) DHT: Failed to read from DHT11[0m
+[0;32mI (558791) LIGHT: Raw ADC Light: 380 | Light %: 90.7[0m
+[0;32mI (558791) SENSOR: PPM: 28.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.7%[0m
+[1;31mE (561791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (561791) DHT: Failed to read from DHT11[0m
+[0;32mI (561791) LIGHT: Raw ADC Light: 379 | Light %: 90.7[0m
+[0;32mI (561791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.7%[0m
+[1;31mE (564791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (564791) DHT: Failed to read from DHT11[0m
+[0;32mI (564791) LIGHT: Raw ADC Light: 377 | Light %: 90.8[0m
+[0;32mI (564791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (567791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (567791) DHT: Failed to read from DHT11[0m
+[0;32mI (567791) LIGHT: Raw ADC Light: 379 | Light %: 90.7[0m
+[0;32mI (567791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.7%[0m
+[1;31mE (570791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (570791) DHT: Failed to read from DHT11[0m
+[0;32mI (570791) LIGHT: Raw ADC Light: 378 | Light %: 90.8[0m
+[0;32mI (570791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (573791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (573791) DHT: Failed to read from DHT11[0m
+[0;32mI (573791) LIGHT: Raw ADC Light: 376 | Light %: 90.8[0m
+[0;32mI (573791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (576791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (576791) DHT: Failed to read from DHT11[0m
+[0;32mI (576791) LIGHT: Raw ADC Light: 376 | Light %: 90.8[0m
+[0;32mI (576791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (579791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (579791) DHT: Failed to read from DHT11[0m
+[0;32mI (579791) LIGHT: Raw ADC Light: 376 | Light %: 90.8[0m
+[0;32mI (579791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (582791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (582791) DHT: Failed to read from DHT11[0m
+[0;32mI (582791) LIGHT: Raw ADC Light: 376 | Light %: 90.8[0m
+[0;32mI (582791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (585791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (585791) DHT: Failed to read from DHT11[0m
+[0;32mI (585791) LIGHT: Raw ADC Light: 376 | Light %: 90.8[0m
+[0;32mI (585791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (588791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (588791) DHT: Failed to read from DHT11[0m
+[0;32mI (588791) LIGHT: Raw ADC Light: 376 | Light %: 90.8[0m
+[0;32mI (588791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (591791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (591791) DHT: Failed to read from DHT11[0m
+[0;32mI (591791) LIGHT: Raw ADC Light: 377 | Light %: 90.8[0m
+[0;32mI (591791) SENSOR: PPM: 28.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (594791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (594791) DHT: Failed to read from DHT11[0m
+[0;32mI (594791) LIGHT: Raw ADC Light: 374 | Light %: 90.9[0m
+[0;32mI (594791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (597791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (597791) DHT: Failed to read from DHT11[0m
+[0;32mI (597791) LIGHT: Raw ADC Light: 375 | Light %: 90.8[0m
+[0;32mI (597791) SENSOR: PPM: 28.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (600791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (600791) DHT: Failed to read from DHT11[0m
+[0;32mI (600791) LIGHT: Raw ADC Light: 372 | Light %: 90.9[0m
+[0;32mI (600791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (603791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (603791) DHT: Failed to read from DHT11[0m
+[0;32mI (603791) LIGHT: Raw ADC Light: 372 | Light %: 90.9[0m
+[0;32mI (603791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (606791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (606791) DHT: Failed to read from DHT11[0m
+[0;32mI (606791) LIGHT: Raw ADC Light: 373 | Light %: 90.9[0m
+[0;32mI (606791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (609791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (609791) DHT: Failed to read from DHT11[0m
+[0;32mI (609791) LIGHT: Raw ADC Light: 375 | Light %: 90.8[0m
+[0;32mI (609791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (612791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (612791) DHT: Failed to read from DHT11[0m
+[0;32mI (612791) LIGHT: Raw ADC Light: 373 | Light %: 90.9[0m
+[0;32mI (612791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (615791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (615791) DHT: Failed to read from DHT11[0m
+[0;32mI (615791) LIGHT: Raw ADC Light: 373 | Light %: 90.9[0m
+[0;32mI (615791) SENSOR: PPM: 27.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (618791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (618791) DHT: Failed to read from DHT11[0m
+[0;32mI (618791) LIGHT: Raw ADC Light: 375 | Light %: 90.8[0m
+[0;32mI (618791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (621791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (621791) DHT: Failed to read from DHT11[0m
+[0;32mI (621791) LIGHT: Raw ADC Light: 372 | Light %: 90.9[0m
+[0;32mI (621791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (624791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (624791) DHT: Failed to read from DHT11[0m
+[0;32mI (624791) LIGHT: Raw ADC Light: 373 | Light %: 90.9[0m
+[0;32mI (624791) SENSOR: PPM: 28.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (627791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (627791) DHT: Failed to read from DHT11[0m
+[0;32mI (627791) LIGHT: Raw ADC Light: 347 | Light %: 91.5[0m
+[0;32mI (627791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.5%[0m
+[1;31mE (630791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (630791) DHT: Failed to read from DHT11[0m
+[0;32mI (630791) LIGHT: Raw ADC Light: 346 | Light %: 91.6[0m
+[0;32mI (630791) SENSOR: PPM: 28.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (633791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (633791) DHT: Failed to read from DHT11[0m
+[0;32mI (633791) LIGHT: Raw ADC Light: 346 | Light %: 91.6[0m
+[0;32mI (633791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (636791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (636791) DHT: Failed to read from DHT11[0m
+[0;32mI (636791) LIGHT: Raw ADC Light: 345 | Light %: 91.6[0m
+[0;32mI (636791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (639791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (639791) DHT: Failed to read from DHT11[0m
+[0;32mI (639791) LIGHT: Raw ADC Light: 370 | Light %: 91.0[0m
+[0;32mI (639791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (642791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (642791) DHT: Failed to read from DHT11[0m
+[0;32mI (642791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (642791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (645791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (645791) DHT: Failed to read from DHT11[0m
+[0;32mI (645791) LIGHT: Raw ADC Light: 369 | Light %: 91.0[0m
+[0;32mI (645791) SENSOR: PPM: 27.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (648791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (648791) DHT: Failed to read from DHT11[0m
+[0;32mI (648791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (648791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (651791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (651791) DHT: Failed to read from DHT11[0m
+[0;32mI (651791) LIGHT: Raw ADC Light: 370 | Light %: 91.0[0m
+[0;32mI (651791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (654791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (654791) DHT: Failed to read from DHT11[0m
+[0;32mI (654791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (654791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (657791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (657791) DHT: Failed to read from DHT11[0m
+[0;32mI (657791) LIGHT: Raw ADC Light: 369 | Light %: 91.0[0m
+[0;32mI (657791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (660791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (660791) DHT: Failed to read from DHT11[0m
+[0;32mI (660791) LIGHT: Raw ADC Light: 367 | Light %: 91.0[0m
+[0;32mI (660791) SENSOR: PPM: 27.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (663791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (663791) DHT: Failed to read from DHT11[0m
+[0;32mI (663791) LIGHT: Raw ADC Light: 370 | Light %: 91.0[0m
+[0;32mI (663791) SENSOR: PPM: 28.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (666791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (666791) DHT: Failed to read from DHT11[0m
+[0;32mI (666791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (666791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (669791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (669791) DHT: Failed to read from DHT11[0m
+[0;32mI (669791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (669791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (672791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (672791) DHT: Failed to read from DHT11[0m
+[0;32mI (672791) LIGHT: Raw ADC Light: 370 | Light %: 91.0[0m
+[0;32mI (672791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (675791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (675791) DHT: Failed to read from DHT11[0m
+[0;32mI (675791) LIGHT: Raw ADC Light: 367 | Light %: 91.0[0m
+[0;32mI (675791) SENSOR: PPM: 28.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (678791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (678791) DHT: Failed to read from DHT11[0m
+[0;32mI (678791) LIGHT: Raw ADC Light: 367 | Light %: 91.0[0m
+[0;32mI (678791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (681791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (681791) DHT: Failed to read from DHT11[0m
+[0;32mI (681791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (681791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (684791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (684791) DHT: Failed to read from DHT11[0m
+[0;32mI (684791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (684791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (687791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (687791) DHT: Failed to read from DHT11[0m
+[0;32mI (687791) LIGHT: Raw ADC Light: 369 | Light %: 91.0[0m
+[0;32mI (687791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (690791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (690791) DHT: Failed to read from DHT11[0m
+[0;32mI (690791) LIGHT: Raw ADC Light: 363 | Light %: 91.1[0m
+[0;32mI (690791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.1%[0m
+[1;31mE (693791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (693791) DHT: Failed to read from DHT11[0m
+[0;32mI (693791) LIGHT: Raw ADC Light: 367 | Light %: 91.0[0m
+[0;32mI (693791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (696791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (696791) DHT: Failed to read from DHT11[0m
+[0;32mI (696791) LIGHT: Raw ADC Light: 369 | Light %: 91.0[0m
+[0;32mI (696791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (699791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (699791) DHT: Failed to read from DHT11[0m
+[0;32mI (699791) LIGHT: Raw ADC Light: 369 | Light %: 91.0[0m
+[0;32mI (699791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (702791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (702791) DHT: Failed to read from DHT11[0m
+[0;32mI (702791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (702791) SENSOR: PPM: 28.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (705791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (705791) DHT: Failed to read from DHT11[0m
+[0;32mI (705791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (705791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (708791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (708791) DHT: Failed to read from DHT11[0m
+[0;32mI (708791) LIGHT: Raw ADC Light: 366 | Light %: 91.1[0m
+[0;32mI (708791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.1%[0m
+[1;31mE (711791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (711791) DHT: Failed to read from DHT11[0m
+[0;32mI (711791) LIGHT: Raw ADC Light: 366 | Light %: 91.1[0m
+[0;32mI (711791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.1%[0m
+[1;31mE (714791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (714791) DHT: Failed to read from DHT11[0m
+[0;32mI (714791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (714791) SENSOR: PPM: 27.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (717791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (717791) DHT: Failed to read from DHT11[0m
+[0;32mI (717791) LIGHT: Raw ADC Light: 367 | Light %: 91.0[0m
+[0;32mI (717791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (720791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (720791) DHT: Failed to read from DHT11[0m
+[0;32mI (720791) LIGHT: Raw ADC Light: 367 | Light %: 91.0[0m
+[0;32mI (720791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (723791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (723791) DHT: Failed to read from DHT11[0m
+[0;32mI (723791) LIGHT: Raw ADC Light: 367 | Light %: 91.0[0m
+[0;32mI (723791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (726791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (726791) DHT: Failed to read from DHT11[0m
+[0;32mI (726791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (726791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (729791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (729791) DHT: Failed to read from DHT11[0m
+[0;32mI (729791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (729791) SENSOR: PPM: 27.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (732791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (732791) DHT: Failed to read from DHT11[0m
+[0;32mI (732791) LIGHT: Raw ADC Light: 366 | Light %: 91.1[0m
+[0;32mI (732791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.1%[0m
+[1;31mE (735791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (735791) DHT: Failed to read from DHT11[0m
+[0;32mI (735791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (735791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (738791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (738791) DHT: Failed to read from DHT11[0m
+[0;32mI (738791) LIGHT: Raw ADC Light: 319 | Light %: 92.2[0m
+[0;32mI (738791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.2%[0m
+[1;31mE (741791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (741791) DHT: Failed to read from DHT11[0m
+[0;32mI (741791) LIGHT: Raw ADC Light: 360 | Light %: 91.2[0m
+[0;32mI (741791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.2%[0m
+[1;31mE (744791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (744791) DHT: Failed to read from DHT11[0m
+[0;32mI (744791) LIGHT: Raw ADC Light: 325 | Light %: 92.1[0m
+[0;32mI (744791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.1%[0m
+[1;31mE (747791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (747791) DHT: Failed to read from DHT11[0m
+[0;32mI (747791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (747791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (750791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (750791) DHT: Failed to read from DHT11[0m
+[0;32mI (750791) LIGHT: Raw ADC Light: 650 | Light %: 84.1[0m
+[0;32mI (750791) SENSOR: PPM: 27.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 84.1%[0m
+[1;31mE (753791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (753791) DHT: Failed to read from DHT11[0m
+[0;32mI (753791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (753791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (756791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (756791) DHT: Failed to read from DHT11[0m
+[0;32mI (756791) LIGHT: Raw ADC Light: 339 | Light %: 91.7[0m
+[0;32mI (756791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (759791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (759791) DHT: Failed to read from DHT11[0m
+[0;32mI (759791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (759791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (762791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (762791) DHT: Failed to read from DHT11[0m
+[0;32mI (762791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (762791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (765791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (765791) DHT: Failed to read from DHT11[0m
+[0;32mI (765791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (765791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (768791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (768791) DHT: Failed to read from DHT11[0m
+[0;32mI (768791) LIGHT: Raw ADC Light: 338 | Light %: 91.7[0m
+[0;32mI (768791) SENSOR: PPM: 27.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (771791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (771791) DHT: Failed to read from DHT11[0m
+[0;32mI (771791) LIGHT: Raw ADC Light: 338 | Light %: 91.7[0m
+[0;32mI (771791) SENSOR: PPM: 28.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (774791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (774791) DHT: Failed to read from DHT11[0m
+[0;32mI (774791) LIGHT: Raw ADC Light: 339 | Light %: 91.7[0m
+[0;32mI (774791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (777791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (777791) DHT: Failed to read from DHT11[0m
+[0;32mI (777791) LIGHT: Raw ADC Light: 338 | Light %: 91.7[0m
+[0;32mI (777791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (780791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (780791) DHT: Failed to read from DHT11[0m
+[0;32mI (780791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (780791) SENSOR: PPM: 28.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (783791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (783791) DHT: Failed to read from DHT11[0m
+[0;32mI (783791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (783791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (786791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (786791) DHT: Failed to read from DHT11[0m
+[0;32mI (786791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (786791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (789791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (789791) DHT: Failed to read from DHT11[0m
+[0;32mI (789791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (789791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (792791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (792791) DHT: Failed to read from DHT11[0m
+[0;32mI (792791) LIGHT: Raw ADC Light: 342 | Light %: 91.6[0m
+[0;32mI (792791) SENSOR: PPM: 28.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (795791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (795791) DHT: Failed to read from DHT11[0m
+[0;32mI (795791) LIGHT: Raw ADC Light: 338 | Light %: 91.7[0m
+[0;32mI (795791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (798791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (798791) DHT: Failed to read from DHT11[0m
+[0;32mI (798791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (798791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (801791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (801791) DHT: Failed to read from DHT11[0m
+[0;32mI (801791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (801791) SENSOR: PPM: 28.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (804791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (804791) DHT: Failed to read from DHT11[0m
+[0;32mI (804791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (804791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (807791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (807791) DHT: Failed to read from DHT11[0m
+[0;32mI (807791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (807791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (810791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (810791) DHT: Failed to read from DHT11[0m
+[0;32mI (810791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (810791) SENSOR: PPM: 27.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (813791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (813791) DHT: Failed to read from DHT11[0m
+[0;32mI (813791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (813791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.5%[0m
+[1;31mE (816791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (816791) DHT: Failed to read from DHT11[0m
+[0;32mI (816791) LIGHT: Raw ADC Light: 338 | Light %: 91.7[0m
+[0;32mI (816791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (819791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (819791) DHT: Failed to read from DHT11[0m
+[0;32mI (819791) LIGHT: Raw ADC Light: 340 | Light %: 91.7[0m
+[0;32mI (819791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (822791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (822791) DHT: Failed to read from DHT11[0m
+[0;32mI (822791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (822791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (825791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (825791) DHT: Failed to read from DHT11[0m
+[0;32mI (825791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (825791) SENSOR: PPM: 28.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (828791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (828791) DHT: Failed to read from DHT11[0m
+[0;32mI (828791) LIGHT: Raw ADC Light: 334 | Light %: 91.8[0m
+[0;32mI (828791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (831791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (831791) DHT: Failed to read from DHT11[0m
+[0;32mI (831791) LIGHT: Raw ADC Light: 335 | Light %: 91.8[0m
+[0;32mI (831791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (834791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (834791) DHT: Failed to read from DHT11[0m
+[0;32mI (834791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (834791) SENSOR: PPM: 28.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (837791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (837791) DHT: Failed to read from DHT11[0m
+[0;32mI (837791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (837791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (840791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (840791) DHT: Failed to read from DHT11[0m
+[0;32mI (840791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (840791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (843791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (843791) DHT: Failed to read from DHT11[0m
+[0;32mI (843791) LIGHT: Raw ADC Light: 338 | Light %: 91.7[0m
+[0;32mI (843791) SENSOR: PPM: 27.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (846791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (846791) DHT: Failed to read from DHT11[0m
+[0;32mI (846791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (846791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (849791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (849791) DHT: Failed to read from DHT11[0m
+[0;32mI (849791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (849791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (852791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (852791) DHT: Failed to read from DHT11[0m
+[0;32mI (852791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (852791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (855791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (855791) DHT: Failed to read from DHT11[0m
+[0;32mI (855791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (855791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (858791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (858791) DHT: Failed to read from DHT11[0m
+[0;32mI (858791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (858791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (861791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (861791) DHT: Failed to read from DHT11[0m
+[0;32mI (861791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (861791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (864791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (864791) DHT: Failed to read from DHT11[0m
+[0;32mI (864791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (864791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (867791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (867791) DHT: Failed to read from DHT11[0m
+[0;32mI (867791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (867791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (870791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (870791) DHT: Failed to read from DHT11[0m
+[0;32mI (870791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (870791) SENSOR: PPM: 28.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (873791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (873791) DHT: Failed to read from DHT11[0m
+[0;32mI (873791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (873791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (876791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (876791) DHT: Failed to read from DHT11[0m
+[0;32mI (876791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (876791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (879791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (879791) DHT: Failed to read from DHT11[0m
+[0;32mI (879791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (879791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (882791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (882791) DHT: Failed to read from DHT11[0m
+[0;32mI (882791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (882791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[0;32mI (883201) LED2: OFF[0m
+[0;32mI (883251) LED2: ON[0m
+[0;32mI (884501) LED2: OFF[0m
+[1;31mE (885791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (885791) DHT: Failed to read from DHT11[0m
+[0;32mI (885791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (885791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (888791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (888791) DHT: Failed to read from DHT11[0m
+[0;32mI (888791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (888791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (891791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (891791) DHT: Failed to read from DHT11[0m
+[0;32mI (891791) LIGHT: Raw ADC Light: 3267 | Light %: 20.2[0m
+[0;32mI (891801) LED: Bật LED1 do ánh sáng thấp[0m
+[0;32mI (891801) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 20.2%[0m
+[1;31mE (894791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (894791) DHT: Failed to read from DHT11[0m
+[0;32mI (894791) LIGHT: Raw ADC Light: 3188 | Light %: 22.1[0m
+[0;32mI (894791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 22.1%[0m
+[1;31mE (897791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (897791) DHT: Failed to read from DHT11[0m
+[0;32mI (897791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (897801) LED: Tắt LED1 do ánh sáng đủ[0m
+[0;32mI (897801) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (900791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (900791) DHT: Failed to read from DHT11[0m
+[0;32mI (900791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (900791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (903791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (903791) DHT: Failed to read from DHT11[0m
+[0;32mI (903791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (903791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (906791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (906791) DHT: Failed to read from DHT11[0m
+[0;32mI (906791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (906791) SENSOR: PPM: 27.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (909791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (909791) DHT: Failed to read from DHT11[0m
+[0;32mI (909791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (909791) SENSOR: PPM: 27.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (912791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (912791) DHT: Failed to read from DHT11[0m
+[0;32mI (912791) LIGHT: Raw ADC Light: 342 | Light %: 91.6[0m
+[0;32mI (912791) SENSOR: PPM: 28.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (915791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (915791) DHT: Failed to read from DHT11[0m
+[0;32mI (915791) LIGHT: Raw ADC Light: 345 | Light %: 91.6[0m
+[0;32mI (915791) SENSOR: PPM: 27.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (918791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (918791) DHT: Failed to read from DHT11[0m
+[0;32mI (918791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (918791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (921791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (921791) DHT: Failed to read from DHT11[0m
+[0;32mI (921791) LIGHT: Raw ADC Light: 339 | Light %: 91.7[0m
+[0;32mI (921791) SENSOR: PPM: 28.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (924791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (924791) DHT: Failed to read from DHT11[0m
+[0;32mI (924791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (924791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (927791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (927791) DHT: Failed to read from DHT11[0m
+[0;32mI (927791) LIGHT: Raw ADC Light: 334 | Light %: 91.8[0m
+[0;32mI (927791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (930791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (930791) DHT: Failed to read from DHT11[0m
+[0;32mI (930791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (930791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (933791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (933791) DHT: Failed to read from DHT11[0m
+[0;32mI (933791) LIGHT: Raw ADC Light: 338 | Light %: 91.7[0m
+[0;32mI (933791) SENSOR: PPM: 28.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (936791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (936791) DHT: Failed to read from DHT11[0m
+[0;32mI (936791) LIGHT: Raw ADC Light: 339 | Light %: 91.7[0m
+[0;32mI (936791) SENSOR: PPM: 27.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (939791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (939791) DHT: Failed to read from DHT11[0m
+[0;32mI (939791) LIGHT: Raw ADC Light: 340 | Light %: 91.7[0m
+[0;32mI (939791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.7%[0m
+[1;31mE (942791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (942791) DHT: Failed to read from DHT11[0m
+[0;32mI (942791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (942791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.5%[0m
+[1;31mE (945791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (945791) DHT: Failed to read from DHT11[0m
+[0;32mI (945791) LIGHT: Raw ADC Light: 343 | Light %: 91.6[0m
+[0;32mI (945791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (948791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (948791) DHT: Failed to read from DHT11[0m
+[0;32mI (948791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (948791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (951791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (951791) DHT: Failed to read from DHT11[0m
+[0;32mI (951791) LIGHT: Raw ADC Light: 334 | Light %: 91.8[0m
+[0;32mI (951791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (954791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (954791) DHT: Failed to read from DHT11[0m
+[0;32mI (954791) LIGHT: Raw ADC Light: 335 | Light %: 91.8[0m
+[0;32mI (954791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (957791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (957791) DHT: Failed to read from DHT11[0m
+[0;32mI (957791) LIGHT: Raw ADC Light: 332 | Light %: 91.9[0m
+[0;32mI (957791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.9%[0m
+[1;31mE (960791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (960791) DHT: Failed to read from DHT11[0m
+[0;32mI (960791) LIGHT: Raw ADC Light: 332 | Light %: 91.9[0m
+[0;32mI (960791) SENSOR: PPM: 28.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.9%[0m
+[1;31mE (963791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (963791) DHT: Failed to read from DHT11[0m
+[0;32mI (963791) LIGHT: Raw ADC Light: 332 | Light %: 91.9[0m
+[0;32mI (963791) SENSOR: PPM: 27.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.9%[0m
+[1;31mE (966791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (966791) DHT: Failed to read from DHT11[0m
+[0;32mI (966791) LIGHT: Raw ADC Light: 333 | Light %: 91.9[0m
+[0;32mI (966791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.9%[0m
+[1;31mE (969791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (969791) DHT: Failed to read from DHT11[0m
+[0;32mI (969791) LIGHT: Raw ADC Light: 332 | Light %: 91.9[0m
+[0;32mI (969791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.9%[0m
+[1;31mE (972791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (972791) DHT: Failed to read from DHT11[0m
+[0;32mI (972791) LIGHT: Raw ADC Light: 333 | Light %: 91.9[0m
+[0;32mI (972791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.9%[0m
+[1;31mE (975791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (975791) DHT: Failed to read from DHT11[0m
+[0;32mI (975791) LIGHT: Raw ADC Light: 332 | Light %: 91.9[0m
+[0;32mI (975791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.9%[0m
+[1;31mE (978791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (978791) DHT: Failed to read from DHT11[0m
+[0;32mI (978791) LIGHT: Raw ADC Light: 334 | Light %: 91.8[0m
+[0;32mI (978791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (981791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (981791) DHT: Failed to read from DHT11[0m
+[0;32mI (981791) LIGHT: Raw ADC Light: 332 | Light %: 91.9[0m
+[0;32mI (981791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.9%[0m
+[1;31mE (984791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (984791) DHT: Failed to read from DHT11[0m
+[0;32mI (984791) LIGHT: Raw ADC Light: 336 | Light %: 91.8[0m
+[0;32mI (984791) SENSOR: PPM: 27.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (987791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (987791) DHT: Failed to read from DHT11[0m
+[0;32mI (987791) LIGHT: Raw ADC Light: 385 | Light %: 90.6[0m
+[0;32mI (987791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.6%[0m
+[1;31mE (990791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (990791) DHT: Failed to read from DHT11[0m
+[0;32mI (990791) LIGHT: Raw ADC Light: 373 | Light %: 90.9[0m
+[0;32mI (990791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (993791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (993791) DHT: Failed to read from DHT11[0m
+[0;32mI (993791) LIGHT: Raw ADC Light: 361 | Light %: 91.2[0m
+[0;32mI (993791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.2%[0m
+[1;31mE (996791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (996791) DHT: Failed to read from DHT11[0m
+[0;32mI (996791) LIGHT: Raw ADC Light: 361 | Light %: 91.2[0m
+[0;32mI (996791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.2%[0m
+[1;31mE (999791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (999791) DHT: Failed to read from DHT11[0m
+[0;32mI (999791) LIGHT: Raw ADC Light: 366 | Light %: 91.1[0m
+[0;32mI (999791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.1%[0m
+[0;32mI (1000301) LED2: ON[0m
+[1;31mE (1002791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1002791) DHT: Failed to read from DHT11[0m
+[0;32mI (1002791) LIGHT: Raw ADC Light: 345 | Light %: 91.6[0m
+[0;32mI (1002791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.6%[0m
+[1;31mE (1005791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1005791) DHT: Failed to read from DHT11[0m
+[0;32mI (1005791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (1005791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (1008791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1008791) DHT: Failed to read from DHT11[0m
+[0;32mI (1008791) LIGHT: Raw ADC Light: 337 | Light %: 91.8[0m
+[0;32mI (1008791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (1011791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1011791) DHT: Failed to read from DHT11[0m
+[0;32mI (1011791) LIGHT: Raw ADC Light: 335 | Light %: 91.8[0m
+[0;32mI (1011791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.8%[0m
+[1;31mE (1014791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1014791) DHT: Failed to read from DHT11[0m
+[0;32mI (1014791) LIGHT: Raw ADC Light: 332 | Light %: 91.9[0m
+[0;32mI (1014791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.9%[0m
+[1;31mE (1017791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1017791) DHT: Failed to read from DHT11[0m
+[0;32mI (1017791) LIGHT: Raw ADC Light: 325 | Light %: 92.1[0m
+[0;32mI (1017791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.1%[0m
+[0;32mI (1019111) LED2: ON[0m
+[0;32mI (1019311) LED2: OFF[0m
+[0;32mI (1019761) LED2: ON[0m
+[0;32mI (1020011) LED2: OFF[0m
+[0;32mI (1020611) LED2: ON[0m
+[1;31mE (1020791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1020791) DHT: Failed to read from DHT11[0m
+[0;32mI (1020791) LIGHT: Raw ADC Light: 309 | Light %: 92.5[0m
+[0;32mI (1020791) SENSOR: PPM: 28.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.5%[0m
+[0;32mI (1021561) LED2: OFF[0m
+[1;31mE (1023791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1023791) DHT: Failed to read from DHT11[0m
+[0;32mI (1023791) LIGHT: Raw ADC Light: 310 | Light %: 92.4[0m
+[0;32mI (1023791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.4%[0m
+[1;31mE (1026791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1026791) DHT: Failed to read from DHT11[0m
+[0;32mI (1026791) LIGHT: Raw ADC Light: 311 | Light %: 92.4[0m
+[0;32mI (1026791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.4%[0m
+[0;32mI (1027271) LJ12: State: Detected[0m
+[1;31mE (1029791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1029791) DHT: Failed to read from DHT11[0m
+[0;32mI (1029791) LIGHT: Raw ADC Light: 306 | Light %: 92.5[0m
+[0;32mI (1029791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.5%[0m
+[0;32mI (1031921) LJ12: State: Undetected[0m
+[1;31mE (1032791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1032791) DHT: Failed to read from DHT11[0m
+[0;32mI (1032791) LIGHT: Raw ADC Light: 313 | Light %: 92.4[0m
+[0;32mI (1032791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.4%[0m
+[0;32mI (1035551) LJ12: State: Detected[0m
+[1;31mE (1035791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1035791) DHT: Failed to read from DHT11[0m
+[0;32mI (1035791) LIGHT: Raw ADC Light: 312 | Light %: 92.4[0m
+[0;32mI (1035791) SENSOR: PPM: 27.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.4%[0m
+[0;32mI (1036461) LJ12: State: Undetected[0m
+[1;31mE (1038791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1038791) DHT: Failed to read from DHT11[0m
+[0;32mI (1038791) LIGHT: Raw ADC Light: 313 | Light %: 92.4[0m
+[0;32mI (1038791) SENSOR: PPM: 27.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.4%[0m
+[1;31mE (1041791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1041791) DHT: Failed to read from DHT11[0m
+[0;32mI (1041791) LIGHT: Raw ADC Light: 310 | Light %: 92.4[0m
+[0;32mI (1041791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.4%[0m
+[1;31mE (1044791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1044791) DHT: Failed to read from DHT11[0m
+[0;32mI (1044791) LIGHT: Raw ADC Light: 308 | Light %: 92.5[0m
+[0;32mI (1044791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.5%[0m
+[1;31mE (1047791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1047791) DHT: Failed to read from DHT11[0m
+[0;32mI (1047791) LIGHT: Raw ADC Light: 305 | Light %: 92.6[0m
+[0;32mI (1047791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.6%[0m
+[1;31mE (1050791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1050791) DHT: Failed to read from DHT11[0m
+[0;32mI (1050791) LIGHT: Raw ADC Light: 305 | Light %: 92.6[0m
+[0;32mI (1050791) SENSOR: PPM: 27.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.6%[0m
+[0;32mI (1053661) LJ12: State: Detected[0m
+[1;31mE (1053791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1053791) DHT: Failed to read from DHT11[0m
+[0;32mI (1053791) LIGHT: Raw ADC Light: 325 | Light %: 92.1[0m
+[0;32mI (1053791) SENSOR: PPM: 27.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.1%[0m
+[1;31mE (1056791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1056791) DHT: Failed to read from DHT11[0m
+[0;32mI (1056791) LIGHT: Raw ADC Light: 323 | Light %: 92.1[0m
+[0;32mI (1056791) SENSOR: PPM: 27.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 92.1%[0m
+[1;31mE (1059791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1059791) DHT: Failed to read from DHT11[0m
+[0;32mI (1059791) LIGHT: Raw ADC Light: 2926 | Light %: 28.5[0m
+[0;32mI (1059801) LED: Bật LED1 do ánh sáng thấp[0m
+[0;32mI (1059801) SENSOR: PPM: 27.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 28.5%[0m
+[1;31mE (1062791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1062791) DHT: Failed to read from DHT11[0m
+[0;32mI (1062791) LIGHT: Raw ADC Light: 352 | Light %: 91.4[0m
+[0;32mI (1062801) LED: Tắt LED1 do ánh sáng đủ[0m
+[0;32mI (1062801) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.4%[0m
+[0;32mI (1063121) LJ12: State: Undetected[0m
+[1;31mE (1065791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1065791) DHT: Failed to read from DHT11[0m
+[0;32mI (1065791) LIGHT: Raw ADC Light: 355 | Light %: 91.3[0m
+[0;32mI (1065791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.3%[0m
+[1;31mE (1068791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1068791) DHT: Failed to read from DHT11[0m
+[0;32mI (1068791) LIGHT: Raw ADC Light: 360 | Light %: 91.2[0m
+[0;32mI (1068791) SENSOR: PPM: 27.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.2%[0m
+[1;31mE (1071791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1071791) DHT: Failed to read from DHT11[0m
+[0;32mI (1071791) LIGHT: Raw ADC Light: 360 | Light %: 91.2[0m
+[0;32mI (1071791) SENSOR: PPM: 27.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.2%[0m
+[1;31mE (1074791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1074791) DHT: Failed to read from DHT11[0m
+[0;32mI (1074791) LIGHT: Raw ADC Light: 363 | Light %: 91.1[0m
+[0;32mI (1074791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.1%[0m
+[1;31mE (1077791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1077791) DHT: Failed to read from DHT11[0m
+[0;32mI (1077791) LIGHT: Raw ADC Light: 363 | Light %: 91.1[0m
+[0;32mI (1077791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.1%[0m
+[1;31mE (1080791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1080791) DHT: Failed to read from DHT11[0m
+[0;32mI (1080791) LIGHT: Raw ADC Light: 363 | Light %: 91.1[0m
+[0;32mI (1080791) SENSOR: PPM: 28.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.1%[0m
+[1;31mE (1083791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1083791) DHT: Failed to read from DHT11[0m
+[0;32mI (1083791) LIGHT: Raw ADC Light: 364 | Light %: 91.1[0m
+[0;32mI (1083791) SENSOR: PPM: 28.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.1%[0m
+[1;31mE (1086791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1086791) DHT: Failed to read from DHT11[0m
+[0;32mI (1086791) LIGHT: Raw ADC Light: 365 | Light %: 91.1[0m
+[0;32mI (1086791) SENSOR: PPM: 28.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.1%[0m
+[1;31mE (1089791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1089791) DHT: Failed to read from DHT11[0m
+[0;32mI (1089791) LIGHT: Raw ADC Light: 366 | Light %: 91.1[0m
+[0;32mI (1089791) SENSOR: PPM: 28.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.1%[0m
+[1;31mE (1092791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1092791) DHT: Failed to read from DHT11[0m
+[0;32mI (1092791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (1092791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1095791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1095791) DHT: Failed to read from DHT11[0m
+[0;32mI (1095791) LIGHT: Raw ADC Light: 367 | Light %: 91.0[0m
+[0;32mI (1095791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1098791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1098791) DHT: Failed to read from DHT11[0m
+[0;32mI (1098791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (1098791) SENSOR: PPM: 29.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1101791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1101791) DHT: Failed to read from DHT11[0m
+[0;32mI (1101791) LIGHT: Raw ADC Light: 367 | Light %: 91.0[0m
+[0;32mI (1101791) SENSOR: PPM: 29.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1104791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1104791) DHT: Failed to read from DHT11[0m
+[0;32mI (1104791) LIGHT: Raw ADC Light: 369 | Light %: 91.0[0m
+[0;32mI (1104791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1107791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1107791) DHT: Failed to read from DHT11[0m
+[0;32mI (1107791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (1107791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1110791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1110791) DHT: Failed to read from DHT11[0m
+[0;32mI (1110791) LIGHT: Raw ADC Light: 369 | Light %: 91.0[0m
+[0;32mI (1110791) SENSOR: PPM: 28.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1113791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1113791) DHT: Failed to read from DHT11[0m
+[0;32mI (1113791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (1113791) SENSOR: PPM: 28.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1116791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1116791) DHT: Failed to read from DHT11[0m
+[0;32mI (1116791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (1116791) SENSOR: PPM: 28.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1119791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1119791) DHT: Failed to read from DHT11[0m
+[0;32mI (1119791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (1119791) SENSOR: PPM: 28.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1122791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1122791) DHT: Failed to read from DHT11[0m
+[0;32mI (1122791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (1122791) SENSOR: PPM: 28.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1125791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1125791) DHT: Failed to read from DHT11[0m
+[0;32mI (1125791) LIGHT: Raw ADC Light: 369 | Light %: 91.0[0m
+[0;32mI (1125791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1128791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1128791) DHT: Failed to read from DHT11[0m
+[0;32mI (1128791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (1128791) SENSOR: PPM: 28.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1131791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1131791) DHT: Failed to read from DHT11[0m
+[0;32mI (1131791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (1131791) SENSOR: PPM: 28.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1134791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1134791) DHT: Failed to read from DHT11[0m
+[0;32mI (1134791) LIGHT: Raw ADC Light: 366 | Light %: 91.1[0m
+[0;32mI (1134791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.1%[0m
+[1;31mE (1137791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1137791) DHT: Failed to read from DHT11[0m
+[0;32mI (1137791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (1137791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1140791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1140791) DHT: Failed to read from DHT11[0m
+[0;32mI (1140791) LIGHT: Raw ADC Light: 366 | Light %: 91.1[0m
+[0;32mI (1140791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.1%[0m
+[1;31mE (1143791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1143791) DHT: Failed to read from DHT11[0m
+[0;32mI (1143791) LIGHT: Raw ADC Light: 366 | Light %: 91.1[0m
+[0;32mI (1143791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.1%[0m
+[1;31mE (1146791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1146791) DHT: Failed to read from DHT11[0m
+[0;32mI (1146791) LIGHT: Raw ADC Light: 367 | Light %: 91.0[0m
+[0;32mI (1146791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1149791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1149791) DHT: Failed to read from DHT11[0m
+[0;32mI (1149791) LIGHT: Raw ADC Light: 372 | Light %: 90.9[0m
+[0;32mI (1149791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (1152791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1152791) DHT: Failed to read from DHT11[0m
+[0;32mI (1152791) LIGHT: Raw ADC Light: 368 | Light %: 91.0[0m
+[0;32mI (1152791) SENSOR: PPM: 27.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1155791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1155791) DHT: Failed to read from DHT11[0m
+[0;32mI (1155791) LIGHT: Raw ADC Light: 370 | Light %: 91.0[0m
+[0;32mI (1155791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1158791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1158791) DHT: Failed to read from DHT11[0m
+[0;32mI (1158791) LIGHT: Raw ADC Light: 370 | Light %: 91.0[0m
+[0;32mI (1158791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1161791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1161791) DHT: Failed to read from DHT11[0m
+[0;32mI (1161791) LIGHT: Raw ADC Light: 372 | Light %: 90.9[0m
+[0;32mI (1161791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[0;32mI (1162821) LJ12: State: Detected[0m
+[0;32mI (1164681) LJ12: State: Undetected[0m
+[1;31mE (1164791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1164791) DHT: Failed to read from DHT11[0m
+[0;32mI (1164791) LIGHT: Raw ADC Light: 370 | Light %: 91.0[0m
+[0;32mI (1164791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1167781) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1167791) DHT: Failed to read from DHT11[0m
+[0;32mI (1167791) LIGHT: Raw ADC Light: 369 | Light %: 91.0[0m
+[0;32mI (1167791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 91.0%[0m
+[1;31mE (1170791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1170791) DHT: Failed to read from DHT11[0m
+[0;32mI (1170791) LIGHT: Raw ADC Light: 371 | Light %: 90.9[0m
+[0;32mI (1170791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (1173791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1173791) DHT: Failed to read from DHT11[0m
+[0;32mI (1173791) LIGHT: Raw ADC Light: 612 | Light %: 85.1[0m
+[0;32mI (1173791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 85.1%[0m
+[1;31mE (1176791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1176791) DHT: Failed to read from DHT11[0m
+[0;32mI (1176791) LIGHT: Raw ADC Light: 373 | Light %: 90.9[0m
+[0;32mI (1176791) SENSOR: PPM: 27.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (1179791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1179791) DHT: Failed to read from DHT11[0m
+[0;32mI (1179791) LIGHT: Raw ADC Light: 374 | Light %: 90.9[0m
+[0;32mI (1179791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (1182791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1182791) DHT: Failed to read from DHT11[0m
+[0;32mI (1182791) LIGHT: Raw ADC Light: 374 | Light %: 90.9[0m
+[0;32mI (1182791) SENSOR: PPM: 28.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (1185791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1185791) DHT: Failed to read from DHT11[0m
+[0;32mI (1185791) LIGHT: Raw ADC Light: 375 | Light %: 90.8[0m
+[0;32mI (1185791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1188791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1188791) DHT: Failed to read from DHT11[0m
+[0;32mI (1188791) LIGHT: Raw ADC Light: 371 | Light %: 90.9[0m
+[0;32mI (1188791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (1191791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1191791) DHT: Failed to read from DHT11[0m
+[0;32mI (1191791) LIGHT: Raw ADC Light: 377 | Light %: 90.8[0m
+[0;32mI (1191791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1194791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1194791) DHT: Failed to read from DHT11[0m
+[0;32mI (1194791) LIGHT: Raw ADC Light: 378 | Light %: 90.8[0m
+[0;32mI (1194791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1197791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1197791) DHT: Failed to read from DHT11[0m
+[0;32mI (1197791) LIGHT: Raw ADC Light: 379 | Light %: 90.7[0m
+[0;32mI (1197791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.7%[0m
+[1;31mE (1200791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1200791) DHT: Failed to read from DHT11[0m
+[0;32mI (1200791) LIGHT: Raw ADC Light: 376 | Light %: 90.8[0m
+[0;32mI (1200791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[0;32mI (1202171) LJ12: State: Detected[0m
+[0;32mI (1202281) LJ12: State: Undetected[0m
+[0;32mI (1202451) LJ12: State: Detected[0m
+[0;32mI (1202701) LJ12: State: Undetected[0m
+[0;32mI (1203001) LJ12: State: Detected[0m
+[0;32mI (1203321) LJ12: State: Undetected[0m
+[0;32mI (1203601) LJ12: State: Detected[0m
+[1;31mE (1203791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1203791) DHT: Failed to read from DHT11[0m
+[0;32mI (1203791) LIGHT: Raw ADC Light: 373 | Light %: 90.9[0m
+[0;32mI (1203791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[0;32mI (1203811) LJ12: State: Undetected[0m
+[0;32mI (1204071) LJ12: State: Detected[0m
+[0;32mI (1204391) LJ12: State: Undetected[0m
+[0;32mI (1204931) LJ12: State: Detected[0m
+[0;32mI (1205751) LJ12: State: Undetected[0m
+[0;32mI (1206201) LJ12: State: Detected[0m
+[0;32mI (1206251) LJ12: State: Undetected[0m
+[0;32mI (1206571) LJ12: State: Detected[0m
+[0;32mI (1206641) LJ12: State: Undetected[0m
+[1;31mE (1206791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1206791) DHT: Failed to read from DHT11[0m
+[0;32mI (1206791) LIGHT: Raw ADC Light: 378 | Light %: 90.8[0m
+[0;32mI (1206791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[0;32mI (1206941) LJ12: State: Detected[0m
+[0;32mI (1208651) LJ12: State: Undetected[0m
+[1;31mE (1209791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1209791) DHT: Failed to read from DHT11[0m
+[0;32mI (1209791) LIGHT: Raw ADC Light: 374 | Light %: 90.9[0m
+[0;32mI (1209791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[0;32mI (1211501) LJ12: State: Detected[0m
+[0;32mI (1211611) LJ12: State: Undetected[0m
+[0;32mI (1212001) LJ12: State: Detected[0m
+[0;32mI (1212041) LJ12: State: Undetected[0m
+[0;32mI (1212461) LJ12: State: Detected[0m
+[1;31mE (1212791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1212791) DHT: Failed to read from DHT11[0m
+[0;32mI (1212791) LIGHT: Raw ADC Light: 376 | Light %: 90.8[0m
+[0;32mI (1212791) SENSOR: PPM: 27.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[0;32mI (1212831) LJ12: State: Undetected[0m
+[0;32mI (1213701) LJ12: State: Detected[0m
+[0;32mI (1213901) LJ12: State: Undetected[0m
+[0;32mI (1214081) LJ12: State: Detected[0m
+[0;32mI (1214301) LJ12: State: Undetected[0m
+[0;32mI (1215571) LJ12: State: Detected[0m
+[0;32mI (1215681) LJ12: State: Undetected[0m
+[1;31mE (1215791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1215791) DHT: Failed to read from DHT11[0m
+[0;32mI (1215791) LIGHT: Raw ADC Light: 375 | Light %: 90.8[0m
+[0;32mI (1215791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1218791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1218791) DHT: Failed to read from DHT11[0m
+[0;32mI (1218791) LIGHT: Raw ADC Light: 375 | Light %: 90.8[0m
+[0;32mI (1218791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1221791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1221791) DHT: Failed to read from DHT11[0m
+[0;32mI (1221791) LIGHT: Raw ADC Light: 375 | Light %: 90.8[0m
+[0;32mI (1221791) SENSOR: PPM: 28.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1224791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1224791) DHT: Failed to read from DHT11[0m
+[0;32mI (1224791) LIGHT: Raw ADC Light: 379 | Light %: 90.7[0m
+[0;32mI (1224791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.7%[0m
+[1;31mE (1227791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1227791) DHT: Failed to read from DHT11[0m
+[0;32mI (1227791) LIGHT: Raw ADC Light: 378 | Light %: 90.8[0m
+[0;32mI (1227791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1230791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1230791) DHT: Failed to read from DHT11[0m
+[0;32mI (1230791) LIGHT: Raw ADC Light: 380 | Light %: 90.7[0m
+[0;32mI (1230791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.7%[0m
+[1;31mE (1233791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1233791) DHT: Failed to read from DHT11[0m
+[0;32mI (1233791) LIGHT: Raw ADC Light: 378 | Light %: 90.8[0m
+[0;32mI (1233791) SENSOR: PPM: 27.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1236791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1236791) DHT: Failed to read from DHT11[0m
+[0;32mI (1236791) LIGHT: Raw ADC Light: 376 | Light %: 90.8[0m
+[0;32mI (1236791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1239791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1239791) DHT: Failed to read from DHT11[0m
+[0;32mI (1239791) LIGHT: Raw ADC Light: 376 | Light %: 90.8[0m
+[0;32mI (1239791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1242791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1242791) DHT: Failed to read from DHT11[0m
+[0;32mI (1242791) LIGHT: Raw ADC Light: 379 | Light %: 90.7[0m
+[0;32mI (1242791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.7%[0m
+[1;31mE (1245791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1245791) DHT: Failed to read from DHT11[0m
+[0;32mI (1245791) LIGHT: Raw ADC Light: 374 | Light %: 90.9[0m
+[0;32mI (1245791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (1248791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1248791) DHT: Failed to read from DHT11[0m
+[0;32mI (1248791) LIGHT: Raw ADC Light: 378 | Light %: 90.8[0m
+[0;32mI (1248791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1251791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1251791) DHT: Failed to read from DHT11[0m
+[0;32mI (1251791) LIGHT: Raw ADC Light: 378 | Light %: 90.8[0m
+[0;32mI (1251791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1254791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1254791) DHT: Failed to read from DHT11[0m
+[0;32mI (1254791) LIGHT: Raw ADC Light: 376 | Light %: 90.8[0m
+[0;32mI (1254791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1257791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1257791) DHT: Failed to read from DHT11[0m
+[0;32mI (1257791) LIGHT: Raw ADC Light: 374 | Light %: 90.9[0m
+[0;32mI (1257791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (1260791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1260791) DHT: Failed to read from DHT11[0m
+[0;32mI (1260791) LIGHT: Raw ADC Light: 375 | Light %: 90.8[0m
+[0;32mI (1260791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1263791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1263791) DHT: Failed to read from DHT11[0m
+[0;32mI (1263791) LIGHT: Raw ADC Light: 373 | Light %: 90.9[0m
+[0;32mI (1263791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.9%[0m
+[1;31mE (1266791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1266791) DHT: Failed to read from DHT11[0m
+[0;32mI (1266791) LIGHT: Raw ADC Light: 379 | Light %: 90.7[0m
+[0;32mI (1266791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.7%[0m
+[1;31mE (1269791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1269791) DHT: Failed to read from DHT11[0m
+[0;32mI (1269791) LIGHT: Raw ADC Light: 377 | Light %: 90.8[0m
+[0;32mI (1269791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1272791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1272791) DHT: Failed to read from DHT11[0m
+[0;32mI (1272791) LIGHT: Raw ADC Light: 379 | Light %: 90.7[0m
+[0;32mI (1272791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.7%[0m
+[1;31mE (1275791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1275791) DHT: Failed to read from DHT11[0m
+[0;32mI (1275791) LIGHT: Raw ADC Light: 376 | Light %: 90.8[0m
+[0;32mI (1275791) SENSOR: PPM: 28.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1278791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1278791) DHT: Failed to read from DHT11[0m
+[0;32mI (1278791) LIGHT: Raw ADC Light: 377 | Light %: 90.8[0m
+[0;32mI (1278791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1281791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1281791) DHT: Failed to read from DHT11[0m
+[0;32mI (1281791) LIGHT: Raw ADC Light: 378 | Light %: 90.8[0m
+[0;32mI (1281791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1284791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1284791) DHT: Failed to read from DHT11[0m
+[0;32mI (1284791) LIGHT: Raw ADC Light: 375 | Light %: 90.8[0m
+[0;32mI (1284791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1287791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1287791) DHT: Failed to read from DHT11[0m
+[0;32mI (1287791) LIGHT: Raw ADC Light: 380 | Light %: 90.7[0m
+[0;32mI (1287791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.7%[0m
+[1;31mE (1290791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1290791) DHT: Failed to read from DHT11[0m
+[0;32mI (1290791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1290791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1293791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1293791) DHT: Failed to read from DHT11[0m
+[0;32mI (1293791) LIGHT: Raw ADC Light: 405 | Light %: 90.1[0m
+[0;32mI (1293791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.1%[0m
+[1;31mE (1296791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1296791) DHT: Failed to read from DHT11[0m
+[0;32mI (1296791) LIGHT: Raw ADC Light: 425 | Light %: 89.6[0m
+[0;32mI (1296791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.6%[0m
+[1;31mE (1299791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1299791) DHT: Failed to read from DHT11[0m
+[0;32mI (1299791) LIGHT: Raw ADC Light: 432 | Light %: 89.5[0m
+[0;32mI (1299791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.5%[0m
+[1;31mE (1302791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1302791) DHT: Failed to read from DHT11[0m
+[0;32mI (1302791) LIGHT: Raw ADC Light: 428 | Light %: 89.5[0m
+[0;32mI (1302791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.5%[0m
+[1;31mE (1305791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1305791) DHT: Failed to read from DHT11[0m
+[0;32mI (1305791) LIGHT: Raw ADC Light: 417 | Light %: 89.8[0m
+[0;32mI (1305791) SENSOR: PPM: 27.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.8%[0m
+[1;31mE (1308791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1308791) DHT: Failed to read from DHT11[0m
+[0;32mI (1308791) LIGHT: Raw ADC Light: 423 | Light %: 89.7[0m
+[0;32mI (1308791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.7%[0m
+[1;31mE (1311791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1311791) DHT: Failed to read from DHT11[0m
+[0;32mI (1311791) LIGHT: Raw ADC Light: 419 | Light %: 89.8[0m
+[0;32mI (1311791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.8%[0m
+[1;31mE (1314791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1314791) DHT: Failed to read from DHT11[0m
+[0;32mI (1314791) LIGHT: Raw ADC Light: 419 | Light %: 89.8[0m
+[0;32mI (1314791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.8%[0m
+[1;31mE (1317791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1317791) DHT: Failed to read from DHT11[0m
+[0;32mI (1317791) LIGHT: Raw ADC Light: 419 | Light %: 89.8[0m
+[0;32mI (1317791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.8%[0m
+[1;31mE (1320791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1320791) DHT: Failed to read from DHT11[0m
+[0;32mI (1320791) LIGHT: Raw ADC Light: 416 | Light %: 89.8[0m
+[0;32mI (1320791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.8%[0m
+[1;31mE (1323791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1323791) DHT: Failed to read from DHT11[0m
+[0;32mI (1323791) LIGHT: Raw ADC Light: 415 | Light %: 89.9[0m
+[0;32mI (1323791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.9%[0m
+[1;31mE (1326791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1326791) DHT: Failed to read from DHT11[0m
+[0;32mI (1326791) LIGHT: Raw ADC Light: 414 | Light %: 89.9[0m
+[0;32mI (1326791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.9%[0m
+[1;31mE (1329791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1329791) DHT: Failed to read from DHT11[0m
+[0;32mI (1329791) LIGHT: Raw ADC Light: 412 | Light %: 89.9[0m
+[0;32mI (1329791) SENSOR: PPM: 27.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.9%[0m
+[1;31mE (1332791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1332791) DHT: Failed to read from DHT11[0m
+[0;32mI (1332791) LIGHT: Raw ADC Light: 418 | Light %: 89.8[0m
+[0;32mI (1332791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.8%[0m
+[1;31mE (1335791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1335791) DHT: Failed to read from DHT11[0m
+[0;32mI (1335791) LIGHT: Raw ADC Light: 414 | Light %: 89.9[0m
+[0;32mI (1335791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.9%[0m
+[1;31mE (1338791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1338791) DHT: Failed to read from DHT11[0m
+[0;32mI (1338791) LIGHT: Raw ADC Light: 417 | Light %: 89.8[0m
+[0;32mI (1338791) SENSOR: PPM: 28.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.8%[0m
+[1;31mE (1341791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1341791) DHT: Failed to read from DHT11[0m
+[0;32mI (1341791) LIGHT: Raw ADC Light: 382 | Light %: 90.7[0m
+[0;32mI (1341791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.7%[0m
+[1;31mE (1344791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1344791) DHT: Failed to read from DHT11[0m
+[0;32mI (1344791) LIGHT: Raw ADC Light: 383 | Light %: 90.6[0m
+[0;32mI (1344791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.6%[0m
+[1;31mE (1347791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1347791) DHT: Failed to read from DHT11[0m
+[0;32mI (1347791) LIGHT: Raw ADC Light: 377 | Light %: 90.8[0m
+[0;32mI (1347791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.8%[0m
+[1;31mE (1350791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1350791) DHT: Failed to read from DHT11[0m
+[0;32mI (1350791) LIGHT: Raw ADC Light: 381 | Light %: 90.7[0m
+[0;32mI (1350791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.7%[0m
+[1;31mE (1353791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1353791) DHT: Failed to read from DHT11[0m
+[0;32mI (1353791) LIGHT: Raw ADC Light: 388 | Light %: 90.5[0m
+[0;32mI (1353791) SENSOR: PPM: 27.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.5%[0m
+[1;31mE (1356791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1356791) DHT: Failed to read from DHT11[0m
+[0;32mI (1356791) LIGHT: Raw ADC Light: 397 | Light %: 90.3[0m
+[0;32mI (1356791) SENSOR: PPM: 27.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1359791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1359791) DHT: Failed to read from DHT11[0m
+[0;32mI (1359791) LIGHT: Raw ADC Light: 410 | Light %: 90.0[0m
+[0;32mI (1359791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.0%[0m
+[1;31mE (1362791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1362791) DHT: Failed to read from DHT11[0m
+[0;32mI (1362791) LIGHT: Raw ADC Light: 411 | Light %: 90.0[0m
+[0;32mI (1362791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.0%[0m
+[1;31mE (1365791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1365791) DHT: Failed to read from DHT11[0m
+[0;32mI (1365791) LIGHT: Raw ADC Light: 412 | Light %: 89.9[0m
+[0;32mI (1365791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.9%[0m
+[1;31mE (1368791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1368791) DHT: Failed to read from DHT11[0m
+[0;32mI (1368791) LIGHT: Raw ADC Light: 411 | Light %: 90.0[0m
+[0;32mI (1368791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.0%[0m
+[1;31mE (1371791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1371791) DHT: Failed to read from DHT11[0m
+[0;32mI (1371791) LIGHT: Raw ADC Light: 412 | Light %: 89.9[0m
+[0;32mI (1371791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.9%[0m
+[1;31mE (1374791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1374791) DHT: Failed to read from DHT11[0m
+[0;32mI (1374791) LIGHT: Raw ADC Light: 468 | Light %: 88.6[0m
+[0;32mI (1374791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.6%[0m
+[1;31mE (1377791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1377791) DHT: Failed to read from DHT11[0m
+[0;32mI (1377791) LIGHT: Raw ADC Light: 468 | Light %: 88.6[0m
+[0;32mI (1377791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.6%[0m
+[1;31mE (1380791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1380791) DHT: Failed to read from DHT11[0m
+[0;32mI (1380791) LIGHT: Raw ADC Light: 465 | Light %: 88.6[0m
+[0;32mI (1380791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.6%[0m
+[1;31mE (1383791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1383791) DHT: Failed to read from DHT11[0m
+[0;32mI (1383791) LIGHT: Raw ADC Light: 462 | Light %: 88.7[0m
+[0;32mI (1383791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.7%[0m
+[1;31mE (1386791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1386791) DHT: Failed to read from DHT11[0m
+[0;32mI (1386791) LIGHT: Raw ADC Light: 462 | Light %: 88.7[0m
+[0;32mI (1386791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.7%[0m
+[1;31mE (1389791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1389791) DHT: Failed to read from DHT11[0m
+[0;32mI (1389791) LIGHT: Raw ADC Light: 463 | Light %: 88.7[0m
+[0;32mI (1389791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.7%[0m
+[1;31mE (1392791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1392791) DHT: Failed to read from DHT11[0m
+[0;32mI (1392791) LIGHT: Raw ADC Light: 457 | Light %: 88.8[0m
+[0;32mI (1392791) SENSOR: PPM: 27.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.8%[0m
+[1;31mE (1395791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1395791) DHT: Failed to read from DHT11[0m
+[0;32mI (1395791) LIGHT: Raw ADC Light: 459 | Light %: 88.8[0m
+[0;32mI (1395791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.8%[0m
+[1;31mE (1398791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1398791) DHT: Failed to read from DHT11[0m
+[0;32mI (1398791) LIGHT: Raw ADC Light: 459 | Light %: 88.8[0m
+[0;32mI (1398791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.8%[0m
+[1;31mE (1401791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1401791) DHT: Failed to read from DHT11[0m
+[0;32mI (1401791) LIGHT: Raw ADC Light: 456 | Light %: 88.9[0m
+[0;32mI (1401791) SENSOR: PPM: 27.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.9%[0m
+[1;31mE (1404791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1404791) DHT: Failed to read from DHT11[0m
+[0;32mI (1404791) LIGHT: Raw ADC Light: 449 | Light %: 89.0[0m
+[0;32mI (1404791) SENSOR: PPM: 27.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.0%[0m
+[1;31mE (1407791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1407791) DHT: Failed to read from DHT11[0m
+[0;32mI (1407791) LIGHT: Raw ADC Light: 442 | Light %: 89.2[0m
+[0;32mI (1407791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1410791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1410791) DHT: Failed to read from DHT11[0m
+[0;32mI (1410791) LIGHT: Raw ADC Light: 443 | Light %: 89.2[0m
+[0;32mI (1410791) SENSOR: PPM: 27.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1413791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1413791) DHT: Failed to read from DHT11[0m
+[0;32mI (1413791) LIGHT: Raw ADC Light: 448 | Light %: 89.1[0m
+[0;32mI (1413791) SENSOR: PPM: 27.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.1%[0m
+[1;31mE (1416791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1416791) DHT: Failed to read from DHT11[0m
+[0;32mI (1416791) LIGHT: Raw ADC Light: 448 | Light %: 89.1[0m
+[0;32mI (1416791) SENSOR: PPM: 27.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.1%[0m
+[1;31mE (1419791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1419791) DHT: Failed to read from DHT11[0m
+[0;32mI (1419791) LIGHT: Raw ADC Light: 447 | Light %: 89.1[0m
+[0;32mI (1419791) SENSOR: PPM: 27.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.1%[0m
+[1;31mE (1422791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1422791) DHT: Failed to read from DHT11[0m
+[0;32mI (1422791) LIGHT: Raw ADC Light: 447 | Light %: 89.1[0m
+[0;32mI (1422791) SENSOR: PPM: 26.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.1%[0m
+[1;31mE (1425791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1425791) DHT: Failed to read from DHT11[0m
+[0;32mI (1425791) LIGHT: Raw ADC Light: 447 | Light %: 89.1[0m
+[0;32mI (1425791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.1%[0m
+[1;31mE (1428791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1428791) DHT: Failed to read from DHT11[0m
+[0;32mI (1428791) LIGHT: Raw ADC Light: 441 | Light %: 89.2[0m
+[0;32mI (1428791) SENSOR: PPM: 27.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1431791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1431791) DHT: Failed to read from DHT11[0m
+[0;32mI (1431791) LIGHT: Raw ADC Light: 442 | Light %: 89.2[0m
+[0;32mI (1431791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1434791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1434791) DHT: Failed to read from DHT11[0m
+[0;32mI (1434791) LIGHT: Raw ADC Light: 442 | Light %: 89.2[0m
+[0;32mI (1434791) SENSOR: PPM: 27.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1437791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1437791) DHT: Failed to read from DHT11[0m
+[0;32mI (1437791) LIGHT: Raw ADC Light: 442 | Light %: 89.2[0m
+[0;32mI (1437791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1440791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1440791) DHT: Failed to read from DHT11[0m
+[0;32mI (1440791) LIGHT: Raw ADC Light: 446 | Light %: 89.1[0m
+[0;32mI (1440791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.1%[0m
+[1;31mE (1443791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1443791) DHT: Failed to read from DHT11[0m
+[0;32mI (1443791) LIGHT: Raw ADC Light: 444 | Light %: 89.2[0m
+[0;32mI (1443791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1446791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1446791) DHT: Failed to read from DHT11[0m
+[0;32mI (1446791) LIGHT: Raw ADC Light: 441 | Light %: 89.2[0m
+[0;32mI (1446791) SENSOR: PPM: 27.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1449791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1449791) DHT: Failed to read from DHT11[0m
+[0;32mI (1449791) LIGHT: Raw ADC Light: 440 | Light %: 89.3[0m
+[0;32mI (1449791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.3%[0m
+[1;31mE (1452791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1452791) DHT: Failed to read from DHT11[0m
+[0;32mI (1452791) LIGHT: Raw ADC Light: 438 | Light %: 89.3[0m
+[0;32mI (1452791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.3%[0m
+[1;31mE (1455791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1455791) DHT: Failed to read from DHT11[0m
+[0;32mI (1455791) LIGHT: Raw ADC Light: 439 | Light %: 89.3[0m
+[0;32mI (1455791) SENSOR: PPM: 28.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.3%[0m
+[1;31mE (1458791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1458791) DHT: Failed to read from DHT11[0m
+[0;32mI (1458791) LIGHT: Raw ADC Light: 447 | Light %: 89.1[0m
+[0;32mI (1458791) SENSOR: PPM: 27.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.1%[0m
+[1;31mE (1461791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1461791) DHT: Failed to read from DHT11[0m
+[0;32mI (1461791) LIGHT: Raw ADC Light: 442 | Light %: 89.2[0m
+[0;32mI (1461791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1464791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1464791) DHT: Failed to read from DHT11[0m
+[0;32mI (1464791) LIGHT: Raw ADC Light: 444 | Light %: 89.2[0m
+[0;32mI (1464791) SENSOR: PPM: 27.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1467791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1467791) DHT: Failed to read from DHT11[0m
+[0;32mI (1467791) LIGHT: Raw ADC Light: 444 | Light %: 89.2[0m
+[0;32mI (1467791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1470791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1470791) DHT: Failed to read from DHT11[0m
+[0;32mI (1470791) LIGHT: Raw ADC Light: 473 | Light %: 88.4[0m
+[0;32mI (1470791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.4%[0m
+[1;31mE (1473791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1473791) DHT: Failed to read from DHT11[0m
+[0;32mI (1473791) LIGHT: Raw ADC Light: 478 | Light %: 88.3[0m
+[0;32mI (1473791) SENSOR: PPM: 27.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.3%[0m
+[1;31mE (1476791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1476791) DHT: Failed to read from DHT11[0m
+[0;32mI (1476791) LIGHT: Raw ADC Light: 470 | Light %: 88.5[0m
+[0;32mI (1476791) SENSOR: PPM: 27.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.5%[0m
+[1;31mE (1479791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1479791) DHT: Failed to read from DHT11[0m
+[0;32mI (1479791) LIGHT: Raw ADC Light: 472 | Light %: 88.5[0m
+[0;32mI (1479791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.5%[0m
+[1;31mE (1482791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1482791) DHT: Failed to read from DHT11[0m
+[0;32mI (1482791) LIGHT: Raw ADC Light: 465 | Light %: 88.6[0m
+[0;32mI (1482791) SENSOR: PPM: 27.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.6%[0m
+[1;31mE (1485791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1485791) DHT: Failed to read from DHT11[0m
+[0;32mI (1485791) LIGHT: Raw ADC Light: 465 | Light %: 88.6[0m
+[0;32mI (1485791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.6%[0m
+[1;31mE (1488791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1488791) DHT: Failed to read from DHT11[0m
+[0;32mI (1488791) LIGHT: Raw ADC Light: 464 | Light %: 88.7[0m
+[0;32mI (1488791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.7%[0m
+[1;31mE (1491791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1491791) DHT: Failed to read from DHT11[0m
+[0;32mI (1491791) LIGHT: Raw ADC Light: 464 | Light %: 88.7[0m
+[0;32mI (1491791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.7%[0m
+[1;31mE (1494791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1494791) DHT: Failed to read from DHT11[0m
+[0;32mI (1494791) LIGHT: Raw ADC Light: 464 | Light %: 88.7[0m
+[0;32mI (1494791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.7%[0m
+[1;31mE (1497791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1497791) DHT: Failed to read from DHT11[0m
+[0;32mI (1497791) LIGHT: Raw ADC Light: 476 | Light %: 88.4[0m
+[0;32mI (1497791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.4%[0m
+[1;31mE (1500791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1500791) DHT: Failed to read from DHT11[0m
+[0;32mI (1500791) LIGHT: Raw ADC Light: 494 | Light %: 87.9[0m
+[0;32mI (1500791) SENSOR: PPM: 27.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 87.9%[0m
+[1;31mE (1503791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1503791) DHT: Failed to read from DHT11[0m
+[0;32mI (1503791) LIGHT: Raw ADC Light: 495 | Light %: 87.9[0m
+[0;32mI (1503791) SENSOR: PPM: 27.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 87.9%[0m
+[1;31mE (1506791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1506791) DHT: Failed to read from DHT11[0m
+[0;32mI (1506791) LIGHT: Raw ADC Light: 461 | Light %: 88.7[0m
+[0;32mI (1506791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.7%[0m
+[1;31mE (1509791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1509791) DHT: Failed to read from DHT11[0m
+[0;32mI (1509791) LIGHT: Raw ADC Light: 465 | Light %: 88.6[0m
+[0;32mI (1509791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.6%[0m
+[1;31mE (1512791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1512791) DHT: Failed to read from DHT11[0m
+[0;32mI (1512791) LIGHT: Raw ADC Light: 460 | Light %: 88.8[0m
+[0;32mI (1512791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.8%[0m
+[1;31mE (1515791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1515791) DHT: Failed to read from DHT11[0m
+[0;32mI (1515791) LIGHT: Raw ADC Light: 461 | Light %: 88.7[0m
+[0;32mI (1515791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.7%[0m
+[1;31mE (1518791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1518791) DHT: Failed to read from DHT11[0m
+[0;32mI (1518791) LIGHT: Raw ADC Light: 467 | Light %: 88.6[0m
+[0;32mI (1518791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.6%[0m
+[1;31mE (1521791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1521791) DHT: Failed to read from DHT11[0m
+[0;32mI (1521791) LIGHT: Raw ADC Light: 467 | Light %: 88.6[0m
+[0;32mI (1521791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.6%[0m
+[1;31mE (1524791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1524791) DHT: Failed to read from DHT11[0m
+[0;32mI (1524791) LIGHT: Raw ADC Light: 495 | Light %: 87.9[0m
+[0;32mI (1524791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 87.9%[0m
+[1;31mE (1527791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1527791) DHT: Failed to read from DHT11[0m
+[0;32mI (1527791) LIGHT: Raw ADC Light: 491 | Light %: 88.0[0m
+[0;32mI (1527791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.0%[0m
+[1;31mE (1530791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1530791) DHT: Failed to read from DHT11[0m
+[0;32mI (1530791) LIGHT: Raw ADC Light: 486 | Light %: 88.1[0m
+[0;32mI (1530791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.1%[0m
+[1;31mE (1533791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1533791) DHT: Failed to read from DHT11[0m
+[0;32mI (1533791) LIGHT: Raw ADC Light: 501 | Light %: 87.8[0m
+[0;32mI (1533791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 87.8%[0m
+[1;31mE (1536791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1536791) DHT: Failed to read from DHT11[0m
+[0;32mI (1536791) LIGHT: Raw ADC Light: 503 | Light %: 87.7[0m
+[0;32mI (1536791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 87.7%[0m
+[1;31mE (1539791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1539791) DHT: Failed to read from DHT11[0m
+[0;32mI (1539791) LIGHT: Raw ADC Light: 499 | Light %: 87.8[0m
+[0;32mI (1539791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 87.8%[0m
+[1;31mE (1542791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1542791) DHT: Failed to read from DHT11[0m
+[0;32mI (1542791) LIGHT: Raw ADC Light: 480 | Light %: 88.3[0m
+[0;32mI (1542791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.3%[0m
+[1;31mE (1545791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1545791) DHT: Failed to read from DHT11[0m
+[0;32mI (1545791) LIGHT: Raw ADC Light: 479 | Light %: 88.3[0m
+[0;32mI (1545791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.3%[0m
+[1;31mE (1548791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1548791) DHT: Failed to read from DHT11[0m
+[0;32mI (1548791) LIGHT: Raw ADC Light: 478 | Light %: 88.3[0m
+[0;32mI (1548791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.3%[0m
+[1;31mE (1551791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1551791) DHT: Failed to read from DHT11[0m
+[0;32mI (1551791) LIGHT: Raw ADC Light: 443 | Light %: 89.2[0m
+[0;32mI (1551791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1554791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1554791) DHT: Failed to read from DHT11[0m
+[0;32mI (1554791) LIGHT: Raw ADC Light: 469 | Light %: 88.5[0m
+[0;32mI (1554791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.5%[0m
+[1;31mE (1557791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1557791) DHT: Failed to read from DHT11[0m
+[0;32mI (1557791) LIGHT: Raw ADC Light: 559 | Light %: 86.3[0m
+[0;32mI (1557791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.3%[0m
+[1;31mE (1560791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1560791) DHT: Failed to read from DHT11[0m
+[0;32mI (1560791) LIGHT: Raw ADC Light: 530 | Light %: 87.1[0m
+[0;32mI (1560791) SENSOR: PPM: 27.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 87.1%[0m
+[1;31mE (1563791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1563791) DHT: Failed to read from DHT11[0m
+[0;32mI (1563791) LIGHT: Raw ADC Light: 544 | Light %: 86.7[0m
+[0;32mI (1563791) SENSOR: PPM: 27.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.7%[0m
+[1;31mE (1566791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1566791) DHT: Failed to read from DHT11[0m
+[0;32mI (1566791) LIGHT: Raw ADC Light: 485 | Light %: 88.2[0m
+[0;32mI (1566791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.2%[0m
+[1;31mE (1569791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1569791) DHT: Failed to read from DHT11[0m
+[0;32mI (1569791) LIGHT: Raw ADC Light: 471 | Light %: 88.5[0m
+[0;32mI (1569791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.5%[0m
+[1;31mE (1572791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1572791) DHT: Failed to read from DHT11[0m
+[0;32mI (1572791) LIGHT: Raw ADC Light: 464 | Light %: 88.7[0m
+[0;32mI (1572791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.7%[0m
+[1;31mE (1575791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1575791) DHT: Failed to read from DHT11[0m
+[0;32mI (1575791) LIGHT: Raw ADC Light: 474 | Light %: 88.4[0m
+[0;32mI (1575791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.4%[0m
+[1;31mE (1578791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1578791) DHT: Failed to read from DHT11[0m
+[0;32mI (1578791) LIGHT: Raw ADC Light: 471 | Light %: 88.5[0m
+[0;32mI (1578791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.5%[0m
+[1;31mE (1581791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1581791) DHT: Failed to read from DHT11[0m
+[0;32mI (1581791) LIGHT: Raw ADC Light: 475 | Light %: 88.4[0m
+[0;32mI (1581791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.4%[0m
+[1;31mE (1584791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1584791) DHT: Failed to read from DHT11[0m
+[0;32mI (1584791) LIGHT: Raw ADC Light: 479 | Light %: 88.3[0m
+[0;32mI (1584791) SENSOR: PPM: 28.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.3%[0m
+[1;31mE (1587791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1587791) DHT: Failed to read from DHT11[0m
+[0;32mI (1587791) LIGHT: Raw ADC Light: 479 | Light %: 88.3[0m
+[0;32mI (1587791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.3%[0m
+[1;31mE (1590791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1590791) DHT: Failed to read from DHT11[0m
+[0;32mI (1590791) LIGHT: Raw ADC Light: 480 | Light %: 88.3[0m
+[0;32mI (1590791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.3%[0m
+[1;31mE (1593791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1593791) DHT: Failed to read from DHT11[0m
+[0;32mI (1593791) LIGHT: Raw ADC Light: 476 | Light %: 88.4[0m
+[0;32mI (1593791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.4%[0m
+[1;31mE (1596791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1596791) DHT: Failed to read from DHT11[0m
+[0;32mI (1596791) LIGHT: Raw ADC Light: 474 | Light %: 88.4[0m
+[0;32mI (1596791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.4%[0m
+[1;31mE (1599791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1599791) DHT: Failed to read from DHT11[0m
+[0;32mI (1599791) LIGHT: Raw ADC Light: 475 | Light %: 88.4[0m
+[0;32mI (1599791) SENSOR: PPM: 27.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.4%[0m
+[1;31mE (1602791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1602791) DHT: Failed to read from DHT11[0m
+[0;32mI (1602791) LIGHT: Raw ADC Light: 474 | Light %: 88.4[0m
+[0;32mI (1602791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.4%[0m
+[1;31mE (1605791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1605791) DHT: Failed to read from DHT11[0m
+[0;32mI (1605791) LIGHT: Raw ADC Light: 464 | Light %: 88.7[0m
+[0;32mI (1605791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.7%[0m
+[1;31mE (1608791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1608791) DHT: Failed to read from DHT11[0m
+[0;32mI (1608791) LIGHT: Raw ADC Light: 464 | Light %: 88.7[0m
+[0;32mI (1608791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.7%[0m
+[1;31mE (1611791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1611791) DHT: Failed to read from DHT11[0m
+[0;32mI (1611791) LIGHT: Raw ADC Light: 461 | Light %: 88.7[0m
+[0;32mI (1611791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.7%[0m
+[1;31mE (1614791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1614791) DHT: Failed to read from DHT11[0m
+[0;32mI (1614791) LIGHT: Raw ADC Light: 456 | Light %: 88.9[0m
+[0;32mI (1614791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.9%[0m
+[1;31mE (1617791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1617791) DHT: Failed to read from DHT11[0m
+[0;32mI (1617791) LIGHT: Raw ADC Light: 405 | Light %: 90.1[0m
+[0;32mI (1617791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.1%[0m
+[1;31mE (1620791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1620791) DHT: Failed to read from DHT11[0m
+[0;32mI (1620791) LIGHT: Raw ADC Light: 401 | Light %: 90.2[0m
+[0;32mI (1620791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1623791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1623791) DHT: Failed to read from DHT11[0m
+[0;32mI (1623791) LIGHT: Raw ADC Light: 401 | Light %: 90.2[0m
+[0;32mI (1623791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1626791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1626791) DHT: Failed to read from DHT11[0m
+[0;32mI (1626791) LIGHT: Raw ADC Light: 401 | Light %: 90.2[0m
+[0;32mI (1626791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1629791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1629791) DHT: Failed to read from DHT11[0m
+[0;32mI (1629791) LIGHT: Raw ADC Light: 402 | Light %: 90.2[0m
+[0;32mI (1629791) SENSOR: PPM: 28.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1632791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1632791) DHT: Failed to read from DHT11[0m
+[0;32mI (1632791) LIGHT: Raw ADC Light: 401 | Light %: 90.2[0m
+[0;32mI (1632791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1635791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1635791) DHT: Failed to read from DHT11[0m
+[0;32mI (1635791) LIGHT: Raw ADC Light: 402 | Light %: 90.2[0m
+[0;32mI (1635791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1638791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1638791) DHT: Failed to read from DHT11[0m
+[0;32mI (1638791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (1638791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1641791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1641791) DHT: Failed to read from DHT11[0m
+[0;32mI (1641791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (1641791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1644791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1644791) DHT: Failed to read from DHT11[0m
+[0;32mI (1644791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (1644791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1647791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1647791) DHT: Failed to read from DHT11[0m
+[0;32mI (1647791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (1647791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1650791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1650791) DHT: Failed to read from DHT11[0m
+[0;32mI (1650791) LIGHT: Raw ADC Light: 401 | Light %: 90.2[0m
+[0;32mI (1650791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1653791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1653791) DHT: Failed to read from DHT11[0m
+[0;32mI (1653791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (1653791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1656791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1656791) DHT: Failed to read from DHT11[0m
+[0;32mI (1656791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (1656791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1659791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1659791) DHT: Failed to read from DHT11[0m
+[0;32mI (1659791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (1659791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1662791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1662791) DHT: Failed to read from DHT11[0m
+[0;32mI (1662791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1662791) SENSOR: PPM: 27.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1665791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1665791) DHT: Failed to read from DHT11[0m
+[0;32mI (1665791) LIGHT: Raw ADC Light: 401 | Light %: 90.2[0m
+[0;32mI (1665791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1668791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1668791) DHT: Failed to read from DHT11[0m
+[0;32mI (1668791) LIGHT: Raw ADC Light: 402 | Light %: 90.2[0m
+[0;32mI (1668791) SENSOR: PPM: 27.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1671791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1671791) DHT: Failed to read from DHT11[0m
+[0;32mI (1671791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (1671791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1674791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1674791) DHT: Failed to read from DHT11[0m
+[0;32mI (1674791) LIGHT: Raw ADC Light: 401 | Light %: 90.2[0m
+[0;32mI (1674791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1677791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1677791) DHT: Failed to read from DHT11[0m
+[0;32mI (1677791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (1677791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1680791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1680791) DHT: Failed to read from DHT11[0m
+[0;32mI (1680791) LIGHT: Raw ADC Light: 407 | Light %: 90.1[0m
+[0;32mI (1680791) SENSOR: PPM: 27.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.1%[0m
+[1;31mE (1683791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1683791) DHT: Failed to read from DHT11[0m
+[0;32mI (1683791) LIGHT: Raw ADC Light: 394 | Light %: 90.4[0m
+[0;32mI (1683791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[1;31mE (1686791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1686791) DHT: Failed to read from DHT11[0m
+[0;32mI (1686791) LIGHT: Raw ADC Light: 394 | Light %: 90.4[0m
+[0;32mI (1686791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[1;31mE (1689791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1689791) DHT: Failed to read from DHT11[0m
+[0;32mI (1689791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (1689791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1692791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1692791) DHT: Failed to read from DHT11[0m
+[0;32mI (1692791) LIGHT: Raw ADC Light: 394 | Light %: 90.4[0m
+[0;32mI (1692791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[1;31mE (1695791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1695791) DHT: Failed to read from DHT11[0m
+[0;32mI (1695791) LIGHT: Raw ADC Light: 394 | Light %: 90.4[0m
+[0;32mI (1695791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[1;31mE (1698791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1698791) DHT: Failed to read from DHT11[0m
+[0;32mI (1698791) LIGHT: Raw ADC Light: 392 | Light %: 90.4[0m
+[0;32mI (1698791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[1;31mE (1701791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1701791) DHT: Failed to read from DHT11[0m
+[0;32mI (1701791) LIGHT: Raw ADC Light: 393 | Light %: 90.4[0m
+[0;32mI (1701791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[1;31mE (1704791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1704791) DHT: Failed to read from DHT11[0m
+[0;32mI (1704791) LIGHT: Raw ADC Light: 396 | Light %: 90.3[0m
+[0;32mI (1704791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1707791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1707791) DHT: Failed to read from DHT11[0m
+[0;32mI (1707791) LIGHT: Raw ADC Light: 393 | Light %: 90.4[0m
+[0;32mI (1707791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[1;31mE (1710791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1710791) DHT: Failed to read from DHT11[0m
+[0;32mI (1710791) LIGHT: Raw ADC Light: 393 | Light %: 90.4[0m
+[0;32mI (1710791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[1;31mE (1713791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1713791) DHT: Failed to read from DHT11[0m
+[0;32mI (1713791) LIGHT: Raw ADC Light: 393 | Light %: 90.4[0m
+[0;32mI (1713791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[1;31mE (1716791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1716791) DHT: Failed to read from DHT11[0m
+[0;32mI (1716791) LIGHT: Raw ADC Light: 394 | Light %: 90.4[0m
+[0;32mI (1716791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[1;31mE (1719791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1719791) DHT: Failed to read from DHT11[0m
+[0;32mI (1719791) LIGHT: Raw ADC Light: 393 | Light %: 90.4[0m
+[0;32mI (1719791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[1;31mE (1722791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1722791) DHT: Failed to read from DHT11[0m
+[0;32mI (1722791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1722791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1725791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1725791) DHT: Failed to read from DHT11[0m
+[0;32mI (1725791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1725791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1728791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1728791) DHT: Failed to read from DHT11[0m
+[0;32mI (1728791) LIGHT: Raw ADC Light: 396 | Light %: 90.3[0m
+[0;32mI (1728791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1731791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1731791) DHT: Failed to read from DHT11[0m
+[0;32mI (1731791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (1731791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1734791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1734791) DHT: Failed to read from DHT11[0m
+[0;32mI (1734791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1734791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1737791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1737791) DHT: Failed to read from DHT11[0m
+[0;32mI (1737791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1737791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1740791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1740791) DHT: Failed to read from DHT11[0m
+[0;32mI (1740791) LIGHT: Raw ADC Light: 396 | Light %: 90.3[0m
+[0;32mI (1740791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1743791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1743791) DHT: Failed to read from DHT11[0m
+[0;32mI (1743791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1743791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1746791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1746791) DHT: Failed to read from DHT11[0m
+[0;32mI (1746791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1746791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1749791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1749791) DHT: Failed to read from DHT11[0m
+[0;32mI (1749791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (1749791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1752791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1752791) DHT: Failed to read from DHT11[0m
+[0;32mI (1752791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (1752791) SENSOR: PPM: 28.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1755791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1755791) DHT: Failed to read from DHT11[0m
+[0;32mI (1755791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (1755791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1758791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1758791) DHT: Failed to read from DHT11[0m
+[0;32mI (1758791) LIGHT: Raw ADC Light: 401 | Light %: 90.2[0m
+[0;32mI (1758791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1761791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1761791) DHT: Failed to read from DHT11[0m
+[0;32mI (1761791) LIGHT: Raw ADC Light: 401 | Light %: 90.2[0m
+[0;32mI (1761791) SENSOR: PPM: 28.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1764791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1764791) DHT: Failed to read from DHT11[0m
+[0;32mI (1764791) LIGHT: Raw ADC Light: 402 | Light %: 90.2[0m
+[0;32mI (1764791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1767791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1767791) DHT: Failed to read from DHT11[0m
+[0;32mI (1767791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (1767791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1770791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1770791) DHT: Failed to read from DHT11[0m
+[0;32mI (1770791) LIGHT: Raw ADC Light: 401 | Light %: 90.2[0m
+[0;32mI (1770791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1773791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1773791) DHT: Failed to read from DHT11[0m
+[0;32mI (1773791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (1773791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1776791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1776791) DHT: Failed to read from DHT11[0m
+[0;32mI (1776791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (1776791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1779791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1779791) DHT: Failed to read from DHT11[0m
+[0;32mI (1779791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1779791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1782791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1782791) DHT: Failed to read from DHT11[0m
+[0;32mI (1782791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (1782791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1785791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1785791) DHT: Failed to read from DHT11[0m
+[0;32mI (1785791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (1785791) SENSOR: PPM: 27.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1788791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1788791) DHT: Failed to read from DHT11[0m
+[0;32mI (1788791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (1788791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1791791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1791791) DHT: Failed to read from DHT11[0m
+[0;32mI (1791791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (1791791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1794791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1794791) DHT: Failed to read from DHT11[0m
+[0;32mI (1794791) LIGHT: Raw ADC Light: 397 | Light %: 90.3[0m
+[0;32mI (1794791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1797791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1797791) DHT: Failed to read from DHT11[0m
+[0;32mI (1797791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1797791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1800791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1800791) DHT: Failed to read from DHT11[0m
+[0;32mI (1800791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1800791) SENSOR: PPM: 27.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1803791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1803791) DHT: Failed to read from DHT11[0m
+[0;32mI (1803791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (1803791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1806791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1806791) DHT: Failed to read from DHT11[0m
+[0;32mI (1806791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1806791) SENSOR: PPM: 27.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1809791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1809791) DHT: Failed to read from DHT11[0m
+[0;32mI (1809791) LIGHT: Raw ADC Light: 399 | Light %: 90.3[0m
+[0;32mI (1809791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1812791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1812791) DHT: Failed to read from DHT11[0m
+[0;32mI (1812791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (1812791) SENSOR: PPM: 27.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1815791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1815791) DHT: Failed to read from DHT11[0m
+[0;32mI (1815791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (1815791) SENSOR: PPM: 27.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1818791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1818791) DHT: Failed to read from DHT11[0m
+[0;32mI (1818791) LIGHT: Raw ADC Light: 396 | Light %: 90.3[0m
+[0;32mI (1818791) SENSOR: PPM: 27.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1821791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1821791) DHT: Failed to read from DHT11[0m
+[0;32mI (1821791) LIGHT: Raw ADC Light: 396 | Light %: 90.3[0m
+[0;32mI (1821791) SENSOR: PPM: 27.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1824791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1824791) DHT: Failed to read from DHT11[0m
+[0;32mI (1824791) LIGHT: Raw ADC Light: 396 | Light %: 90.3[0m
+[0;32mI (1824791) SENSOR: PPM: 27.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1827791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1827791) DHT: Failed to read from DHT11[0m
+[0;32mI (1827791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1827791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1830791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1830791) DHT: Failed to read from DHT11[0m
+[0;32mI (1830791) LIGHT: Raw ADC Light: 396 | Light %: 90.3[0m
+[0;32mI (1830791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1833791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1833791) DHT: Failed to read from DHT11[0m
+[0;32mI (1833791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1833791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1836791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1836791) DHT: Failed to read from DHT11[0m
+[0;32mI (1836791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1836791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1839791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1839791) DHT: Failed to read from DHT11[0m
+[0;32mI (1839791) LIGHT: Raw ADC Light: 393 | Light %: 90.4[0m
+[0;32mI (1839791) SENSOR: PPM: 26.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[1;31mE (1842791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1842791) DHT: Failed to read from DHT11[0m
+[0;32mI (1842791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1842791) SENSOR: PPM: 27.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1845781) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1845791) DHT: Failed to read from DHT11[0m
+[0;32mI (1845791) LIGHT: Raw ADC Light: 394 | Light %: 90.4[0m
+[0;32mI (1845791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[1;31mE (1848791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1848791) DHT: Failed to read from DHT11[0m
+[0;32mI (1848791) LIGHT: Raw ADC Light: 496 | Light %: 87.9[0m
+[0;32mI (1848791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 87.9%[0m
+[1;31mE (1851791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1851791) DHT: Failed to read from DHT11[0m
+[0;32mI (1851791) LIGHT: Raw ADC Light: 407 | Light %: 90.1[0m
+[0;32mI (1851791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.1%[0m
+[1;31mE (1854791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1854791) DHT: Failed to read from DHT11[0m
+[0;32mI (1854791) LIGHT: Raw ADC Light: 422 | Light %: 89.7[0m
+[0;32mI (1854791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.7%[0m
+[1;31mE (1857791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1857791) DHT: Failed to read from DHT11[0m
+[0;32mI (1857791) LIGHT: Raw ADC Light: 428 | Light %: 89.5[0m
+[0;32mI (1857791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.5%[0m
+[1;31mE (1860791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1860791) DHT: Failed to read from DHT11[0m
+[0;32mI (1860791) LIGHT: Raw ADC Light: 431 | Light %: 89.5[0m
+[0;32mI (1860791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.5%[0m
+[1;31mE (1863791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1863791) DHT: Failed to read from DHT11[0m
+[0;32mI (1863791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (1863791) SENSOR: PPM: 27.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1866791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1866791) DHT: Failed to read from DHT11[0m
+[0;32mI (1866791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (1866791) SENSOR: PPM: 27.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1869791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1869791) DHT: Failed to read from DHT11[0m
+[0;32mI (1869791) LIGHT: Raw ADC Light: 419 | Light %: 89.8[0m
+[0;32mI (1869791) SENSOR: PPM: 27.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.8%[0m
+[1;31mE (1872791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1872791) DHT: Failed to read from DHT11[0m
+[0;32mI (1872791) LIGHT: Raw ADC Light: 412 | Light %: 89.9[0m
+[0;32mI (1872791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.9%[0m
+[1;31mE (1875791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1875791) DHT: Failed to read from DHT11[0m
+[0;32mI (1875791) LIGHT: Raw ADC Light: 412 | Light %: 89.9[0m
+[0;32mI (1875791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.9%[0m
+[1;31mE (1878791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1878791) DHT: Failed to read from DHT11[0m
+[0;32mI (1878791) LIGHT: Raw ADC Light: 414 | Light %: 89.9[0m
+[0;32mI (1878791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.9%[0m
+[1;31mE (1881791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1881791) DHT: Failed to read from DHT11[0m
+[0;32mI (1881791) LIGHT: Raw ADC Light: 414 | Light %: 89.9[0m
+[0;32mI (1881791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.9%[0m
+[1;31mE (1884791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1884791) DHT: Failed to read from DHT11[0m
+[0;32mI (1884791) LIGHT: Raw ADC Light: 418 | Light %: 89.8[0m
+[0;32mI (1884791) SENSOR: PPM: 27.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.8%[0m
+[1;31mE (1887791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1887791) DHT: Failed to read from DHT11[0m
+[0;32mI (1887791) LIGHT: Raw ADC Light: 420 | Light %: 89.7[0m
+[0;32mI (1887791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.7%[0m
+[1;31mE (1890791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1890791) DHT: Failed to read from DHT11[0m
+[0;32mI (1890791) LIGHT: Raw ADC Light: 396 | Light %: 90.3[0m
+[0;32mI (1890791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1893791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1893791) DHT: Failed to read from DHT11[0m
+[0;32mI (1893791) LIGHT: Raw ADC Light: 397 | Light %: 90.3[0m
+[0;32mI (1893791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1896791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1896791) DHT: Failed to read from DHT11[0m
+[0;32mI (1896791) LIGHT: Raw ADC Light: 392 | Light %: 90.4[0m
+[0;32mI (1896791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[1;31mE (1899791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1899791) DHT: Failed to read from DHT11[0m
+[0;32mI (1899791) LIGHT: Raw ADC Light: 420 | Light %: 89.7[0m
+[0;32mI (1899791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.7%[0m
+[1;31mE (1902791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1902791) DHT: Failed to read from DHT11[0m
+[0;32mI (1902791) LIGHT: Raw ADC Light: 398 | Light %: 90.3[0m
+[0;32mI (1902791) SENSOR: PPM: 28.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[1;31mE (1905791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1905791) DHT: Failed to read from DHT11[0m
+[0;32mI (1905791) LIGHT: Raw ADC Light: 400 | Light %: 90.2[0m
+[0;32mI (1905791) SENSOR: PPM: 27.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1908791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1908791) DHT: Failed to read from DHT11[0m
+[0;32mI (1908791) LIGHT: Raw ADC Light: 414 | Light %: 89.9[0m
+[0;32mI (1908791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.9%[0m
+[1;31mE (1911791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1911791) DHT: Failed to read from DHT11[0m
+[0;32mI (1911791) LIGHT: Raw ADC Light: 402 | Light %: 90.2[0m
+[0;32mI (1911791) SENSOR: PPM: 27.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.2%[0m
+[1;31mE (1914791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1914791) DHT: Failed to read from DHT11[0m
+[0;32mI (1914791) LIGHT: Raw ADC Light: 414 | Light %: 89.9[0m
+[0;32mI (1914791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.9%[0m
+[1;31mE (1917791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1917791) DHT: Failed to read from DHT11[0m
+[0;32mI (1917791) LIGHT: Raw ADC Light: 393 | Light %: 90.4[0m
+[0;32mI (1917791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.4%[0m
+[1;31mE (1920791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1920791) DHT: Failed to read from DHT11[0m
+[0;32mI (1920791) LIGHT: Raw ADC Light: 434 | Light %: 89.4[0m
+[0;32mI (1920791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.4%[0m
+[1;31mE (1923791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1923791) DHT: Failed to read from DHT11[0m
+[0;32mI (1923791) LIGHT: Raw ADC Light: 437 | Light %: 89.3[0m
+[0;32mI (1923791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.3%[0m
+[1;31mE (1926791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1926791) DHT: Failed to read from DHT11[0m
+[0;32mI (1926791) LIGHT: Raw ADC Light: 437 | Light %: 89.3[0m
+[0;32mI (1926791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.3%[0m
+[1;31mE (1929791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1929791) DHT: Failed to read from DHT11[0m
+[0;32mI (1929791) LIGHT: Raw ADC Light: 437 | Light %: 89.3[0m
+[0;32mI (1929791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.3%[0m
+[1;31mE (1932791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1932791) DHT: Failed to read from DHT11[0m
+[0;32mI (1932791) LIGHT: Raw ADC Light: 436 | Light %: 89.4[0m
+[0;32mI (1932791) SENSOR: PPM: 27.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.4%[0m
+[1;31mE (1935791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1935791) DHT: Failed to read from DHT11[0m
+[0;32mI (1935791) LIGHT: Raw ADC Light: 433 | Light %: 89.4[0m
+[0;32mI (1935791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.4%[0m
+[1;31mE (1938791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1938791) DHT: Failed to read from DHT11[0m
+[0;32mI (1938791) LIGHT: Raw ADC Light: 443 | Light %: 89.2[0m
+[0;32mI (1938791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1941791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1941791) DHT: Failed to read from DHT11[0m
+[0;32mI (1941791) LIGHT: Raw ADC Light: 445 | Light %: 89.1[0m
+[0;32mI (1941791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.1%[0m
+[1;31mE (1944791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1944791) DHT: Failed to read from DHT11[0m
+[0;32mI (1944791) LIGHT: Raw ADC Light: 445 | Light %: 89.1[0m
+[0;32mI (1944791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.1%[0m
+[1;31mE (1947791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1947791) DHT: Failed to read from DHT11[0m
+[0;32mI (1947791) LIGHT: Raw ADC Light: 448 | Light %: 89.1[0m
+[0;32mI (1947791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.1%[0m
+[1;31mE (1950791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1950791) DHT: Failed to read from DHT11[0m
+[0;32mI (1950791) LIGHT: Raw ADC Light: 455 | Light %: 88.9[0m
+[0;32mI (1950791) SENSOR: PPM: 27.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.9%[0m
+[1;31mE (1953791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1953791) DHT: Failed to read from DHT11[0m
+[0;32mI (1953791) LIGHT: Raw ADC Light: 464 | Light %: 88.7[0m
+[0;32mI (1953791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.7%[0m
+[1;31mE (1956791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1956791) DHT: Failed to read from DHT11[0m
+[0;32mI (1956791) LIGHT: Raw ADC Light: 433 | Light %: 89.4[0m
+[0;32mI (1956791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.4%[0m
+[1;31mE (1959791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1959791) DHT: Failed to read from DHT11[0m
+[0;32mI (1959791) LIGHT: Raw ADC Light: 433 | Light %: 89.4[0m
+[0;32mI (1959791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.4%[0m
+[1;31mE (1962791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1962791) DHT: Failed to read from DHT11[0m
+[0;32mI (1962791) LIGHT: Raw ADC Light: 531 | Light %: 87.0[0m
+[0;32mI (1962791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 87.0%[0m
+[1;31mE (1965791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1965791) DHT: Failed to read from DHT11[0m
+[0;32mI (1965791) LIGHT: Raw ADC Light: 446 | Light %: 89.1[0m
+[0;32mI (1965791) SENSOR: PPM: 28.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.1%[0m
+[1;31mE (1968791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1968791) DHT: Failed to read from DHT11[0m
+[0;32mI (1968791) LIGHT: Raw ADC Light: 443 | Light %: 89.2[0m
+[0;32mI (1968791) SENSOR: PPM: 27.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1971791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1971791) DHT: Failed to read from DHT11[0m
+[0;32mI (1971791) LIGHT: Raw ADC Light: 442 | Light %: 89.2[0m
+[0;32mI (1971791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1974791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1974791) DHT: Failed to read from DHT11[0m
+[0;32mI (1974791) LIGHT: Raw ADC Light: 444 | Light %: 89.2[0m
+[0;32mI (1974791) SENSOR: PPM: 27.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1977791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1977791) DHT: Failed to read from DHT11[0m
+[0;32mI (1977791) LIGHT: Raw ADC Light: 444 | Light %: 89.2[0m
+[0;32mI (1977791) SENSOR: PPM: 28.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1980791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1980791) DHT: Failed to read from DHT11[0m
+[0;32mI (1980791) LIGHT: Raw ADC Light: 446 | Light %: 89.1[0m
+[0;32mI (1980791) SENSOR: PPM: 27.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.1%[0m
+[1;31mE (1983791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1983791) DHT: Failed to read from DHT11[0m
+[0;32mI (1983791) LIGHT: Raw ADC Light: 443 | Light %: 89.2[0m
+[0;32mI (1983791) SENSOR: PPM: 28.00 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1986791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1986791) DHT: Failed to read from DHT11[0m
+[0;32mI (1986791) LIGHT: Raw ADC Light: 442 | Light %: 89.2[0m
+[0;32mI (1986791) SENSOR: PPM: 27.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.2%[0m
+[1;31mE (1989791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1989791) DHT: Failed to read from DHT11[0m
+[0;32mI (1989791) LIGHT: Raw ADC Light: 439 | Light %: 89.3[0m
+[0;32mI (1989791) SENSOR: PPM: 26.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.3%[0m
+[1;31mE (1992791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1992791) DHT: Failed to read from DHT11[0m
+[0;32mI (1992791) LIGHT: Raw ADC Light: 445 | Light %: 89.1[0m
+[0;32mI (1992791) SENSOR: PPM: 27.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.1%[0m
+[1;31mE (1995791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1995791) DHT: Failed to read from DHT11[0m
+[0;32mI (1995791) LIGHT: Raw ADC Light: 445 | Light %: 89.1[0m
+[0;32mI (1995791) SENSOR: PPM: 27.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.1%[0m
+[1;31mE (1998791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (1998791) DHT: Failed to read from DHT11[0m
+[0;32mI (1998791) LIGHT: Raw ADC Light: 446 | Light %: 89.1[0m
+[0;32mI (1998791) SENSOR: PPM: 27.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.1%[0m
+[1;31mE (2001791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (2001791) DHT: Failed to read from DHT11[0m
+[0;32mI (2001791) LIGHT:

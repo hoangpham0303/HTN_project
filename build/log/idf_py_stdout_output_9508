@@ -1,0 +1,796 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15796
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 19 2025 14:52:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (66) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (73) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (79) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (86) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (92) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (99) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (105) boot:  7 reserved         unknown          06 06 003e0000 0001a000[0m
+[0;32mI (112) boot:  8 fctry            WiFi data        01 02 003fa000 00006000[0m
+[0;32mI (119) boot: End of partition table[0m
+[0;32mI (122) boot: No factory image, trying OTA 0[0m
+[0;32mI (126) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=412bch (266940) map[0m
+[0;32mI (225) esp_image: segment 1: paddr=000612e4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=00061308 vaddr=3ffbdb60 size=05e38h ( 24120) load[0m
+[0;32mI (238) esp_image: segment 3: paddr=00067148 vaddr=40080000 size=08ed0h ( 36560) load[0m
+[0;32mI (252) esp_image: segment 4: paddr=00070020 vaddr=400d0020 size=fb0a8h (1028264) map[0m
+[0;32mI (603) esp_image: segment 5: paddr=0016b0d0 vaddr=40088ed0 size=13e90h ( 81552) load[0m
+[0;32mI (649) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (650) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (650) boot: Disabling RNG early entropy source...[0m
+[0;32mI (664) cpu_start: Multicore app[0m
+[0;32mI (673) cpu_start: Pro cpu start user code[0m
+[0;32mI (673) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (673) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     HTN_project[0m
+[0;32mI (677) app_init: App version:      1.0[0m
+[0;32mI (681) app_init: Compile time:     May  9 2025 12:56:35[0m
+[0;32mI (686) app_init: ELF file SHA256:  7a66f64ee...[0m
+[0;32mI (690) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (694) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (712) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (717) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (722) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (728) heap_init: At 3FFCB4A8 len 00014B58 (82 KiB): DRAM[0m
+[0;32mI (733) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (738) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (744) heap_init: At 4009CD60 len 000032A0 (12 KiB): IRAM[0m
+[0;32mI (751) spi_flash: detected chip: generic[0m
+[0;32mI (753) spi_flash: flash io: dio[0m
+[0;32mI (757) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (761) main_task: Started on CPU0[0m
+[0;32mI (771) main_task: Calling app_main()[0m
+[0;32mI (771) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (811) wifi:wifi driver task: 3ffd4b4c, prio:23, stack:6656, core=0[0m
+[0;32mI (811) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (811) wifi:wifi certification version: v7.0[0m
+[0;32mI (811) wifi:config NVS flash: enabled[0m
+[0;32mI (811) wifi:config nano formatting: disabled[0m
+[0;32mI (821) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (821) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (831) wifi:Init management short buffer num: 32[0m
+[0;32mI (831) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (841) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (841) wifi:Init static rx buffer num: 10[0m
+[0;32mI (841) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (851) wifi_init: rx ba win: 6[0m
+[0;32mI (851) wifi_init: accept mbox: 6[0m
+[0;32mI (851) wifi_init: tcpip mbox: 32[0m
+[0;32mI (861) wifi_init: udp mbox: 6[0m
+[0;32mI (861) wifi_init: tcp mbox: 6[0m
+[0;32mI (861) wifi_init: tcp tx win: 5760[0m
+[0;32mI (871) wifi_init: tcp rx win: 5760[0m
+[0;32mI (871) wifi_init: tcp mss: 1440[0m
+[0;32mI (871) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (881) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (891) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (891) esp_claim: Initialising Assisted Claiming. This may take time.[0m
+[0;33mW (901) esp_claim: Generating the private key. This may take time.[0m
+[1;31mE (7771) esp_rmaker_param: Param handle cannot be NULL.[0m
+[1;31mE (7791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (7791) DHT: Failed to read from DHT11[0m
+[0;32mI (7791) SENSOR: PPM: 37.60 | Temp: 0.0°C | Humidity: 0.0% [0m
+[0;32mI (9191) esp_rmaker_node: Node ID ----- CCDBA734EECC[0m
+[0;32mI (9191) esp_rmaker_ota_using_topics: OTA enabled with Topics[0m
+[0;32mI (9191) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (9191) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (9201) app_insights: Enable CONFIG_ESP_INSIGHTS_ENABLED to get Insights.[0m
+[0;32mI (9201) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (9211) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (9221) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (9221) esp_claim: Waiting for assisted claim to finish.[0m
+[0;32mI (9231) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (9231) app_wifi: Starting provisioning[0m
+[0;32mI (9251) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (9251) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;33mW (9321) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+[0;32mI (9341) wifi:mode : sta (cc:db:a7:34:ee:cc)[0m
+[0;32mI (9341) wifi:enable tsf[0m
+[0;32mI (9351) BTDM_INIT: BT controller compile version [20b459d][0m
+[0;32mI (9351) BTDM_INIT: Bluetooth MAC: cc:db:a7:34:ee:ce[0m
+[0;32mI (9601) protocomm_nimble: BLE Host Task Started[0m
+[0;32mI (9621) network_prov_mgr: Provisioning started with service name : PROV_9750c3 [0m
+[0;32mI (9621) app_wifi: Provisioning started[0m
+[0;32mI (9631) esp_rmaker_local: Event 1[0m
+[0;32mI (9631) app_network: Scan this QR code from the ESP RainMaker phone app for Provisioning.[0m
+[0;32mI (9661) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (9661) NimBLE: disc_mode=2[0m
+[0;32mI (9661) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=256[0m
+[0;32mI (9671) NimBLE: [0m
+
+                                      
+  █▀▀▀▀▀█ ▀▀▀█▄█   ██▄ ▀▄ ▀ █▀▀▀▀▀█   
+  █ ███ █  ▀▄█ █▄ ▀▄█▀▄█▄▀  █ ███ █   
+  █ ▀▀▀ █  ▄▀█▀▄▀ ▀▀ ▀▄▀█▄▀ █ ▀▀▀ █   
+  ▀▀▀▀▀▀▀ █▄▀ █▄█▄█ █ █ ▀ █ ▀▀▀▀▀▀▀   
+  ██▄▀█▄▀  ▀▄ ▀▄ ▄▀▀▀██ ▄█▄ ▀▄▄ ▄▄▀   
+  ▄█ ▀▀ ▀▄█▀  ▀▀▀▀▄▄▀    ▀ █  ▄█▄█▀   
+  ▀█▀▀██▀█ ▀█ ▄▄██▄ ▄▀▄ █  ▄▀█ ▀▄▄▀   
+  ▄ ▀ ▄ ▀▄▄▀▀ ▄ ▄█▄ ▀█▄ ▀▄▀▄▄█  ▄     
+  ▀▀   █▀ ▀▀ █▀▀ █▀▄▀▄▀ ▄█  ███▄ ██   
+   ▄▄  █▀█▄▀ ▄▀▄███ ▀▀█ ▀█ █▀▀ ▀▄▄▀   
+  ▄▄▄█ ▀▀▄▄▄█▀▄▄█▄▀▀█▄█▄█▀▀█ ▀▄ ▄▀    
+  █ ▄▀ ▄▀▀█▀▀█▄  ▀█▄█▄▀▀█▀█ ▄█ ▀▄▄█   
+  ▀▀▀  ▀▀▀▄█▄▀▀▄▄██▄█▀█ ▀██▀▀▀█▄▄▀    
+  █▀▀▀▀▀█  ▄▄█▀▀▀██ ▄▀▄ █▄█ ▀ █ ▄ ▄   
+  █ ███ █ █ ▀▄█▀▀█▀▄█▄▄ ▀██▀▀▀▀▄▄▀▀   
+  █ ▀▀▀ █ ▄█▀▀ ▄█▀█ █▀ ▀▀███▄▀█ █▄█   
+  ▀▀▀▀▀▀▀ ▀▀▀▀  ▀▀ ▀     ▀▀▀▀▀▀       
+                                      
+
+[0;32mI (9881) app_network: If QR code is not visible, copy paste the below URL in a browser.[0m
+https://rainmaker.espressif.com/qrcode.html?data={"ver":"v1","name":"PROV_9750c3","pop":"13ab63a3","transport":"ble"}
+[0;32mI (9891) app_network: Provisioning will auto stop after 30 minute(s).[0m
+[0;32mI (14801) SENSOR: PPM: 36.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (21791) SENSOR: PPM: 35.95 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (28791) SENSOR: PPM: 36.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (35791) SENSOR: PPM: 36.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (42791) SENSOR: PPM: 35.25 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (49791) SENSOR: PPM: 35.85 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (56791) SENSOR: PPM: 35.50 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (63791) SENSOR: PPM: 36.00 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (70791) SENSOR: PPM: 36.00 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (77791) SENSOR: PPM: 35.85 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (84791) SENSOR: PPM: 36.00 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (87851) protocomm_nimble: mtu update event; conn_handle=0 cid=4 mtu=256[0m
+[0;32mI (89171) app_network: Secured session established![0m
+[0;32mI (89291) esp_claim: Assisted Claiming Started.[0m
+[0;32mI (91091) esp_rmaker_core: New Node ID ----- htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (91811) SENSOR: PPM: 35.60 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (97181) esp_claim: Storing received MQTT Host: a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (97201) esp_claim: Assisted Claiming was Successful.[0m
+[0;33mW (97211) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (98791) SENSOR: PPM: 35.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (105791) SENSOR: PPM: 35.05 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (111911) esp_rmaker_user_mapping: Received request for node details[0m
+[0;32mI (111911) esp_rmaker_user_mapping: Got user_id = Google_oBTjJ5sKe2xCH33his2SLg, secret_key = b0699a22-1b0f-4b47-bc4c-6ebb185ab0a3[0m
+[0;32mI (111921) esp_rmaker_user_mapping: User Node mapping reset detected.[0m
+[0;32mI (111921) esp_rmaker_user_mapping: Sending status SUCCESS[0m
+[0;32mI (112791) SENSOR: PPM: 35.15 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (116031) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (116031) NimBLE: disc_mode=2[0m
+[0;32mI (116031) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=256[0m
+[0;32mI (116031) NimBLE: [0m
+
+[0;32mI (119791) SENSOR: PPM: 35.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (126791) SENSOR: PPM: 36.40 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (133791) SENSOR: PPM: 36.00 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (140791) SENSOR: PPM: 35.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (143781) protocomm_nimble: mtu update event; conn_handle=0 cid=4 mtu=256[0m
+[0;32mI (145571) app_network: Secured session established![0m
+[0;32mI (145691) esp_claim: Assisted Claiming Started.[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x40104ee5  PS      : 0x00060230  A0      : 0x80105011  A1      : 0x3ffe37a0  
+A2      : 0x3ffddc10  A3      : 0x3ffbe018  A4      : 0x3ffe3834  A5      : 0x3ffdf8d6  
+A6      : 0x00000002  A7      : 0x00000000  A8      : 0x80104bc6  A9      : 0x3ffe3790  
+A10     : 0x00000036  A11     : 0x3ffe3834  A12     : 0x3ffdf8d6  A13     : 0x00000001  
+A14     : 0x3ffe37c0  A15     : 0x00000001  SAR     : 0x0000001d  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000002  LBEG    : 0x4000c2e0  LEND    : 0x4000c2f6  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40104ee2:0x3ffe37a0 0x4010500e:0x3ffe37d0 0x400df13f:0x3ffe3800 0x400dee13:0x3ffe3820 0x400eee5b:0x3ffe3890 0x400f1981:0x3ffe38f0 0x400f9b7d:0x3ffe3930 0x400f9bbe:0x3ffe3960 0x40100991:0x3ffe39a0 0x401011f9:0x3ffe39d0 0x40101bbd:0x3ffe39f0 0x400f41b9:0x3ffe3a20 0x400f403a:0x3ffe3a50 0x400f355d:0x3ffe3a80 0x400f356f:0x3ffe3aa0 0x401bd10b:0x3ffe3ac0 0x4008374a:0x3ffe3ae0 0x400f127a:0x3ffe3b00 0x40090ba6:0x3ffe3b20
+
+
+
+
+ELF file SHA256: 7a66f64ee
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15796
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 19 2025 14:52:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (66) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (73) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (79) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (86) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (92) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (99) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (105) boot:  7 reserved         unknown          06 06 003e0000 0001a000[0m
+[0;32mI (112) boot:  8 fctry            WiFi data        01 02 003fa000 00006000[0m
+[0;32mI (119) boot: End of partition table[0m
+[0;32mI (122) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=412bch (266940) map[0m
+[0;32mI (221) esp_image: segment 1: paddr=000612e4 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (221) esp_image: segment 2: paddr=00061308 vaddr=3ffbdb60 size=05e38h ( 24120) load[0m
+[0;32mI (234) esp_image: segment 3: paddr=00067148 vaddr=40080000 size=08ed0h ( 36560) load[0m
+[0;32mI (248) esp_image: segment 4: paddr=00070020 vaddr=400d0020 size=fb0a8h (1028264) map[0m
+[0;32mI (599) esp_image: segment 5: paddr=0016b0d0 vaddr=40088ed0 size=13e90h ( 81552) load[0m
+[0;32mI (645) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (645) boot: Disabling RNG early entropy source...[0m
+[0;32mI (656) cpu_start: Multicore app[0m
+[0;32mI (664) cpu_start: Pro cpu start user code[0m
+[0;32mI (664) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (665) app_init: Application information:[0m
+[0;32mI (665) app_init: Project name:     HTN_project[0m
+[0;32mI (669) app_init: App version:      1.0[0m
+[0;32mI (672) app_init: Compile time:     May  9 2025 12:56:35[0m
+[0;32mI (677) app_init: ELF file SHA256:  7a66f64ee...[0m
+[0;32mI (682) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (686) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (690) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (694) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (698) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (704) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (709) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (714) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (719) heap_init: At 3FFCB4A8 len 00014B58 (82 KiB): DRAM[0m
+[0;32mI (724) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (730) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (735) heap_init: At 4009CD60 len 000032A0 (12 KiB): IRAM[0m
+[0;32mI (742) spi_flash: detected chip: generic[0m
+[0;32mI (744) spi_flash: flash io: dio[0m
+[0;32mI (748) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (753) main_task: Started on CPU0[0m
+[0;32mI (763) main_task: Calling app_main()[0m
+[0;32mI (763) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (793) wifi:wifi driver task: 3ffd4bcc, prio:23, stack:6656, core=0[0m
+[0;32mI (793) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (793) wifi:wifi certification version: v7.0[0m
+[0;32mI (793) wifi:config NVS flash: enabled[0m
+[0;32mI (793) wifi:config nano formatting: disabled[0m
+[0;32mI (803) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (803) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (813) wifi:Init management short buffer num: 32[0m
+[0;32mI (813) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (813) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (823) wifi:Init static rx buffer num: 10[0m
+[0;32mI (823) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (833) wifi_init: rx ba win: 6[0m
+[0;32mI (833) wifi_init: accept mbox: 6[0m
+[0;32mI (833) wifi_init: tcpip mbox: 32[0m
+[0;32mI (833) wifi_init: udp mbox: 6[0m
+[0;32mI (843) wifi_init: tcp mbox: 6[0m
+[0;32mI (843) wifi_init: tcp tx win: 5760[0m
+[0;32mI (843) wifi_init: tcp rx win: 5760[0m
+[0;32mI (853) wifi_init: tcp mss: 1440[0m
+[0;32mI (853) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (853) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (873) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (893) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|CCDBA734EECC[0m
+[0;32mI (893) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (893) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (903) esp_rmaker_node: Node ID ----- htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (913) esp_rmaker_ota_using_topics: OTA enabled with Topics[0m
+[0;32mI (913) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (913) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (923) app_insights: Enable CONFIG_ESP_INSIGHTS_ENABLED to get Insights.[0m
+[0;32mI (933) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (933) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (943) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (953) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (953) app_wifi: Starting provisioning[0m
+[0;32mI (953) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1053) wifi:mode : sta (cc:db:a7:34:ee:cc)[0m
+[0;32mI (1053) wifi:enable tsf[0m
+[0;32mI (1053) BTDM_INIT: BT controller compile version [20b459d][0m
+[0;32mI (1063) BTDM_INIT: Bluetooth MAC: cc:db:a7:34:ee:ce[0m
+[0;32mI (1313) protocomm_nimble: BLE Host Task Started[0m
+[0;32mI (1333) network_prov_mgr: Provisioning started with service name : PROV_9750c3 [0m
+[0;32mI (1333) app_wifi: Provisioning started[0m
+[0;32mI (1333) esp_rmaker_local: Event 1[0m
+[0;32mI (1343) app_network: Scan this QR code from the ESP RainMaker phone app for Provisioning.[0m
+[0;32mI (1373) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1373) NimBLE: disc_mode=2[0m
+[0;32mI (1373) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=256[0m
+[0;32mI (1383) NimBLE: [0m
+
+                                      
+  █▀▀▀▀▀█ ▀▀▀█▄█   ██▄ ▀▄ ▀ █▀▀▀▀▀█   
+  █ ███ █  ▀▄█ █▄ ▀▄█▀▄█▄▀  █ ███ █   
+  █ ▀▀▀ █  ▄▀█▀▄▀ ▀▀ ▀▄▀█▄▀ █ ▀▀▀ █   
+  ▀▀▀▀▀▀▀ █▄▀ █▄█▄█ █ █ ▀ █ ▀▀▀▀▀▀▀   
+  ██▄▀█▄▀  ▀▄ ▀▄ ▄▀▀▀██ ▄█▄ ▀▄▄ ▄▄▀   
+  ▄█ ▀▀ ▀▄█▀  ▀▀▀▀▄▄▀    ▀ █  ▄█▄█▀   
+  ▀█▀▀██▀█ ▀█ ▄▄██▄ ▄▀▄ █  ▄▀█ ▀▄▄▀   
+  ▄ ▀ ▄ ▀▄▄▀▀ ▄ ▄█▄ ▀█▄ ▀▄▀▄▄█  ▄     
+  ▀▀   █▀ ▀▀ █▀▀ █▀▄▀▄▀ ▄█  ███▄ ██   
+   ▄▄  █▀█▄▀ ▄▀▄███ ▀▀█ ▀█ █▀▀ ▀▄▄▀   
+  ▄▄▄█ ▀▀▄▄▄█▀▄▄█▄▀▀█▄█▄█▀▀█ ▀▄ ▄▀    
+  █ ▄▀ ▄▀▀█▀▀█▄  ▀█▄█▄▀▀█▀█ ▄█ ▀▄▄█   
+  ▀▀▀  ▀▀▀▄█▄▀▀▄▄██▄█▀█ ▀██▀▀▀█▄▄▀    
+  █▀▀▀▀▀█  ▄▄█▀▀▀██ ▄▀▄ █▄█ ▀ █ ▄ ▄   
+  █ ███ █ █ ▀▄█▀▀█▀▄█▄▄ ▀██▀▀▀▀▄▄▀▀   
+  █ ▀▀▀ █ ▄█▀▀ ▄█▀█ █▀ ▀▀███▄▀█ █▄█   
+  ▀▀▀▀▀▀▀ ▀▀▀▀  ▀▀ ▀     ▀▀▀▀▀▀       
+                                      
+
+[0;32mI (1583) app_network: If QR code is not visible, copy paste the below URL in a browser.[0m
+https://rainmaker.espressif.com/qrcode.html?data={"ver":"v1","name":"PROV_9750c3","pop":"13ab63a3","transport":"ble"}
+[0;32mI (1603) app_network: Provisioning will auto stop after 30 minute(s).[0m
+[0;32mI (7793) SENSOR: PPM: 35.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (14783) SENSOR: PPM: 35.65 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (21783) SENSOR: PPM: 35.30 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (28783) SENSOR: PPM: 35.05 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (29753) protocomm_nimble: mtu update event; conn_handle=0 cid=4 mtu=256[0m
+[0;32mI (31183) app_network: Secured session established![0m
+[0;32mI (35783) SENSOR: PPM: 35.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (42783) SENSOR: PPM: 37.10 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (43813) esp_rmaker_user_mapping: Received request for node details[0m
+[0;32mI (43813) esp_rmaker_user_mapping: Got user_id = Google_oBTjJ5sKe2xCH33his2SLg, secret_key = 7da499a5-12d8-44e9-b8a0-1bb5ad6e2cd3[0m
+[0;32mI (43823) esp_rmaker_user_mapping: User Node mapping reset detected.[0m
+[0;32mI (43823) esp_rmaker_user_mapping: Sending status SUCCESS[0m
+[0;33mW (44323) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (44373) app_wifi: Received Wi-Fi credentials[0m
+	SSID     : Wifi HHH
+	Password : hoang123
+[0;32mI (49783) SENSOR: PPM: 37.05 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (50483) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (50483) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (50493) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (50503) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (50523) wifi:connected with Wifi HHH, aid = 4, channel 1, BW20, bssid = 3e:9c:0f:e8:98:60[0m
+[0;32mI (50523) wifi:security: WPA2-PSK, phy: bgn, rssi: -36[0m
+[0;32mI (50543) wifi:pm start, type: 1[0m
+
+[0;32mI (50543) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (50543) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (51643) esp_netif_handlers: sta ip: 192.168.137.128, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (51643) app_network: Connected with IP Address:192.168.137.128[0m
+[0;32mI (51643) network_prov_mgr: STA Got IP[0m
+[0;32mI (51643) app_wifi: Provisioning successful[0m
+[0;32mI (51653) main_task: Returned from app_main()[0m
+[0;32mI (51653) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (51663) esp_rmaker_node: Node attribute cmd-resp created[0m
+[0;32mI (51663) esp_rmaker_local: Enabling Local Control[0m
+[0;33mW (51673) event: handler already registered, overwriting[0m
+[0;33mW (51673) event: handler already registered, overwriting[0m
+[0;32mI (51683) esp_rmaker_local: Couldn't find POP in NVS. Generating a new one.[0m
+[0;32mI (51693) esp_rmaker_local: Local Control Service Enabled[0m
+[0;32mI (51693) esp_rmaker_local: Waiting for Wi-Fi provisioning to finish.[0m
+[0;32mI (51693) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (51703) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (52803) wifi:<ba-add>idx:0 (ifx:0, 3e:9c:0f:e8:98:60), tid:0, ssn:11, winSize:64[0m
+[0;32mI (52853) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (52863) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (52863) NimBLE: GAP procedure initiated: terminate connection; conn_handle=0 hci_reason=19[0m
+
+[0;32mI (52953) esp-x509-crt-bundle: Certificate validated[0m
+[1;31mE (52963) protocomm_nimble: Error setting advertisement data; rc = 30[0m
+[0;32mI (52973) network_prov_mgr: Provisioning stopped[0m
+[0;32mI (52973) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (52973) esp_rmaker_local: Event 6[0m
+[0;32mI (52973) esp_rmaker_local: Starting ESP Local control with HTTP Transport and security version: 1[0m
+[0;32mI (52993) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (53003) esp_https_server: Starting server[0m
+[0;32mI (53013) esp_https_server: Server listening on port 8080[0m
+[0;32mI (53013) esp_rmaker_local: esp_local_ctrl service started with name : htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (55763) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (55763) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (55783) esp_rmaker_node_config: Generated Node config of length 1487[0m
+[0;32mI (55793) esp_rmaker_core: Waiting for User Node Association.[0m
+[0;32mI (55793) esp_rmaker_ota_using_topics: Subscribing to: node/htVVE7aBtXXsgnGh4yvLKr/otaurl[0m
+[0;32mI (55803) esp_rmaker_user_mapping: MQTT Publish: {"node_id":"htVVE7aBtXXsgnGh4yvLKr","user_id":"Google_oBTjJ5sKe2xCH33his2SLg","secret_key":"7da499a5-12d8-44e9-b8a0-1bb5ad6e2cd3","reset":true}[0m
+[0;32mI (56793) SENSOR: PPM: 36.75 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (58363) esp_rmaker_user_mapping: User Node association message published successfully.[0m
+[0;32mI (60793) esp_rmaker_ota_using_topics: Fetching OTA details, if any.[0m
+[0;32mI (63793) SENSOR: PPM: 36.25 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (70783) SENSOR: PPM: 36.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (77793) SENSOR: PPM: 36.70 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (81263) esp_rmaker_time: SNTP Synchronised.[0m
+[0;32mI (81263) esp_rmaker_time: The current time is: Fri May  9 14:33:39 2025 +0800[CST], DST: No.[0m
+[0;32mI (84793) SENSOR: PPM: 36.30 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (91783) SENSOR: PPM: 36.55 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (98783) SENSOR: PPM: 35.35 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (105783) SENSOR: PPM: 36.00 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (112783) SENSOR: PPM: 36.75 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (119793) SENSOR: PPM: 37.95 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (126783) SENSOR: PPM: 37.25 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (133783) SENSOR: PPM: 37.60 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (140783) SENSOR: PPM: 37.35 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (147783) SENSOR: PPM: 37.05 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (154783) SENSOR: PPM: 36.45 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (161783) SENSOR: PPM: 35.95 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (168783) SENSOR: PPM: 36.05 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (175783) SENSOR: PPM: 35.80 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (182783) SENSOR: PPM: 35.85 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (189783) SENSOR: PPM: 35.65 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (196783) SENSOR: PPM: 35.85 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (203793) SENSOR: PPM: 36.00 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (210793) SENSOR: PPM: 35.85 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (217783) SENSOR: PPM: 36.35 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (224783) SENSOR: PPM: 36.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (231783) SENSOR: PPM: 36.25 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (238783) SENSOR: PPM: 36.65 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (245793) SENSOR: PPM: 36.00 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (252783) SENSOR: PPM: 36.35 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (259793) SENSOR: PPM: 36.00 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (266783) SENSOR: PPM: 35.95 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (273783) SENSOR: PPM: 35.50 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (280783) SENSOR: PPM: 35.50 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (287023) app_network: Secured session established![0m
+[1;31mE (287783) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (287783) DHT: Failed to read from DHT11[0m
+[0;32mI (287783) SENSOR: PPM: 34.95 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (288323) esp_rmaker_node_config: Generated Node config of length 1487[0m
+[0;32mI (294783) SENSOR: PPM: 34.95 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (301783) SENSOR: PPM: 35.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (308783) SENSOR: PPM: 34.60 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (315783) SENSOR: PPM: 34.95 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (322783) SENSOR: PPM: 34.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (329783) SENSOR: PPM: 35.15 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (336783) SENSOR: PPM: 34.75 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (343783) SENSOR: PPM: 34.60 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (350783) SENSOR: PPM: 34.30 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (357783) SENSOR: PPM: 34.85 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (364783) SENSOR: PPM: 34.30 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (371783) SENSOR: PPM: 34.95 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (378793) SENSOR: PPM: 34.65 | Temp: 31.0°C | Humidity: 41.0% [0m
+[0;32mI (385793) SENSOR: PPM: 34.05 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (392783) SENSOR: PPM: 35.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (399783) SENSOR: PPM: 35.10 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (406783) SENSOR: PPM: 34.40 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (413793) SENSOR: PPM: 35.00 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (420793) SENSOR: PPM: 34.40 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (427783) SENSOR: PPM: 34.40 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (434783) SENSOR: PPM: 35.25 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (441783) SENSOR: PPM: 35.25 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (448783) SENSOR: PPM: 35.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (455783) SENSOR: PPM: 35.75 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (462783) SENSOR: PPM: 36.15 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;33mW (463123) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (469783) SENSOR: PPM: 35.75 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (476783) SENSOR: PPM: 35.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (483783) SENSOR: PPM: 35.00 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (490783) SENSOR: PPM: 35.00 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (497783) SENSOR: PPM: 35.10 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (504783) SENSOR: PPM: 35.50 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (511793) SENSOR: PPM: 35.10 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (518793) SENSOR: PPM: 35.30 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (525793) SENSOR: PPM: 35.00 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (532783) SENSOR: PPM: 34.35 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (539783) SENSOR: PPM: 35.20 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (546793) SENSOR: PPM: 34.40 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (553793) SENSOR: PPM: 34.30 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (560783) SENSOR: PPM: 33.95 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (567783) SENSOR: PPM: 33.90 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (574793) SENSOR: PPM: 34.65 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (581793) SENSOR: PPM: 35.35 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (588783) SENSOR: PPM: 35.80 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (595783) SENSOR: PPM: 34.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (602783) SENSOR: PPM: 34.35 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (609783) SENSOR: PPM: 34.10 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (616783) SENSOR: PPM: 35.15 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (623783) SENSOR: PPM: 34.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;33mW (626253) protocomm_httpd: Closing session with ID: 880172061[0m
+[0;32mI (627173) app_network: Secured session established![0m
+[0;32mI (627903) esp_rmaker_node_config: Generated Node config of length 1487[0m
+[0;33mW (629323) protocomm_httpd: Closing session with ID: 1986351787[0m
+[0;32mI (629863) app_network: Secured session established![0m
+[0;32mI (630433) esp_rmaker_node_config: Generated Node config of length 1487[0m
+[0;32mI (630793) SENSOR: PPM: 34.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (637783) SENSOR: PPM: 34.25 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (644793) SENSOR: PPM: 34.40 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (651793) SENSOR: PPM: 34.45 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (658783) SENSOR: PPM: 33.55 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (665783) SENSOR: PPM: 33.35 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (672783) SENSOR: PPM: 33.75 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (679783) SENSOR: PPM: 34.35 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (686783) SENSOR: PPM: 34.35 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (693783) SENSOR: PPM: 33.90 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (700783) SENSOR: PPM: 34.45 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (707783) SENSOR: PPM: 33.35 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (714783) SENSOR: PPM: 34.25 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (721783) SENSOR: PPM: 33.35 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;33mW (724253) protocomm_httpd: Closing session with ID: 1492975281[0m
+[0;32mI (725203) app_network: Secured session established![0m
+[0;32mI (725793) esp_rmaker_node_config: Generated Node config of length 1487[0m
+[0;32mI (728793) SENSOR: PPM: 33.35 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (735783) SENSOR: PPM: 34.35 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (742783) SENSOR: PPM: 32.00 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;33mW (747903) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (749783) SENSOR: PPM: 35.25 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (756783) SENSOR: PPM: 36.00 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (763783) SENSOR: PPM: 35.95 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (770783) SENSOR: PPM: 36.05 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (777783) SENSOR: PPM: 36.80 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (784783) SENSOR: PPM: 35.65 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (791783) SENSOR: PPM: 35.65 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (798783) SENSOR: PPM: 35.85 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (805783) SENSOR: PPM: 35.75 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (812783) SENSOR: PPM: 35.70 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (819783) SENSOR: PPM: 35.80 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (826783) SENSOR: PPM: 35.30 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (833783) SENSOR: PPM: 35.75 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (840783) SENSOR: PPM: 35.45 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (847793) SENSOR: PPM: 36.00 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (854793) SENSOR: PPM: 35.70 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (861783) SENSOR: PPM: 35.80 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (868793) SENSOR: PPM: 36.00 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (875783) SENSOR: PPM: 35.70 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (882783) SENSOR: PPM: 36.00 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (889783) SENSOR: PPM: 36.00 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (896783) SENSOR: PPM: 35.95 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (903783) SENSOR: PPM: 35.40 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (910783) SENSOR: PPM: 35.35 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (917783) SENSOR: PPM: 35.85 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (924783) SENSOR: PPM: 35.45 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (931783) SENSOR: PPM: 35.35 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (938793) SENSOR: PPM: 35.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (945783) SENSOR: PPM: 36.05 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (952783) SENSOR: PPM: 35.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (959783) SENSOR: PPM: 35.15 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (966783) SENSOR: PPM: 35.15 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (973783) SENSOR: PPM: 35.05 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (980783) SENSOR: PPM: 34.75 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (987793) SENSOR: PPM: 34.70 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (994783) SENSOR: PPM: 35.20 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (1001783) SENSOR: PPM: 34.75 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (1008783) SENSOR: PPM: 35.50 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (1015783) SENSOR: PPM: 35.15 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (1022793) SENSOR: PPM: 35.25 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1029783) SENSOR: PPM: 34.90 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1036783) SENSOR: PPM: 35.00 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1043783) SENSOR: PPM: 35.15 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1050793) SENSOR: PPM: 34.75 | Temp: 31.0°C | Humidity: 41.0% [0m
+[0;32mI (1057793) SENSOR: PPM: 34.95 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1064783) SENSOR: PPM: 34.40 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1071783) SENSOR: PPM: 34.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1078783) SENSOR: PPM: 34.60 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1085783) SENSOR: PPM: 34.85 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1092783) SENSOR: PPM: 35.05 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1099783) SENSOR: PPM: 34.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1106783) SENSOR: PPM: 34.70 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1113783) SENSOR: PPM: 34.95 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1120783) SENSOR: PPM: 34.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1127783) SENSOR: PPM: 34.40 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1134783) SENSOR: PPM: 34.40 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1141783) SENSOR: PPM: 34.60 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1148783) SENSOR: PPM: 34.40 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1155783) SENSOR: PPM: 34.40 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1162783) SENSOR: PPM: 34.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1169783) SENSOR: PPM: 34.40 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1176783) SENSOR: PPM: 34.95 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1183783) SENSOR: PPM: 34.15 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1190783) SENSOR: PPM: 33.95 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1197783) SENSOR: PPM: 33.85 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1204783) SENSOR: PPM: 33.95 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1211783) SENSOR: PPM: 33.65 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1218783) SENSOR: PPM: 33.70 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1225783) SENSOR: PPM: 33.60 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1232783) SENSOR: PPM: 33.50 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1239783) SENSOR: PPM: 33.70 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1246783) SENSOR: PPM: 33.85 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;33mW (1251453) protocomm_httpd: Closing session with ID: 3521163434[0m
+[0;32mI (1251963) app_network: Secured session established![0m
+[0;32mI (1253003) esp_rmaker_node_config: Generated Node config of length 1487[0m
+[0;32mI (1253793) SENSOR: PPM: 33.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1260783) SENSOR: PPM: 33.30 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1267783) SENSOR: PPM: 33.30 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1274783) SENSOR: PPM: 33.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1281783) SENSOR: PPM: 33.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1288783) SENSOR: PPM: 33.35 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1295783) SENSOR: PPM: 33.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1302783) SENSOR: PPM: 32.85 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1309783) SENSOR: PPM: 33.30 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1316783) SENSOR: PPM: 33.05 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1323783) SENSOR: PPM: 32.75 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1330783) SENSOR: PPM: 33.60 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1337783) SENSOR: PPM: 32.95 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1344783) SENSOR: PPM: 33.10 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1351783) SENSOR: PPM: 32.85 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1358783) SENSOR: PPM: 32.80 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1365783) SENSOR: PPM: 32.85 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1372783) SENSOR: PPM: 33.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1379783) SENSOR: PPM: 33.50 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1386783) SENSOR: PPM: 33.05 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1393783) SENSOR: PPM: 32.95 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1400783) SENSOR: PPM: 32.85 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1407783) SENSOR: PPM: 33.10 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1414783) SENSOR: PPM: 32.90 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1421783) SENSOR: PPM: 32.80 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1428783) SENSOR: PPM: 32.80 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1435783) SENSOR: PPM: 32.75 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1442783) SENSOR: PPM: 32.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1449783) SENSOR: PPM: 31.80 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1456783) SENSOR: PPM: 32.25 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1463783) SENSOR: PPM: 29.65 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1470783) SENSOR: PPM: 31.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1477783) SENSOR: PPM: 31.85 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1484783) SENSOR: PPM: 32.05 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1491783) SENSOR: PPM: 32.65 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1498783) SENSOR: PPM: 32.30 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1505783) SENSOR: PPM: 32.85 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1512783) SENSOR: PPM: 31.80 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1519783) SENSOR: PPM: 31.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1526783) SENSOR: PPM: 31.75 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1533783) SENSOR: PPM: 32.00 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1540783) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1547783) SENSOR: PPM: 31.85 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1554783) SENSOR: PPM: 32.40 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1561783) SENSOR: PPM: 32.70 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1568783) SENSOR: PPM: 32.90 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1575783) SENSOR: PPM: 32.70 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1582783) SENSOR: PPM: 32.60 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1589783) SENSOR: PPM: 32.65 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1596783) SENSOR: PPM: 32.80 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1603783) SENSOR: PPM: 32.80 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1610783) SENSOR: PPM: 32.80 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1617783) SENSOR: PPM: 32.30 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1624783) SENSOR: PPM: 32.60 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1631783) SENSOR: PPM: 32.25 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1638783) SENSOR: PPM: 32.30 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1645783) SENSOR: PPM: 32.10 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1652783) SENSOR: PPM: 32.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1659783) SENSOR: PPM: 32.25 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1666783) SENSOR: PPM: 31.35 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1673783) SENSOR: PPM: 32.30 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1680783) SENSOR: PPM: 32.50 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1687783) SENSOR: PPM: 32.65 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1694783) SENSOR: PPM: 32.10 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1701783) SENSOR: PPM: 32.30 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1708783) SENSOR: PPM: 32.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1715783) SENSOR: PPM: 32.05 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1722783) SENSOR: PPM: 32.80 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1729783) SENSOR: PPM: 32.00 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1736783) SENSOR: PPM: 32.30 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1743783) SENSOR: PPM: 32.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1750783) SENSOR: PPM: 31.85 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1757783) SENSOR: PPM: 31.70 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1764783) SENSOR: PPM: 31.95 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1771783) SENSOR: PPM: 32.05 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1778783) SENSOR: PPM: 30.75 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1785783) SENSOR: PPM: 30.50 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1792783) SENSOR: PPM: 31.05 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1799783) SENSOR: PPM: 31.75 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1806783) SENSOR: PPM: 30.65 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1813783) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1820783) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1827783) SENSOR: PPM: 31.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1834793) SENSOR: PPM: 31.15 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (1841793) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (1848783) SENSOR: PPM: 32.00 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (1855793) SENSOR: PPM: 31.95 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1862793) SENSOR: PPM: 31.95 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (1869793) SENSOR: PPM: 31.60 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1876793) SENSOR: PPM: 32.00 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1883783) SENSOR: PPM: 31.70 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1890783) SENSOR: PPM: 31.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1897783) SENSOR: PPM: 31.50 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1904783) SENSOR: PPM: 32.15 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1911783) SENSOR: PPM: 31.90 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1918783) SENSOR: PPM: 31.70 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1925783) SENSOR: PPM: 31.90 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1932783) SENSOR: PPM: 31.65 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1939783) SENSOR: PPM: 31.90 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1946783) SENSOR: PPM: 31.75 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1953783) SENSOR: PPM: 31.75 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1960793) SENSOR: PPM: 32.00 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (1967793) SENSOR: PPM: 31.85 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (1974783) SENSOR: PPM: 31.95 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (1981793) SENSOR: PPM: 31.70 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1988793) SENSOR: PPM: 31.35 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (1995783) SENSOR: PPM: 31.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2002783) SENSOR: PPM: 31.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2009783) SENSOR: PPM: 31.50 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2016783) SENSOR: PPM: 31.70 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2023783) SENSOR: PPM: 31.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2030783) SENSOR: PPM: 30.65 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2037783) SENSOR: PPM: 31.50 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2044783) SENSOR: PPM: 31.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2051783) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2058783) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2065783) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2072783) SENSOR: PPM: 30.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2079793) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2086793) SENSOR: PPM: 31.25 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2093793) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2100793) SENSOR: PPM: 31.45 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2107793) SENSOR: PPM: 31.15 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2114783) SENSOR: PPM: 30.75 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2121783) SENSOR: PPM: 31.30 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2128783) SENSOR: PPM: 30.95 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2135793) SENSOR: PPM: 31.30 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2142793) SENSOR: PPM: 30.85 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2149793) SENSOR: PPM: 30.75 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2156783) SENSOR: PPM: 30.45 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2163793) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2170793) SENSOR: PPM: 30.85 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2177783) SENSOR: PPM: 30.90 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2184783) SENSOR: PPM: 31.10 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2191783) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2198783) SENSOR: PPM: 30.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2205783) SENSOR: PPM: 30.40 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2212783) SENSOR: PPM: 30.55 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2219783) SENSOR: PPM: 30.40 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2226793) SENSOR: PPM: 30.45 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2233793) SENSOR: PPM: 30.05 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2240783) SENSOR: PPM: 29.65 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2247783) SENSOR: PPM: 29.60 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2254783) SENSOR: PPM: 30.25 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2261783) SENSOR: PPM: 29.90 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2268783) SENSOR: PPM: 29.90 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2275783) SENSOR: PPM: 30.85 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2282783) SENSOR: PPM: 32.10 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2289783) SENSOR: PPM: 31.95 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2296783) SENSOR: PPM: 31.90 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2303783) SENSOR: PPM: 32.05 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2310783) SENSOR: PPM: 32.10 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2317783) SENSOR: PPM: 31.70 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2324783) SENSOR: PPM: 32.00 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2331783) SENSOR: PPM: 32.10 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2338783) SENSOR: PPM: 32.00 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2345783) SENSOR: PPM: 31.70 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2352783) SENSOR: PPM: 31.85 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2359783) SENSOR: PPM: 31.30 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2366783) SENSOR: PPM: 32.10 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2373783) SENSOR: PPM: 32.15 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2380783) SENSOR: PPM: 31.55 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2387783) SENSOR: PPM: 31.40 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2394783) SENSOR: PPM: 31.55 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2401783) SENSOR: PPM: 31.25 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2408783) SENSOR: PPM: 31.30 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2415783) SENSOR: PPM: 31.50 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2422783) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2429783) SENSOR: PPM: 31.75 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2436783) SENSOR: PPM: 30.95 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2443783) SENSOR: PPM: 31.25 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2450793) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2457783) SENSOR: PPM: 31.10 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2464783) SENSOR: PPM: 31.15 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2471783) SENSOR: PPM: 31.45 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2478783) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2485783) SENSOR: PPM: 31.05 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2492793) SENSOR: PPM: 31.15 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2499793) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2506783) SENSOR: PPM: 31.05 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2513793) SENSOR: PPM: 31.05 | Temp: 30.0°C | Humidity: 42.0% [0m
+[1;31mE (2520783) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (2520783) DHT: Failed to read from DHT11[0m
+[0;32mI (2520783) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2527793) SENSOR: PPM: 31.15 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2534793) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2541783) SENSOR: PPM: 30.95 | Temp: 30.0°C | Humidity: 42.0% [0m
+[0;32mI (2548793) SENSOR: PPM: 31.15 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2555783) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2562783) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2569783) SENSOR: PPM: 31.15 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2576783) SENSOR: PPM: 31.15 | Temp: 30.0°C | Humidity: 41.0% [0m
+[0;32mI (2583

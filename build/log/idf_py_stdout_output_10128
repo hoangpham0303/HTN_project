@@ -1,0 +1,499 @@
+�x�x�x���ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15796
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 19 2025 14:52:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (66) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (73) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (79) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (86) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (92) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (99) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (105) boot:  7 reserved         unknown          06 06 003e0000 0001a000[0m
+[0;32mI (112) boot:  8 fctry            WiFi data        01 02 003fa000 00006000[0m
+[0;32mI (119) boot: End of partition table[0m
+[0;32mI (122) boot: No factory image, trying OTA 0[0m
+I (126) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=41194h (266644) map
+[0;32mI (225) esp_image: segment 1: paddr=000611bc vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=000611e0 vaddr=3ffbdb60 size=05e38h ( 24120) load[0m
+[0;32mI (237) esp_image: segment 3: paddr=00067020 vaddr=40080000 size=08ff8h ( 36856) load[0m
+[0;32mI (252) esp_image: segment 4: paddr=00070020 vaddr=400d0020 size=faddch (1027548) map[0m
+[0;32mI (603) esp_image: segment 5: paddr=0016ae04 vaddr=40088ff8 size=139cch ( 80332) load[0m
+[0;32mI (649) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (649) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (650) boot: Disabling RNG early entropy source...[0m
+[0;32mI (664) cpu_start: Multicore app[0m
+[0;32mI (672) cpu_start: Pro cpu start user code[0m
+[0;32mI (672) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (672) app_init: Application information:[0m
+[0;32mI (672) app_init: Project name:     HTN_project[0m
+[0;32mI (676) app_init: App version:      1.0[0m
+[0;32mI (680) app_init: Compile time:     Apr 19 2025 14:49:59[0m
+[0;32mI (685) app_init: ELF file SHA256:  18641162d...[0m
+[0;32mI (689) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (693) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (697) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (701) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (705) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (712) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (716) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (722) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (727) heap_init: At 3FFCB490 len 00014B70 (82 KiB): DRAM[0m
+[0;32mI (732) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (737) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (743) heap_init: At 4009C9C4 len 0000363C (13 KiB): IRAM[0m
+[0;32mI (750) spi_flash: detected chip: generic[0m
+[0;32mI (752) spi_flash: flash io: dio[0m
+[0;32mI (756) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (760) main_task: Started on CPU0[0m
+[0;32mI (770) main_task: Calling app_main()[0m
+[0;32mI (770) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[1;31mE (770) esp_rmaker_param: Param handle cannot be NULL.[0m
+[1;31mE (830) esp_rmaker_param: Param handle cannot be NULL.[0m
+[1;31mE (830) esp_rmaker_param: Param handle cannot be NULL.[0m
+[0;32mI (840) SENSOR: PPM: 26.95 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (860) wifi:wifi driver task: 3ffd4a24, prio:23, stack:6656, core=0[0m
+[0;32mI (860) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (860) wifi:wifi certification version: v7.0[0m
+[0;32mI (860) wifi:config NVS flash: enabled[0m
+[0;32mI (860) wifi:config nano formatting: disabled[0m
+[0;32mI (870) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (870) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (880) wifi:Init management short buffer num: 32[0m
+[0;32mI (880) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (890) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (890) wifi:Init static rx buffer num: 10[0m
+[0;32mI (890) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (900) wifi_init: rx ba win: 6[0m
+[0;32mI (900) wifi_init: accept mbox: 6[0m
+[0;32mI (900) wifi_init: tcpip mbox: 32[0m
+[0;32mI (910) wifi_init: udp mbox: 6[0m
+[0;32mI (910) wifi_init: tcp mbox: 6[0m
+[0;32mI (910) wifi_init: tcp tx win: 5760[0m
+[0;32mI (920) wifi_init: tcp rx win: 5760[0m
+[0;32mI (920) wifi_init: tcp mss: 1440[0m
+[0;32mI (920) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (930) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (940) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (960) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|CCDBA734EECC[0m
+[0;32mI (960) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (960) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (970) esp_rmaker_node: Node ID ----- htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (980) esp_rmaker_ota_using_topics: OTA enabled with Topics[0m
+[0;32mI (980) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (990) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (990) app_insights: Enable CONFIG_ESP_INSIGHTS_ENABLED to get Insights.[0m
+[0;32mI (1000) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (1000) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (1010) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (1020) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (1020) app_wifi: Starting provisioning[0m
+[0;32mI (1030) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (1030) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;33mW (1110) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+[0;32mI (1130) wifi:mode : sta (cc:db:a7:34:ee:cc)[0m
+[0;32mI (1130) wifi:enable tsf[0m
+[0;32mI (1140) BTDM_INIT: BT controller compile version [20b459d][0m
+[0;32mI (1140) BTDM_INIT: Bluetooth MAC: cc:db:a7:34:ee:ce[0m
+[0;32mI (1390) protocomm_nimble: BLE Host Task Started[0m
+[0;32mI (1400) network_prov_mgr: Provisioning started with service name : PROV_2a18fb [0m
+[0;32mI (1410) app_wifi: Provisioning started[0m
+[0;32mI (1410) esp_rmaker_local: Event 1[0m
+[0;32mI (1420) app_network: Scan this QR code from the ESP RainMaker phone app for Provisioning.[0m
+[0;32mI (1450) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1450) NimBLE: disc_mode=2[0m
+[0;32mI (1450) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=256[0m
+[0;32mI (1460) NimBLE: [0m
+
+                                      
+  █▀▀▀▀▀█ ▄█ ▄▄ █▄▀ ▄▀ █▀▀▀ █▀▀▀▀▀█   
+  █ ███ █ ▄█▀█ ▄ ▄▄▄▄ █▀▀ █ █ ███ █   
+  █ ▀▀▀ █ ▄ █ ▀▄ ▄█▀▄▀▄▄▀▀▄ █ ▀▀▀ █   
+  ▀▀▀▀▀▀▀ ▀ ▀ █ ▀ █ ▀▄█▄▀▄█ ▀▀▀▀▀▀▀   
+  ███▀█ ▀███▀ ▀█▄ ▄▀▀▄▀▄▀▄▄▀▄▀ ▀▄█▄   
+  ▀  ▄▄▀▀▄▄█▄█▀▀ █  ▄▄▄▄▀▄ █▀▄  ▄█    
+  █ ▄█ ▀▀  █▄▀▄▀ ▀█▀▀▄▀▄▀▀ ▀▄▀▀ ▄▀▄   
+   ▀█▄▄▄▀▀    ▄▀ ▀▀▀ ▄ ▄ ▄▀█ ▀█ ▄▀▄   
+   ▀ ▀█▀▀ ▄█▀ ▀▀▀▀█▀▄▄ ▄    ▄▀▀▀ █▄   
+  ▄▀██▄▀▀█▄▀▄█▀▀ ▀▄▀▀▄ ▄ ▄  ▄█▀ ▄▀▄   
+  █ ▀█▄▄▀▄▀▄▀▀▄█▀ ▄▀██▀  ▀▀▄▄█▀ ▄ ▄   
+  █ ▄█▀▀▀  █▄ ▄ ▀█▀▀█▄ █▀▄█ █▀▄▄▄▄▄   
+  ▀  ▀ ▀▀▀▄ ▄ ▀▀▀▀▄██▄ ▄ ▄█▀▀▀██▄▄█   
+  █▀▀▀▀▀█ ▀█ █▀ █▀  ▄  ▄ ▄█ ▀ █ ▄▀    
+  █ ███ █ █ █▀█▀ ▀█▀█▄█▄█ █▀▀██▀▄▀    
+  █ ▀▀▀ █ █▄▄  ▀ █▄▀█▄██ ▄█ ▀█▄▀█▀    
+  ▀▀▀▀▀▀▀ ▀▀▀▀ ▀▀▀▀▀ ▀  ▀▀▀ ▀▀   ▀    
+                                      
+
+[0;32mI (1660) app_network: If QR code is not visible, copy paste the below URL in a browser.[0m
+https://rainmaker.espressif.com/qrcode.html?data={"ver":"v1","name":"PROV_2a18fb","pop":"6741947c","transport":"ble"}
+[0;32mI (1680) app_network: Provisioning will auto stop after 30 minute(s).[0m
+[0;32mI (3790) SENSOR: PPM: 26.85 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (6790) SENSOR: PPM: 26.45 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (9790) SENSOR: PPM: 26.70 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (12790) SENSOR: PPM: 27.00 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (15790) SENSOR: PPM: 27.10 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (18790) SENSOR: PPM: 26.85 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (21790) SENSOR: PPM: 26.40 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (24790) SENSOR: PPM: 26.90 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (27790) SENSOR: PPM: 26.15 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (30790) SENSOR: PPM: 26.65 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (33790) SENSOR: PPM: 27.20 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (36790) SENSOR: PPM: 26.70 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (39790) SENSOR: PPM: 26.70 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (42790) SENSOR: PPM: 26.85 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (45790) SENSOR: PPM: 26.50 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (46380) protocomm_nimble: mtu update event; conn_handle=0 cid=4 mtu=256[0m
+[0;32mI (47580) app_network: Secured session established![0m
+[0;32mI (48790) SENSOR: PPM: 26.60 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (51790) SENSOR: PPM: 26.75 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (54790) SENSOR: PPM: 26.75 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (57790) SENSOR: PPM: 26.35 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (60790) SENSOR: PPM: 26.95 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (63790) SENSOR: PPM: 26.65 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (64980) esp_rmaker_user_mapping: Received request for node details[0m
+[0;32mI (64980) esp_rmaker_user_mapping: Got user_id = Google_oBTjJ5sKe2xCH33his2SLg, secret_key = 2af04ede-924b-473c-b0dd-baa591fde587[0m
+[0;32mI (64990) esp_rmaker_user_mapping: User Node mapping reset detected.[0m
+[0;32mI (64990) esp_rmaker_user_mapping: Sending status SUCCESS[0m
+[0;33mW (65310) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (65410) app_wifi: Received Wi-Fi credentials[0m
+	SSID     : Wifi HHH
+	Password : hoang123
+[0;32mI (66790) SENSOR: PPM: 26.35 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (69790) SENSOR: PPM: 26.45 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (71520) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (71520) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (71530) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (71550) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (71570) wifi:connected with Wifi HHH, aid = 1, channel 11, BW20, bssid = 3e:9c:0f:e8:98:60[0m
+[0;32mI (71570) wifi:security: WPA2-PSK, phy: bgn, rssi: -52[0m
+[0;32mI (71590) wifi:pm start, type: 1[0m
+
+[0;32mI (71590) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (71640) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (72660) esp_netif_handlers: sta ip: 192.168.137.114, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (72660) app_network: Connected with IP Address:192.168.137.114[0m
+[0;32mI (72660) network_prov_mgr: STA Got IP[0m
+[0;32mI (72670) app_wifi: Provisioning successful[0m
+[0;32mI (72670) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (72670) main_task: Returned from app_main()[0m
+[0;32mI (72670) esp_rmaker_node: Node attribute cmd-resp created[0m
+[0;32mI (72680) esp_rmaker_local: Enabling Local Control[0m
+[0;33mW (72690) event: handler already registered, overwriting[0m
+[0;33mW (72690) event: handler already registered, overwriting[0m
+[0;32mI (72700) esp_rmaker_local: Couldn't find POP in NVS. Generating a new one.[0m
+[0;32mI (72710) esp_rmaker_local: Local Control Service Enabled[0m
+[0;32mI (72710) esp_rmaker_local: Waiting for Wi-Fi provisioning to finish.[0m
+[0;32mI (72710) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (72720) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (72790) SENSOR: PPM: 26.90 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (73490) wifi:<ba-add>idx:0 (ifx:0, 3e:9c:0f:e8:98:60), tid:0, ssn:7, winSize:64[0m
+[0;32mI (73950) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (75790) SENSOR: PPM: 26.45 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (76980) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (76980) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (76990) esp_rmaker_node_config: Generated Node config of length 1487[0m
+[0;32mI (77000) esp_rmaker_core: Waiting for User Node Association.[0m
+[0;32mI (77000) esp_rmaker_ota_using_topics: Subscribing to: node/htVVE7aBtXXsgnGh4yvLKr/otaurl[0m
+[0;32mI (77010) esp_rmaker_user_mapping: MQTT Publish: {"node_id":"htVVE7aBtXXsgnGh4yvLKr","user_id":"Google_oBTjJ5sKe2xCH33his2SLg","secret_key":"2af04ede-924b-473c-b0dd-baa591fde587","reset":true}[0m
+[0;32mI (77900) esp_rmaker_user_mapping: User Node association message published successfully.[0m
+[0;32mI (77910) esp_rmaker_param: Params MQTT Init done.[0m
+[0;32mI (77920) esp_rmaker_param: Reporting params (init): {"LED":{"LED":false},"LED2":{"LED2":false},"Temperature":{"Temperature":0.00000},"Humidity":{"Humidity":0.00000},"MQ135":{"MQ135":0.00000},"Metal Detector":{"Metal Detection":"None"},"Local Control":{"POP":"493b7810","Type":1}}[0m
+[0;32mI (78790) SENSOR: PPM: 26.75 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (78800) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (78800) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (78800) NimBLE: GAP procedure initiated: terminate connection; conn_handle=0 hci_reason=19[0m
+
+[1;31mE (78870) protocomm_nimble: Error setting advertisement data; rc = 30[0m
+[0;32mI (78880) network_prov_mgr: Provisioning stopped[0m
+[0;32mI (78880) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (78880) esp_rmaker_local: Event 6[0m
+[0;32mI (78880) esp_rmaker_local: Starting ESP Local control with HTTP Transport and security version: 1[0m
+[0;32mI (78890) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (78900) esp_https_server: Starting server[0m
+[0;32mI (78900) esp_https_server: Server listening on port 8080[0m
+[0;32mI (78910) esp_rmaker_local: esp_local_ctrl service started with name : htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (81790) SENSOR: PPM: 26.90 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (82000) esp_rmaker_ota_using_topics: Fetching OTA details, if any.[0m
+[0;32mI (84790) SENSOR: PPM: 26.40 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (87790) SENSOR: PPM: 26.65 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (90790) SENSOR: PPM: 26.90 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (93790) SENSOR: PPM: 27.00 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (96790) SENSOR: PPM: 27.20 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (99790) SENSOR: PPM: 26.60 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (102790) SENSOR: PPM: 26.60 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (105790) SENSOR: PPM: 26.20 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (108790) SENSOR: PPM: 26.50 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (111790) SENSOR: PPM: 26.85 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (114790) SENSOR: PPM: 26.35 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (117790) SENSOR: PPM: 26.40 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (120790) SENSOR: PPM: 26.40 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (123790) SENSOR: PPM: 27.10 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (126230) esp_rmaker_param: Received params: {"LED":{"LED":true}}[0m
+[0;32mI (126230) esp_rmaker_param: Found 1 params in write request for LED[0m
+[0;32mI (126230) app_main: Received write request via : Cloud[0m
+[0;32mI (126240) esp_rmaker_param: Reporting params: {"LED":{"LED":true}}[0m
+[0;32mI (126790) SENSOR: PPM: 26.90 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (128080) esp_rmaker_param: Received params: {"LED":{"LED":false}}[0m
+[0;32mI (128080) esp_rmaker_param: Found 1 params in write request for LED[0m
+[0;32mI (128080) app_main: Received write request via : Cloud[0m
+[0;32mI (128080) esp_rmaker_param: Reporting params: {"LED":{"LED":false}}[0m
+[0;32mI (129790) SENSOR: PPM: 26.40 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (130530) esp_rmaker_param: Received params: {"LED2":{"LED2":true}}[0m
+[0;32mI (130530) esp_rmaker_param: Found 1 params in write request for LED2[0m
+[0;32mI (130530) app_main: Received write request via : Cloud[0m
+[0;32mI (130540) esp_rmaker_param: Reporting params: {"LED2":{"LED2":true}}[0m
+[0;32mI (132790) SENSOR: PPM: 26.75 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (135790) SENSOR: PPM: 26.65 | Temp: 29.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (138790) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":50.00000}}[0m
+[0;32mI (138800) SENSOR: PPM: 26.65 | Temp: 29.0°C | Humidity: 50.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (141770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (141800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":51.00000}}[0m
+[0;32mI (141800) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 51.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (144770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":16.05000}}[0m
+[0;32mI (144800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":53.00000}}[0m
+[0;32mI (144800) SENSOR: PPM: 16.05 | Temp: 29.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (147770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (147800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":54.00000}}[0m
+[0;32mI (147800) SENSOR: PPM: 204.75 | Temp: 29.0°C | Humidity: 54.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (148380) esp_rmaker_param: Reporting params: {"LED2":{"LED2":false}}[0m
+[0;32mI (148380) LED2: OFF[0m
+[0;32mI (150770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":178.45000}}[0m
+[1;31mE (150790) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (150790) DHT: Failed to read from DHT11[0m
+[0;32mI (150790) SENSOR: PPM: 178.45 | Temp: 29.0°C | Humidity: 54.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (153770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (153800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":55.00000}}[0m
+[0;32mI (153800) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 55.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (154490) esp_rmaker_time: SNTP Synchronised.[0m
+[0;32mI (154490) esp_rmaker_time: The current time is: Sat Apr 19 15:55:36 2025 +0800[CST], DST: No.[0m
+[0;32mI (156790) SENSOR: PPM: 5.25 | Temp: 29.0°C | Humidity: 55.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (159770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (159800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":54.00000}}[0m
+[0;32mI (159800) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Detected"}}[0m
+[0;32mI (159810) SENSOR: PPM: 204.75 | Temp: 29.0°C | Humidity: 54.0% | LJ12A3: DETECTED[0m
+[0;32mI (162770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (162800) esp_rmaker_param: Reporting params: {"Metal Detector":{"Metal Detection":"Undetected"}}[0m
+[0;32mI (162800) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 54.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (165770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":22.15000}}[0m
+[0;32mI (165800) SENSOR: PPM: 22.15 | Temp: 29.0°C | Humidity: 54.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (168790) SENSOR: PPM: 26.60 | Temp: 29.0°C | Humidity: 54.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (171790) SENSOR: PPM: 26.25 | Temp: 29.0°C | Humidity: 54.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (174790) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":55.00000}}[0m
+[0;32mI (174800) SENSOR: PPM: 29.35 | Temp: 29.0°C | Humidity: 55.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (177770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":92.00000}}[0m
+[0;32mI (177800) SENSOR: PPM: 92.00 | Temp: 29.0°C | Humidity: 55.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (180770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":15.10000}}[0m
+[0;32mI (180800) SENSOR: PPM: 15.10 | Temp: 29.0°C | Humidity: 55.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (183770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":3.10000}}[0m
+[0;32mI (183800) SENSOR: PPM: 3.10 | Temp: 29.0°C | Humidity: 55.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (186770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (186800) SENSOR: PPM: 204.75 | Temp: 29.0°C | Humidity: 55.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (189770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":20.05000}}[0m
+[0;32mI (189800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":54.00000}}[0m
+[0;32mI (189800) SENSOR: PPM: 20.05 | Temp: 29.0°C | Humidity: 54.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (192790) SENSOR: PPM: 27.80 | Temp: 29.0°C | Humidity: 54.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (195770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":79.00000}}[0m
+[0;32mI (195800) SENSOR: PPM: 79.00 | Temp: 29.0°C | Humidity: 54.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (198770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (198800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":60.00000}}[0m
+[0;32mI (198800) SENSOR: PPM: 204.75 | Temp: 29.0°C | Humidity: 60.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (201770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (201800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":65.00000}}[0m
+[0;32mI (201800) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 65.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (204770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (204800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":69.00000}}[0m
+[0;32mI (204800) SENSOR: PPM: 204.75 | Temp: 29.0°C | Humidity: 69.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (207770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":3.05000}}[0m
+[0;32mI (207800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":73.00000}}[0m
+[0;32mI (207800) SENSOR: PPM: 3.05 | Temp: 29.0°C | Humidity: 73.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (210770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":27.20000}}[0m
+[0;32mI (210800) esp_rmaker_param: Reporting params: {"Temperature":{"Temperature":30.00000}}[0m
+[0;32mI (210800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":74.00000}}[0m
+[0;32mI (210810) SENSOR: PPM: 27.20 | Temp: 30.0°C | Humidity: 74.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (213790) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":73.00000}}[0m
+[0;32mI (213800) SENSOR: PPM: 27.20 | Temp: 30.0°C | Humidity: 73.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (216770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (216800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":71.00000}}[0m
+[0;32mI (216800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 71.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (219790) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":69.00000}}[0m
+[0;32mI (219800) SENSOR: PPM: 6.65 | Temp: 30.0°C | Humidity: 69.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (222770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (222800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":67.00000}}[0m
+[0;32mI (222800) SENSOR: PPM: 204.75 | Temp: 30.0°C | Humidity: 67.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (225770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (225800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":64.00000}}[0m
+[0;32mI (225800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 64.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (228770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":26.45000}}[0m
+[0;32mI (228800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":62.00000}}[0m
+[0;32mI (228800) SENSOR: PPM: 26.45 | Temp: 30.0°C | Humidity: 62.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (231770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":187.10001}}[0m
+[0;32mI (231800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":60.00000}}[0m
+[0;32mI (231800) SENSOR: PPM: 187.10 | Temp: 30.0°C | Humidity: 60.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (234770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (234800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":61.00000}}[0m
+[0;32mI (234800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 61.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (237770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":107.40000}}[0m
+[0;32mI (237800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":63.00000}}[0m
+[0;32mI (237800) SENSOR: PPM: 107.40 | Temp: 30.0°C | Humidity: 63.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (240770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":27.20000}}[0m
+[0;32mI (240800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":64.00000}}[0m
+[0;32mI (240800) SENSOR: PPM: 27.20 | Temp: 30.0°C | Humidity: 64.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (243770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (243800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":63.00000}}[0m
+[0;32mI (243800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 63.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (246770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":26.90000}}[0m
+[0;32mI (246800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":62.00000}}[0m
+[0;32mI (246800) SENSOR: PPM: 26.90 | Temp: 30.0°C | Humidity: 62.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (249770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (249800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":61.00000}}[0m
+[0;32mI (249800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 61.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (252790) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":60.00000}}[0m
+[0;32mI (252800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 60.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (255770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":99.20000}}[0m
+[0;32mI (255800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":58.00000}}[0m
+[0;32mI (255800) SENSOR: PPM: 99.20 | Temp: 30.0°C | Humidity: 58.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (258770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (258800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":57.00000}}[0m
+[0;32mI (258800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 57.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (261770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":43.35000}}[0m
+[0;32mI (261800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":56.00000}}[0m
+[0;32mI (261800) SENSOR: PPM: 43.35 | Temp: 30.0°C | Humidity: 56.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (264770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (264800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":55.00000}}[0m
+[0;32mI (264800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 55.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (267770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":15.45000}}[0m
+[0;32mI (267800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":54.00000}}[0m
+[0;32mI (267800) SENSOR: PPM: 15.45 | Temp: 30.0°C | Humidity: 54.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (270790) SENSOR: PPM: 23.90 | Temp: 30.0°C | Humidity: 54.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (273770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (273800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":53.00000}}[0m
+[0;32mI (273800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (276770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":94.80000}}[0m
+[0;32mI (276800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":52.00000}}[0m
+[0;32mI (276800) SENSOR: PPM: 94.80 | Temp: 30.0°C | Humidity: 52.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (279770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (279800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 52.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (282790) esp_rmaker_param: Reporting params: {"Temperature":{"Temperature":29.00000}}[0m
+[0;32mI (282800) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 52.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (285770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":26.45000}}[0m
+[0;32mI (285800) SENSOR: PPM: 26.45 | Temp: 29.0°C | Humidity: 52.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (288790) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":53.00000}}[0m
+[0;32mI (288800) SENSOR: PPM: 26.45 | Temp: 29.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (291790) SENSOR: PPM: 25.55 | Temp: 29.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (294790) SENSOR: PPM: 26.35 | Temp: 29.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (297770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (297800) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (300770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (300800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":54.00000}}[0m
+[0;32mI (300800) SENSOR: PPM: 204.75 | Temp: 29.0°C | Humidity: 54.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (303770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (303800) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 54.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (306770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":34.65000}}[0m
+[0;32mI (306800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":53.00000}}[0m
+[0;32mI (306800) SENSOR: PPM: 34.65 | Temp: 29.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (309770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[1;31mE (309790) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (309790) DHT: Failed to read from DHT11[0m
+[0;32mI (309790) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (312770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":56.40000}}[0m
+[0;32mI (312800) SENSOR: PPM: 56.40 | Temp: 29.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (315770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (315800) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (318770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":75.05000}}[0m
+[0;32mI (318800) SENSOR: PPM: 75.05 | Temp: 29.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (321770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[1;31mE (321790) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (321790) DHT: Failed to read from DHT11[0m
+[0;32mI (321790) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (324770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":109.55000}}[0m
+[0;32mI (324800) SENSOR: PPM: 109.55 | Temp: 29.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (327770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (327800) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (330770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":75.70000}}[0m
+[0;32mI (330800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":52.00000}}[0m
+[0;32mI (330800) SENSOR: PPM: 75.70 | Temp: 29.0°C | Humidity: 52.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (333770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[1;31mE (333800) dht: HIGH bit timeout[0m
+[0;33mW (333800) DHT: Failed to read from DHT11[0m
+[0;32mI (333800) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 52.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (336770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":41.65000}}[0m
+[0;32mI (336800) SENSOR: PPM: 41.65 | Temp: 29.0°C | Humidity: 52.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (339770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (339800) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 52.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (342770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":48.15000}}[0m
+[0;32mI (342800) esp_rmaker_param: Reporting params: {"Temperature":{"Temperature":30.00000}}[0m
+[0;32mI (342800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":51.00000}}[0m
+[0;32mI (342810) SENSOR: PPM: 48.15 | Temp: 30.0°C | Humidity: 51.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (345770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (345800) esp_rmaker_param: Reporting params: {"Temperature":{"Temperature":29.00000}}[0m
+[0;32mI (345800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":52.00000}}[0m
+[0;32mI (345810) SENSOR: PPM: 0.00 | Temp: 29.0°C | Humidity: 52.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (348770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (348800) esp_rmaker_param: Reporting params: {"Temperature":{"Temperature":30.00000}}[0m
+[0;32mI (348800) SENSOR: PPM: 204.75 | Temp: 30.0°C | Humidity: 52.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (351770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (351800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":53.00000}}[0m
+[0;32mI (351800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (354770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (354800) SENSOR: PPM: 204.75 | Temp: 30.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (357770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (357800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 53.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (360770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":57.70000}}[0m
+[0;32mI (360800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":52.00000}}[0m
+[0;32mI (360800) SENSOR: PPM: 57.70 | Temp: 30.0°C | Humidity: 52.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (363770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":111.65000}}[0m
+[0;32mI (363800) SENSOR: PPM: 111.65 | Temp: 30.0°C | Humidity: 52.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (366770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (366800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 52.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (369770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (369800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":51.00000}}[0m
+[0;32mI (369800) SENSOR: PPM: 204.75 | Temp: 30.0°C | Humidity: 51.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (372770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (372800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 51.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (375790) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 51.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (378770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (378800) SENSOR: PPM: 204.75 | Temp: 30.0°C | Humidity: 51.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (381770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (381800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 51.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (384770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":178.05000}}[0m
+[0;32mI (384800) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":50.00000}}[0m
+[0;32mI (384800) SENSOR: PPM: 178.05 | Temp: 30.0°C | Humidity: 50.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (387770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (387800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 50.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (390790) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 50.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (393770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (393800) SENSOR: PPM: 204.75 | Temp: 30.0°C | Humidity: 50.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (396770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (396800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 50.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (399770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":12.30000}}[0m
+[0;32mI (399800) SENSOR: PPM: 12.30 | Temp: 30.0°C | Humidity: 50.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (402770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (402800) SENSOR: PPM: 204.75 | Temp: 30.0°C | Humidity: 50.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (405770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":0.00000}}[0m
+[0;32mI (405800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 50.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (408790) esp_rmaker_param: Reporting params: {"Humidity":{"Humidity":49.00000}}[0m
+[0;32mI (408800) SENSOR: PPM: 0.00 | Temp: 30.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;32mI (411770) esp_rmaker_param: Reporting params: {"MQ135":{"MQ135":204.75000}}[0m
+[0;32mI (411800) SENSOR: PPM: 204.75 | Temp: 30.0°C | Humidity: 49.0% | LJ12A3: UNDETECTED[0m
+[0;3

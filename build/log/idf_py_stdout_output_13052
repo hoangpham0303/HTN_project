@@ -1,0 +1,791 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15796
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 19 2025 14:52:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (66) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (73) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (79) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (86) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (92) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (99) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (105) boot:  7 reserved         unknown          06 06 003e0000 0001a000[0m
+I (112) boot:  8 fctry            WiFi data        01 02 003fa000 00006000
+[0;32mI (119) boot: End of partition table[0m
+[0;32mI (122) boot: No factory image, trying OTA 0[0m
+[0;32mI (126) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=4135ch (267100) map[0m
+[0;32mI (225) esp_image: segment 1: paddr=00061384 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=000613a8 vaddr=3ffbdb60 size=05e38h ( 24120) load[0m
+[0;32mI (238) esp_image: segment 3: paddr=000671e8 vaddr=40080000 size=08e30h ( 36400) load[0m
+[0;32mI (252) esp_image: segment 4: paddr=00070020 vaddr=400d0020 size=fb21ch (1028636) map[0m
+[0;32mI (604) esp_image: segment 5: paddr=0016b244 vaddr=40088e30 size=13f30h ( 81712) load[0m
+[0;32mI (650) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (650) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (650) boot: Disabling RNG early entropy source...[0m
+[0;32mI (665) cpu_start: Multicore app[0m
+[0;32mI (673) cpu_start: Pro cpu start user code[0m
+[0;32mI (673) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (673) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     HTN_project[0m
+[0;32mI (677) app_init: App version:      1.0[0m
+[0;32mI (681) app_init: Compile time:     May  9 2025 12:56:35[0m
+[0;32mI (686) app_init: ELF file SHA256:  743492989...[0m
+[0;32mI (690) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (694) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (717) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (723) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (728) heap_init: At 3FFCB4B0 len 00014B50 (82 KiB): DRAM[0m
+[0;32mI (733) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (738) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (744) heap_init: At 4009CD60 len 000032A0 (12 KiB): IRAM[0m
+[0;32mI (751) spi_flash: detected chip: generic[0m
+[0;32mI (753) spi_flash: flash io: dio[0m
+[0;32mI (757) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (761) main_task: Started on CPU0[0m
+[0;32mI (771) main_task: Calling app_main()[0m
+[0;32mI (771) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[1;31mE (771) adc_oneshot: adc_oneshot_config_channel(160): invalid channel[0m
+[0;32mI (811) wifi:wifi driver task: 3ffd4db0, prio:23, stack:6656, core=0[0m
+[0;32mI (821) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (821) wifi:wifi certification version: v7.0[0m
+[0;32mI (821) wifi:config NVS flash: enabled[0m
+[0;32mI (821) wifi:config nano formatting: disabled[0m
+[0;32mI (831) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (831) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (831) wifi:Init management short buffer num: 32[0m
+[0;32mI (841) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (841) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (851) wifi:Init static rx buffer num: 10[0m
+[0;32mI (851) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (861) wifi_init: rx ba win: 6[0m
+[0;32mI (861) wifi_init: accept mbox: 6[0m
+[0;32mI (861) wifi_init: tcpip mbox: 32[0m
+[0;32mI (861) wifi_init: udp mbox: 6[0m
+[0;32mI (871) wifi_init: tcp mbox: 6[0m
+[0;32mI (871) wifi_init: tcp tx win: 5760[0m
+[0;32mI (871) wifi_init: tcp rx win: 5760[0m
+[0;32mI (881) wifi_init: tcp mss: 1440[0m
+[0;32mI (881) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (881) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (901) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (911) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|CCDBA734EECC[0m
+[0;32mI (921) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (921) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (931) esp_rmaker_node: Node ID ----- htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (931) esp_rmaker_ota_using_topics: OTA enabled with Topics[0m
+[0;32mI (941) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (941) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (951) app_insights: Enable CONFIG_ESP_INSIGHTS_ENABLED to get Insights.[0m
+[0;32mI (951) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (961) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (961) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (971) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (981) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (981) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (981) esp_rmaker_local: Event 6[0m
+[0;32mI (991) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1081) wifi:mode : sta (cc:db:a7:34:ee:cc)[0m
+[0;32mI (1081) wifi:enable tsf[0m
+[0;32mI (3501) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3501) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3531) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3541) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3551) wifi:connected with Wifi HHH, aid = 4, channel 1, BW20, bssid = 3e:9c:0f:e8:98:60[0m
+[0;32mI (3551) wifi:security: WPA2-PSK, phy: bgn, rssi: -44[0m
+[0;32mI (3561) wifi:pm start, type: 1[0m
+
+[0;32mI (3561) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3631) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[1;31mE (3801) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (3801) DHT: Failed to read from DHT11[0m
+[1;31mE (3801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (3801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (3811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (3811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (3821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (3821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (3831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (3831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (3841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (3841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (3851) SENSOR: PPM: 37.85 | Temp: 0.0°C | Humidity: 0.0% | Light: 0.0%[0m
+[0;32mI (3851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[0;32mI (4581) esp_netif_handlers: sta ip: 192.168.137.110, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (4581) app_network: Connected with IP Address:192.168.137.110[0m
+[0;32mI (4581) main_task: Returned from app_main()[0m
+[0;32mI (4581) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (4591) esp_rmaker_node: Node attribute cmd-resp created[0m
+[0;32mI (4591) esp_rmaker_local: Enabling Local Control[0m
+[0;32mI (4601) esp_rmaker_local: Local Control Service Enabled[0m
+[0;32mI (4601) esp_rmaker_local: Starting ESP Local control with HTTP Transport and security version: 1[0m
+[0;32mI (4621) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (4631) esp_https_server: Starting server[0m
+[0;32mI (4631) esp_https_server: Server listening on port 8080[0m
+[0;32mI (4631) esp_rmaker_local: esp_local_ctrl service started with name : htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (4641) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (4641) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (4861) wifi:<ba-add>idx:0 (ifx:0, 3e:9c:0f:e8:98:60), tid:0, ssn:6, winSize:64[0m
+[0;32mI (6541) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (6811) wifi:<ba-add>idx:1 (ifx:0, 3e:9c:0f:e8:98:60), tid:1, ssn:9, winSize:64[0m
+[1;31mE (7461) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (7461) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (7461) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (7461) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (7471) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (7471) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (7481) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (7481) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (7491) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (7491) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (7501) SENSOR: PPM: 37.65 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (7511) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[0;32mI (9481) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (9481) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (9491) esp_rmaker_node_config: Generated Node config of length 1635[0m
+[0;32mI (9511) esp_rmaker_ota_using_topics: Subscribing to: node/htVVE7aBtXXsgnGh4yvLKr/otaurl[0m
+[1;31mE (9801) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (9801) DHT: Failed to read from DHT11[0m
+[1;31mE (9801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (9801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (9811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (9811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (9821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (9821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (9831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (9831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (9841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (9841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (9851) SENSOR: PPM: 37.65 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (9861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (12801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (12801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (12801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (12811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (12811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (12821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (12821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (12831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (12831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (12841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (12841) SENSOR: PPM: 37.75 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (12851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[0;32mI (14511) esp_rmaker_ota_using_topics: Fetching OTA details, if any.[0m
+[1;31mE (15801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (15801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (15801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (15811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (15811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (15821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (15821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (15831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (15831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (15841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (15841) SENSOR: PPM: 37.90 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (15851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (18801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (18801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (18801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (18801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (18811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (18821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (18821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (18831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (18831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (18841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (18841) SENSOR: PPM: 37.80 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (18851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (21811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (21811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (21811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (21811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (21821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (21821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (21831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (21831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (21841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (21851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (21851) SENSOR: PPM: 37.35 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (21861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (24801) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (24801) DHT: Failed to read from DHT11[0m
+[1;31mE (24801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (24801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (24801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (24811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (24821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (24821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (24831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (24831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (24841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (24841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (24851) SENSOR: PPM: 37.60 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (24861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (27811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (27811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (27811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (27811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (27821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (27821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (27831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (27831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (27841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (27851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (27851) SENSOR: PPM: 37.55 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (27861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (30811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (30811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (30811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (30811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (30821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (30821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (30831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (30831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (30841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (30851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (30851) SENSOR: PPM: 37.90 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (30861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (33801) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (33801) DHT: Failed to read from DHT11[0m
+[1;31mE (33801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (33801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (33801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (33811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (33821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (33821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (33831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (33831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (33841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (33841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (33851) SENSOR: PPM: 37.65 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (33861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[0;32mI (34051) esp_rmaker_time: SNTP Synchronised.[0m
+[0;32mI (34051) esp_rmaker_time: The current time is: Tue May 27 13:02:07 2025 +0800[CST], DST: No.[0m
+[1;31mE (36801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (36801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (36801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (36811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (36811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (36821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (36821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (36831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (36831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (36841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (36841) SENSOR: PPM: 37.50 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (36851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (39801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (39801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (39801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (39801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (39811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (39821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (39821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (39831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (39831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (39841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (39841) SENSOR: PPM: 37.70 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (39851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (42801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (42801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (42801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (42811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (42811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (42821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (42821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (42831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (42831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (42841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (42841) SENSOR: PPM: 37.60 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (42851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (45811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (45811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (45811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (45811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (45821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (45821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (45831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (45831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (45841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (45851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (45851) SENSOR: PPM: 37.35 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (45861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (48811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (48811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (48811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (48811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (48821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (48821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (48831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (48831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (48841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (48851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (48851) SENSOR: PPM: 36.90 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (48861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (51811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (51811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (51811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (51811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (51821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (51821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (51831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (51831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (51841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (51851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (51851) SENSOR: PPM: 37.85 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (51861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (54801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (54801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (54801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (54811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (54811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (54821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (54821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (54831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (54831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (54841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (54841) SENSOR: PPM: 37.55 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (54851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (57801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (57801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (57801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (57801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (57811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (57821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (57821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (57831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (57831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (57841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (57841) SENSOR: PPM: 37.55 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (57851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (60801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (60801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (60801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (60801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (60811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (60821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (60821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (60831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (60831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (60841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (60841) SENSOR: PPM: 37.65 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (60851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (63801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (63801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (63801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (63811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (63811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (63821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (63821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (63831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (63831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (63841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (63841) SENSOR: PPM: 37.60 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (63851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (66811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (66811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (66811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (66811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (66821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (66821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (66831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (66831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (66841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (66851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (66851) SENSOR: PPM: 37.60 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (66861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (69801) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (69801) DHT: Failed to read from DHT11[0m
+[1;31mE (69801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (69801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (69801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (69811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (69821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (69821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (69831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (69831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (69841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (69841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (69851) SENSOR: PPM: 37.60 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (69861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (72811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (72811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (72811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (72811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (72821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (72821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (72831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (72831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (72841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (72851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (72851) SENSOR: PPM: 37.30 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (72861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (75801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (75801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (75801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (75811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (75811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (75821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (75821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (75831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (75831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (75841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (75841) SENSOR: PPM: 37.60 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (75851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (78801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (78801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (78801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (78801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (78811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (78821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (78821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (78831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (78831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (78841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (78841) SENSOR: PPM: 37.55 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (78851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (81811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (81811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (81811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (81811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (81821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (81821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (81831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (81831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (81841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (81851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (81851) SENSOR: PPM: 37.50 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (81861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (84801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (84801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (84801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (84811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (84811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (84821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (84821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (84831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (84831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (84841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (84841) SENSOR: PPM: 37.45 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (84851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (87811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (87811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (87811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (87811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (87821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (87821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (87831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (87831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (87841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (87851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (87851) SENSOR: PPM: 37.25 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (87861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (90811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (90811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (90811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (90811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (90821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (90821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (90831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (90831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (90841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (90851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (90851) SENSOR: PPM: 37.50 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (90861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (93801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (93801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (93801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (93811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (93811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (93821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (93821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (93831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (93831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (93841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (93841) SENSOR: PPM: 37.60 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (93851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (96811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (96811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (96811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (96811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (96821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (96821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (96831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (96831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (96841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (96851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (96851) SENSOR: PPM: 36.85 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (96861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (99801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (99801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (99801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (99811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (99811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (99821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (99821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (99831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (99831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (99841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (99841) SENSOR: PPM: 37.25 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (99851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (102801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (102801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (102801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (102811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (102811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (102821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (102821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (102831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (102831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (102841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (102841) SENSOR: PPM: 37.50 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (102851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (105801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (105801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (105801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (105811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (105811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (105821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (105821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (105831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (105831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (105841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (105841) SENSOR: PPM: 37.15 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (105851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (108801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (108801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (108801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (108811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (108811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (108821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (108821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (108831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (108831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (108841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (108841) SENSOR: PPM: 37.55 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (108851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (111811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (111811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (111811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (111811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (111821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (111821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (111831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (111831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (111841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (111851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (111851) SENSOR: PPM: 37.05 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (111861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (114811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (114811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (114811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (114811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (114821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (114821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (114831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (114841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (114841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (114851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (114851) SENSOR: PPM: 37.50 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (114861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (117801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (117801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (117801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (117811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (117811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (117821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (117821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (117831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (117831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (117841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (117841) SENSOR: PPM: 37.30 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (117851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (120801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (120801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (120801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (120811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (120811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (120821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (120821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (120831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (120831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (120841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (120841) SENSOR: PPM: 37.50 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (120851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (123801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (123801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (123801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (123811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (123811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (123821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (123821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (123831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (123831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (123841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (123841) SENSOR: PPM: 37.35 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (123851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (126801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (126801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (126801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (126811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (126811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (126821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (126821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (126831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (126831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (126841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (126841) SENSOR: PPM: 37.15 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (126851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (129801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (129801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (129801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (129811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (129811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (129821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (129821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (129831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (129831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (129841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (129841) SENSOR: PPM: 37.10 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (129851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (132801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (132801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (132801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (132811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (132811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (132821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (132821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (132831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (132831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (132841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (132841) SENSOR: PPM: 37.45 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (132851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (135801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (135801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (135801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (135811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (135811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (135821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (135821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (135831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (135831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (135841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (135841) SENSOR: PPM: 36.95 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (135851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (138811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (138811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (138811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (138811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (138821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (138821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (138831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (138841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (138841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (138851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (138851) SENSOR: PPM: 37.40 | Temp: 29.0°C | Humidity: 53.0% | Light: 0.0%[0m
+[0;32mI (138861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (141801) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (141801) DHT: Failed to read from DHT11[0m
+[1;31mE (141801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (141801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (141801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (141811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (141821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (141821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (141831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (141831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (141841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (141841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (141851) SENSOR: PPM: 37.35 | Temp: 29.0°C | Humidity: 53.0% | Light: 0.0%[0m
+[0;32mI (141861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (144811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (144811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (144811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (144811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (144821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (144821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (144831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (144831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (144841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (144851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (144851) SENSOR: PPM: 37.45 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (144861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (147801) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (147801) DHT: Failed to read from DHT11[0m
+[1;31mE (147801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (147801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (147801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (147811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (147821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (147821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (147831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (147831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (147841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (147841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (147851) SENSOR: PPM: 37.25 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (147861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (150811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (150811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (150811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (150811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (150821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (150821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (150831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (150841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (150841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (150851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (150851) SENSOR: PPM: 36.95 | Temp: 28.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (150861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (153811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (153811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (153811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (153811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (153821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (153821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (153831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (153831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (153841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (153851) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (153851) SENSOR: PPM: 37.30 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (153861) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (156801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (156801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (156801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (156811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (156811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (156821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (156821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (156831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (156831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (156841) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[0;32mI (156841) SENSOR: PPM: 37.15 | Temp: 29.0°C | Humidity: 54.0% | Light: 0.0%[0m
+[0;32mI (156851) LIGHT: Raw ADC Light: 0 | Light %: 0.0[0m
+[1;31mE (159801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (159801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (159801) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (159811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (159811) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (159821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (159821) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (159831) adc_oneshot: adc_oneshot_read(185): invalid channel[0m
+[1;31mE (159831) adc_oneshot: adc_oneshot_read(185): invalid channel[0

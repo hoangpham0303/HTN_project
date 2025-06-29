@@ -1,0 +1,582 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15796
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 19 2025 14:52:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (66) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (73) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (79) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (86) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (92) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (99) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (105) boot:  7 reserved         unknown          06 06 003e0000 0001a000[0m
+I (112) boot:  8 fctry            WiFi data        01 02 003fa000 00006000
+[0;32mI (119) boot: End of partition table[0m
+[0;32mI (122) boot: No factory image, trying OTA 0[0m
+[0;32mI (126) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=413ech (267244) map[0m
+[0;32mI (225) esp_image: segment 1: paddr=00061414 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=00061438 vaddr=3ffbdb60 size=05e38h ( 24120) load[0m
+[0;32mI (238) esp_image: segment 3: paddr=00067278 vaddr=40080000 size=08da0h ( 36256) load[0m
+[0;32mI (252) esp_image: segment 4: paddr=00070020 vaddr=400d0020 size=fb4f4h (1029364) map[0m
+[0;32mI (604) esp_image: segment 5: paddr=0016b51c vaddr=40088da0 size=13f9ch ( 81820) load[0m
+[0;32mI (650) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (651) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (651) boot: Disabling RNG early entropy source...[0m
+[0;32mI (665) cpu_start: Multicore app[0m
+[0;32mI (673) cpu_start: Pro cpu start user code[0m
+[0;32mI (673) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (673) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     HTN_project[0m
+[0;32mI (678) app_init: App version:      1.0[0m
+[0;32mI (681) app_init: Compile time:     May  9 2025 12:56:35[0m
+[0;32mI (686) app_init: ELF file SHA256:  d9ee49676...[0m
+[0;32mI (691) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (695) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (699) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (703) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (707) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (718) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (723) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (728) heap_init: At 3FFCB4C0 len 00014B40 (82 KiB): DRAM[0m
+[0;32mI (733) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (739) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (744) heap_init: At 4009CD3C len 000032C4 (12 KiB): IRAM[0m
+[0;32mI (751) spi_flash: detected chip: generic[0m
+[0;32mI (753) spi_flash: flash io: dio[0m
+[0;32mI (757) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (762) main_task: Started on CPU0[0m
+[0;32mI (772) main_task: Calling app_main()[0m
+[0;32mI (772) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (812) wifi:wifi driver task: 3ffd4dc0, prio:23, stack:6656, core=0[0m
+[0;32mI (822) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (822) wifi:wifi certification version: v7.0[0m
+[0;32mI (822) wifi:config NVS flash: enabled[0m
+[0;32mI (822) wifi:config nano formatting: disabled[0m
+[0;32mI (832) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (832) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (832) wifi:Init management short buffer num: 32[0m
+[0;32mI (842) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (842) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (852) wifi:Init static rx buffer num: 10[0m
+[0;32mI (852) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (862) wifi_init: rx ba win: 6[0m
+[0;32mI (862) wifi_init: accept mbox: 6[0m
+[0;32mI (862) wifi_init: tcpip mbox: 32[0m
+[0;32mI (862) wifi_init: udp mbox: 6[0m
+[0;32mI (872) wifi_init: tcp mbox: 6[0m
+[0;32mI (872) wifi_init: tcp tx win: 5760[0m
+[0;32mI (872) wifi_init: tcp rx win: 5760[0m
+[0;32mI (882) wifi_init: tcp mss: 1440[0m
+[0;32mI (882) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (882) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (902) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (912) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|CCDBA734EECC[0m
+[0;32mI (922) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (922) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (932) esp_rmaker_node: Node ID ----- htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (932) esp_rmaker_ota_using_topics: OTA enabled with Topics[0m
+[0;32mI (942) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (942) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (952) app_insights: Enable CONFIG_ESP_INSIGHTS_ENABLED to get Insights.[0m
+[0;32mI (952) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (962) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (962) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (972) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (982) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (982) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (982) esp_rmaker_local: Event 6[0m
+[0;32mI (992) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1082) wifi:mode : sta (cc:db:a7:34:ee:cc)[0m
+[0;32mI (1082) wifi:enable tsf[0m
+[0;32mI (3502) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3502) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3512) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3532) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3542) wifi:connected with Wifi HHH, aid = 1, channel 1, BW20, bssid = 3e:9c:0f:e8:98:60[0m
+[0;32mI (3552) wifi:security: WPA2-PSK, phy: bgn, rssi: -48[0m
+[0;32mI (3552) wifi:pm start, type: 1[0m
+
+[0;32mI (3552) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3622) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[1;31mE (3792) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (3792) DHT: Failed to read from DHT11[0m
+[0;32mI (3792) PPM LED: BLUE LED ON[0m
+[0;32mI (3792) SENSOR: PPM: 32.05 | Temp: 0.0°C | Humidity: 0.0% | Light: 84.0%[0m
+[0;32mI (4632) esp_netif_handlers: sta ip: 192.168.137.110, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (4632) app_network: Connected with IP Address:192.168.137.110[0m
+[0;32mI (4632) main_task: Returned from app_main()[0m
+[0;32mI (4632) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (4642) esp_rmaker_node: Node attribute cmd-resp created[0m
+[0;32mI (4642) esp_rmaker_local: Enabling Local Control[0m
+[0;32mI (4652) esp_rmaker_local: Local Control Service Enabled[0m
+[0;32mI (4652) esp_rmaker_local: Starting ESP Local control with HTTP Transport and security version: 1[0m
+[0;32mI (4672) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (4672) esp_https_server: Starting server[0m
+[0;32mI (4682) esp_https_server: Server listening on port 8080[0m
+[0;32mI (4682) esp_rmaker_local: esp_local_ctrl service started with name : htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (4692) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (4692) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (6492) esp_rmaker_time: SNTP Synchronised.[0m
+[0;32mI (6502) esp_rmaker_time: The current time is: Tue May 27 15:48:45 2025 +0800[CST], DST: No.[0m
+[0;32mI (6792) PPM LED: BLUE LED ON[0m
+[0;32mI (6792) SENSOR: PPM: 30.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 85.7%[0m
+[0;32mI (9792) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 84.2%[0m
+[0;32mI (11702) wifi:<ba-add>idx:0 (ifx:0, 3e:9c:0f:e8:98:60), tid:0, ssn:9, winSize:64[0m
+[0;32mI (12792) SENSOR: PPM: 31.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.3%[0m
+[0;32mI (15792) PPM LED: BLUE LED ON[0m
+[0;32mI (15792) SENSOR: PPM: 31.45 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.7%[0m
+[0;32mI (18792) SENSOR: PPM: 31.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 87.8%[0m
+[0;32mI (21792) SENSOR: PPM: 31.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 84.6%[0m
+[0;33mW (22052) esp-tls: Failed to open new connection in specified timeout[0m
+[1;31mE (22052) transport_base: Failed to open a new connection[0m
+[1;31mE (22052) mqtt_client: Error transport connect[0m
+[1;31mE (22052) esp_mqtt_glue: MQTT_EVENT_ERROR[0m
+[0;33mW (22052) esp_mqtt_glue: MQTT Disconnected. Will try reconnecting in a while...[0m
+[0;32mI (22782) wifi:<ba-add>idx:1 (ifx:0, 3e:9c:0f:e8:98:60), tid:1, ssn:5, winSize:64[0m
+[0;32mI (24792) SENSOR: PPM: 31.55 | Temp: 30.0°C | Humidity: 51.0% | Light: 80.4%[0m
+[0;32mI (27792) SENSOR: PPM: 31.35 | Temp: 30.0°C | Humidity: 51.0% | Light: 88.6%[0m
+[0;32mI (30792) SENSOR: PPM: 31.50 | Temp: 30.0°C | Humidity: 51.0% | Light: 82.2%[0m
+[0;32mI (33792) SENSOR: PPM: 31.25 | Temp: 30.0°C | Humidity: 51.0% | Light: 88.0%[0m
+[0;32mI (33992) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (36792) SENSOR: PPM: 31.00 | Temp: 30.0°C | Humidity: 51.0% | Light: 84.9%[0m
+[0;32mI (36912) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (36912) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (36922) esp_rmaker_node_config: Generated Node config of length 1877[0m
+[0;32mI (36942) esp_rmaker_ota_using_topics: Subscribing to: node/htVVE7aBtXXsgnGh4yvLKr/otaurl[0m
+[0;32mI (39262) LED2: ON[0m
+[0;32mI (39792) SENSOR: PPM: 32.45 | Temp: 30.0°C | Humidity: 51.0% | Light: 85.7%[0m
+[0;32mI (41942) esp_rmaker_ota_using_topics: Fetching OTA details, if any.[0m
+[0;32mI (42812) PPM LED: RED LED ON[0m
+[0;32mI (42812) SENSOR: PPM: 116.70 | Temp: 30.0°C | Humidity: 51.0% | Light: 85.9%[0m
+[0;32mI (45812) PPM LED: YELLOW LED ON[0m
+[0;32mI (45812) SENSOR: PPM: 84.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.1%[0m
+[0;32mI (48812) PPM LED: YELLOW LED ON[0m
+[0;32mI (48812) SENSOR: PPM: 69.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.2%[0m
+[0;32mI (51812) PPM LED: YELLOW LED ON[0m
+[0;32mI (51812) SENSOR: PPM: 60.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.5%[0m
+[0;32mI (54812) PPM LED: YELLOW LED ON[0m
+[0;32mI (54812) SENSOR: PPM: 56.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 87.2%[0m
+[0;32mI (57812) PPM LED: BLUE LED ON[0m
+[0;32mI (57812) SENSOR: PPM: 54.20 | Temp: 31.0°C | Humidity: 50.0% | Light: 85.5%[0m
+[0;32mI (60812) PPM LED: BLUE LED ON[0m
+[0;32mI (60812) SENSOR: PPM: 50.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 85.8%[0m
+[0;32mI (63792) SENSOR: PPM: 50.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 84.7%[0m
+[0;32mI (64122) LED2: OFF[0m
+[0;32mI (64222) LED2: ON[0m
+[0;32mI (65172) LED2: OFF[0m
+[0;32mI (66812) PPM LED: BLUE LED ON[0m
+[0;32mI (66812) SENSOR: PPM: 49.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.0%[0m
+[0;32mI (69792) SENSOR: PPM: 48.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.6%[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15796
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 19 2025 14:52:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (66) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (73) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (79) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (86) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (92) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (99) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (105) boot:  7 reserved         unknown          06 06 003e0000 0001a000[0m
+I (112) boot:  8 fctry            WiFi data        01 02 003fa000 00006000
+[0;32mI (119) boot: End of partition table[0m
+[0;32mI (122) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=413ech (267244) map[0m
+[0;32mI (221) esp_image: segment 1: paddr=00061414 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (221) esp_image: segment 2: paddr=00061438 vaddr=3ffbdb60 size=05e38h ( 24120) load[0m
+[0;32mI (234) esp_image: segment 3: paddr=00067278 vaddr=40080000 size=08da0h ( 36256) load[0m
+[0;32mI (248) esp_image: segment 4: paddr=00070020 vaddr=400d0020 size=fb4f4h (1029364) map[0m
+[0;32mI (600) esp_image: segment 5: paddr=0016b51c vaddr=40088da0 size=13f9ch ( 81820) load[0m
+[0;32mI (646) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (646) boot: Disabling RNG early entropy source...[0m
+[0;32mI (657) cpu_start: Multicore app[0m
+[0;32mI (665) cpu_start: Pro cpu start user code[0m
+[0;32mI (665) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (665) app_init: Application information:[0m
+[0;32mI (665) app_init: Project name:     HTN_project[0m
+[0;32mI (669) app_init: App version:      1.0[0m
+[0;32mI (673) app_init: Compile time:     May  9 2025 12:56:35[0m
+[0;32mI (678) app_init: ELF file SHA256:  d9ee49676...[0m
+[0;32mI (682) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (686) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (690) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (694) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (698) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (705) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (709) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (715) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (720) heap_init: At 3FFCB4C0 len 00014B40 (82 KiB): DRAM[0m
+[0;32mI (725) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (730) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (736) heap_init: At 4009CD3C len 000032C4 (12 KiB): IRAM[0m
+[0;32mI (743) spi_flash: detected chip: generic[0m
+[0;32mI (745) spi_flash: flash io: dio[0m
+[0;32mI (749) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (753) main_task: Started on CPU0[0m
+[0;32mI (763) main_task: Calling app_main()[0m
+[0;32mI (763) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (803) wifi:wifi driver task: 3ffd4dc0, prio:23, stack:6656, core=0[0m
+[0;32mI (813) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (813) wifi:wifi certification version: v7.0[0m
+[0;32mI (813) wifi:config NVS flash: enabled[0m
+[0;32mI (813) wifi:config nano formatting: disabled[0m
+[0;32mI (823) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (823) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (823) wifi:Init management short buffer num: 32[0m
+[0;32mI (833) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (833) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (843) wifi:Init static rx buffer num: 10[0m
+[0;32mI (843) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (853) wifi_init: rx ba win: 6[0m
+[0;32mI (853) wifi_init: accept mbox: 6[0m
+[0;32mI (853) wifi_init: tcpip mbox: 32[0m
+[0;32mI (853) wifi_init: udp mbox: 6[0m
+[0;32mI (863) wifi_init: tcp mbox: 6[0m
+[0;32mI (863) wifi_init: tcp tx win: 5760[0m
+[0;32mI (863) wifi_init: tcp rx win: 5760[0m
+[0;32mI (873) wifi_init: tcp mss: 1440[0m
+[0;32mI (873) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (873) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (893) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (903) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|CCDBA734EECC[0m
+[0;32mI (913) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (913) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (923) esp_rmaker_node: Node ID ----- htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (923) esp_rmaker_ota_using_topics: OTA enabled with Topics[0m
+[0;32mI (933) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (933) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (943) app_insights: Enable CONFIG_ESP_INSIGHTS_ENABLED to get Insights.[0m
+[0;32mI (943) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (953) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (953) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (963) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (973) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (973) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (973) esp_rmaker_local: Event 6[0m
+[0;32mI (983) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1073) wifi:mode : sta (cc:db:a7:34:ee:cc)[0m
+[0;32mI (1073) wifi:enable tsf[0m
+[0;32mI (3493) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3493) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3503) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3513) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3523) wifi:connected with Wifi HHH, aid = 7, channel 1, BW20, bssid = 3e:9c:0f:e8:98:60[0m
+[0;32mI (3523) wifi:security: WPA2-PSK, phy: bgn, rssi: -40[0m
+[0;32mI (3533) wifi:pm start, type: 1[0m
+
+[0;32mI (3533) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3583) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[1;31mE (3783) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (3783) DHT: Failed to read from DHT11[0m
+[0;32mI (3783) PPM LED: BLUE LED ON[0m
+[0;32mI (3783) SENSOR: PPM: 45.95 | Temp: 0.0°C | Humidity: 0.0% | Light: 86.0%[0m
+[0;32mI (4553) esp_netif_handlers: sta ip: 192.168.137.110, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (4553) app_network: Connected with IP Address:192.168.137.110[0m
+[0;32mI (4553) main_task: Returned from app_main()[0m
+[0;32mI (4553) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (4563) esp_rmaker_node: Node attribute cmd-resp created[0m
+[0;32mI (4563) esp_rmaker_local: Enabling Local Control[0m
+[0;32mI (4573) esp_rmaker_local: Local Control Service Enabled[0m
+[0;32mI (4573) esp_rmaker_local: Starting ESP Local control with HTTP Transport and security version: 1[0m
+[0;32mI (4593) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (4593) esp_https_server: Starting server[0m
+[0;32mI (4603) esp_https_server: Server listening on port 8080[0m
+[0;32mI (4603) esp_rmaker_local: esp_local_ctrl service started with name : htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (4613) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (4613) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (5633) esp_rmaker_time: SNTP Synchronised.[0m
+[0;32mI (5633) esp_rmaker_time: The current time is: Tue May 27 15:49:54 2025 +0800[CST], DST: No.[0m
+[0;32mI (5783) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (6643) wifi:<ba-add>idx:0 (ifx:0, 3e:9c:0f:e8:98:60), tid:0, ssn:8, winSize:64[0m
+[0;32mI (7423) PPM LED: BLUE LED ON[0m
+[0;32mI (7433) SENSOR: PPM: 44.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.1%[0m
+[0;32mI (8713) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (8713) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (8723) esp_rmaker_node_config: Generated Node config of length 1877[0m
+[0;32mI (8743) esp_rmaker_ota_using_topics: Subscribing to: node/htVVE7aBtXXsgnGh4yvLKr/otaurl[0m
+[0;32mI (9013) wifi:<ba-add>idx:1 (ifx:0, 3e:9c:0f:e8:98:60), tid:1, ssn:19, winSize:64[0m
+[0;32mI (9793) SENSOR: PPM: 43.95 | Temp: 31.0°C | Humidity: 50.0% | Light: 86.2%[0m
+[0;32mI (12783) SENSOR: PPM: 44.70 | Temp: 31.0°C | Humidity: 50.0% | Light: 86.2%[0m
+[0;32mI (13743) esp_rmaker_ota_using_topics: Fetching OTA details, if any.[0m
+[0;32mI (14753) LED2: ON[0m
+[0;32mI (14903) LED2: OFF[0m
+[0;32mI (15603) LED2: ON[0m
+[0;32mI (15753) LED2: OFF[0m
+[0;32mI (15803) PPM LED: BLUE LED ON[0m
+[0;32mI (15803) SENSOR: PPM: 43.10 | Temp: 30.0°C | Humidity: 50.0% | Light: 85.8%[0m
+[0;32mI (16303) LED2: ON[0m
+[0;32mI (17503) LED2: OFF[0m
+[0;32mI (18783) SENSOR: PPM: 43.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 85.4%[0m
+[0;32mI (21783) SENSOR: PPM: 42.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.0%[0m
+[0;32mI (24783) SENSOR: PPM: 42.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.3%[0m
+[0;32mI (27793) PPM LED: RED LED ON[0m
+[0;32mI (27803) SENSOR: PPM: 101.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.3%[0m
+[0;32mI (30803) PPM LED: YELLOW LED ON[0m
+[0;32mI (30803) SENSOR: PPM: 72.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 80.0%[0m
+[0;32mI (33803) PPM LED: YELLOW LED ON[0m
+[0;32mI (33803) SENSOR: PPM: 62.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 78.8%[0m
+[0;32mI (36803) PPM LED: YELLOW LED ON[0m
+[0;32mI (36803) SENSOR: PPM: 56.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 85.3%[0m
+[0;32mI (39803) PPM LED: BLUE LED ON[0m
+[0;32mI (39803) SENSOR: PPM: 52.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.2%[0m
+[0;32mI (42803) PPM LED: BLUE LED ON[0m
+[0;32mI (42803) SENSOR: PPM: 49.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.4%[0m
+[0;32mI (45803) PPM LED: BLUE LED ON[0m
+[0;32mI (45803) SENSOR: PPM: 47.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.4%[0m
+[0;32mI (48803) PPM LED: BLUE LED ON[0m
+[0;32mI (48803) SENSOR: PPM: 46.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 89.4%[0m
+[0;32mI (51803) PPM LED: BLUE LED ON[0m
+[0;32mI (51803) SENSOR: PPM: 44.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 83.6%[0m
+[0;32mI (54803) PPM LED: BLUE LED ON[0m
+[0;32mI (54803) SENSOR: PPM: 43.20 | Temp: 30.0°C | Humidity: 50.0% | Light: 83.1%[0m
+[0;32mI (57783) SENSOR: PPM: 42.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 84.2%[0m
+[0;32mI (60783) SENSOR: PPM: 42.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 83.8%[0m
+[0;32mI (63783) SENSOR: PPM: 42.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 84.4%[0m
+[0;32mI (65803) LED2: ON[0m
+[0;32mI (66703) LED2: OFF[0m
+[0;32mI (66793) PPM LED: BLUE LED ON[0m
+[0;32mI (66793) SENSOR: PPM: 41.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.3%[0m
+[0;32mI (66853) LED2: ON[0m
+[0;32mI (68253) LED2: OFF[0m
+[0;32mI (69783) SENSOR: PPM: 41.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.8%[0m
+[0;32mI (72783) SENSOR: PPM: 42.15 | Temp: 30.0°C | Humidity: 50.0% | Light: 83.2%[0m
+[0;32mI (75783) SENSOR: PPM: 41.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 83.7%[0m
+[0;32mI (78783) SENSOR: PPM: 41.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 85.0%[0m
+[0;32mI (81783) SENSOR: PPM: 40.95 | Temp: 30.0°C | Humidity: 50.0% | Light: 85.0%[0m
+[0;32mI (84793) PPM LED: BLUE LED ON[0m
+[0;32mI (84803) SENSOR: PPM: 40.55 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[0;32mI (87783) SENSOR: PPM: 40.05 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.3%[0m
+[0;32mI (90783) SENSOR: PPM: 39.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.7%[0m
+[0;32mI (93803) PPM LED: BLUE LED ON[0m
+[0;32mI (93803) SENSOR: PPM: 38.75 | Temp: 30.0°C | Humidity: 50.0% | Light: 78.5%[0m
+[0;32mI (96783) SENSOR: PPM: 38.65 | Temp: 30.0°C | Humidity: 50.0% | Light: 86.8%[0m
+[0;32mI (99783) SENSOR: PPM: 38.35 | Temp: 30.0°C | Humidity: 50.0% | Light: 80.3%[0m
+[0;32mI (102783) SENSOR: PPM: 37.90 | Temp: 30.0°C | Humidity: 50.0% | Light: 83.1%[0m
+[0;32mI (105803) PPM LED: YELLOW LED ON[0m
+[0;32mI (105803) SENSOR: PPM: 72.80 | Temp: 30.0°C | Humidity: 50.0% | Light: 81.4%[0m
+[0;32mI (108803) PPM LED: YELLOW LED ON[0m
+[0;32mI (108803) SENSOR: PPM: 78.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 81.9%[0m
+[0;32mI (111803) PPM LED: YELLOW LED ON[0m
+[0;32mI (111803) SENSOR: PPM: 63.85 | Temp: 30.0°C | Humidity: 51.0% | Light: 82.9%[0m
+[1;31mE (114783) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (114783) DHT: Failed to read from DHT11[0m
+[0;32mI (114793) PPM LED: RED LED ON[0m
+[0;32mI (114793) SENSOR: PPM: 108.00 | Temp: 30.0°C | Humidity: 51.0% | Light: 83.1%[0m
+[0;32mI (117793) PPM LED: YELLOW LED ON[0m
+[0;32mI (117793) SENSOR: PPM: 80.95 | Temp: 30.0°C | Humidity: 51.0% | Light: 84.0%[0m
+[0;32mI (120803) PPM LED: YELLOW LED ON[0m
+[0;32mI (120803) SENSOR: PPM: 85.60 | Temp: 30.0°C | Humidity: 50.0% | Light: 83.6%[0m
+[0;32mI (123803) PPM LED: YELLOW LED ON[0m
+[0;32mI (123803) SENSOR: PPM: 96.80 | Temp: 30.0°C | Humidity: 51.0% | Light: 84.0%[0m
+[0;32mI (126803) PPM LED: YELLOW LED ON[0m
+[0;32mI (126803) SENSOR: PPM: 82.45 | Temp: 30.0°C | Humidity: 51.0% | Light: 84.5%[0m
+[0;32mI (129803) PPM LED: RED LED ON[0m
+[0;32mI (129803) SENSOR: PPM: 105.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 84.5%[0m
+[0;32mI (132803) PPM LED: YELLOW LED ON[0m
+[0;32mI (132803) SENSOR: PPM: 89.25 | Temp: 30.0°C | Humidity: 50.0% | Light: 87.1%[0m
+[0;32mI (135803) PPM LED: YELLOW LED ON[0m
+[0;32mI (135803) SENSOR: PPM: 72.00 | Temp: 30.0°C | Humidity: 51.0% | Light: 88.4%[0m
+[0;32mI (138803) PPM LED: YELLOW LED ON[0m
+[0;32mI (138803) SENSOR: PPM: 64.35 | Temp: 30.0°C | Humidity: 51.0% | Light: 88.4%[0m
+[1;31mE (141793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (141793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (141793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (141803) PPM LED: YELLOW LED ON[0m
+[0;32mI (141803) SENSOR: PPM: 58.70 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.5%[0m
+[1;31mE (144793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (144793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (144793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (144803) PPM LED: YELLOW LED ON[0m
+[0;32mI (144803) SENSOR: PPM: 55.85 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.5%[0m
+[1;31mE (147783) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (147783) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (147783) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (147793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (147803) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (147803) PPM LED: BLUE LED ON[0m
+[0;32mI (147813) SENSOR: PPM: 53.50 | Temp: 30.0°C | Humidity: 51.0% | Light: 88.3%[0m
+[1;31mE (150793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (150793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (150793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (150803) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (150803) PPM LED: BLUE LED ON[0m
+[0;32mI (150813) SENSOR: PPM: 50.40 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.4%[0m
+[0;32mI (153783) SENSOR: PPM: 49.50 | Temp: 30.0°C | Humidity: 50.0% | Light: 88.3%[0m
+[0;32mI (155513) LED2: ON[0m
+[1;31mE (156713) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (156713) LED2: OFF[0m
+[1;31mE (156783) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (156783) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (156783) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (156793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (156803) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (156803) PPM LED: BLUE LED ON[0m
+[0;32mI (156813) SENSOR: PPM: 48.00 | Temp: 30.0°C | Humidity: 51.0% | Light: 85.3%[0m
+[1;31mE (156913) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (156913) LED2: ON[0m
+[1;31mE (158913) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (158913) LED2: OFF[0m
+[0;32mI (159783) SENSOR: PPM: 47.10 | Temp: 30.0°C | Humidity: 51.0% | Light: 88.4%[0m
+[1;31mE (162793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (162793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (162793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (162803) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (162803) PPM LED: BLUE LED ON[0m
+[0;32mI (162813) SENSOR: PPM: 45.30 | Temp: 30.0°C | Humidity: 50.0% | Light: 90.6%[0m
+[0;32mI (165793) SENSOR: PPM: 44.30 | Temp: 30.0°C | Humidity: 51.0% | Light: 88.5%[0m
+[1;31mE (168783) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (168783) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (168783) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (168793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (168803) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (168803) PPM LED: BLUE LED ON[0m
+[0;32mI (168813) SENSOR: PPM: 44.25 | Temp: 30.0°C | Humidity: 52.0% | Light: 87.8%[0m
+[1;31mE (171793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (171793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (171793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (171803) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (171803) PPM LED: BLUE LED ON[0m
+[0;32mI (171813) SENSOR: PPM: 42.95 | Temp: 30.0°C | Humidity: 53.0% | Light: 88.3%[0m
+[0;32mI (174793) SENSOR: PPM: 42.05 | Temp: 30.0°C | Humidity: 54.0% | Light: 88.6%[0m
+[0;32mI (177783) SENSOR: PPM: 42.45 | Temp: 30.0°C | Humidity: 54.0% | Light: 88.0%[0m
+[1;31mE (180793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (180793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (180793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (180803) PPM LED: BLUE LED ON[0m
+[0;32mI (180803) SENSOR: PPM: 41.60 | Temp: 30.0°C | Humidity: 54.0% | Light: 88.6%[0m
+[1;31mE (183783) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (183783) SENSOR: PPM: 41.55 | Temp: 30.0°C | Humidity: 53.0% | Light: 88.1%[0m
+[0;32mI (186783) SENSOR: PPM: 40.95 | Temp: 30.0°C | Humidity: 53.0% | Light: 88.1%[0m
+[1;31mE (189793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (189793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (189793) PPM LED: BLUE LED ON[0m
+[0;32mI (189803) SENSOR: PPM: 40.35 | Temp: 30.0°C | Humidity: 53.0% | Light: 88.4%[0m
+[0;32mI (192783) SENSOR: PPM: 40.30 | Temp: 30.0°C | Humidity: 53.0% | Light: 88.7%[0m
+[1;31mE (195793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (195793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (195793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (195803) PPM LED: BLUE LED ON[0m
+[0;32mI (195803) SENSOR: PPM: 39.00 | Temp: 30.0°C | Humidity: 53.0% | Light: 88.7%[0m
+[1;31mE (198783) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (198783) SENSOR: PPM: 39.55 | Temp: 30.0°C | Humidity: 52.0% | Light: 88.7%[0m
+[0;32mI (201793) SENSOR: PPM: 38.95 | Temp: 30.0°C | Humidity: 53.0% | Light: 88.6%[0m
+[0;32mI (204783) SENSOR: PPM: 39.20 | Temp: 30.0°C | Humidity: 53.0% | Light: 88.7%[0m
+[0;32mI (207793) SENSOR: PPM: 38.40 | Temp: 30.0°C | Humidity: 54.0% | Light: 88.7%[0m
+[0;32mI (210783) SENSOR: PPM: 38.65 | Temp: 30.0°C | Humidity: 54.0% | Light: 88.7%[0m
+[0;32mI (213783) SENSOR: PPM: 38.40 | Temp: 30.0°C | Humidity: 54.0% | Light: 89.5%[0m
+[0;32mI (216783) SENSOR: PPM: 38.05 | Temp: 30.0°C | Humidity: 54.0% | Light: 88.8%[0m
+[1;31mE (219793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (219793) PPM LED: BLUE LED ON[0m
+[0;32mI (219793) SENSOR: PPM: 37.90 | Temp: 30.0°C | Humidity: 54.0% | Light: 88.9%[0m
+[0;32mI (222783) SENSOR: PPM: 37.70 | Temp: 30.0°C | Humidity: 54.0% | Light: 89.5%[0m
+[0;32mI (225783) SENSOR: PPM: 37.55 | Temp: 30.0°C | Humidity: 54.0% | Light: 89.6%[0m
+[0;32mI (228783) SENSOR: PPM: 37.30 | Temp: 30.0°C | Humidity: 54.0% | Light: 88.6%[0m
+[0;32mI (231783) SENSOR: PPM: 37.45 | Temp: 30.0°C | Humidity: 54.0% | Light: 88.7%[0m
+[1;31mE (234793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (234803) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (234803) PPM LED: BLUE LED ON[0m
+[0;32mI (234803) SENSOR: PPM: 36.55 | Temp: 30.0°C | Humidity: 53.0% | Light: 88.8%[0m
+[0;32mI (237783) SENSOR: PPM: 36.85 | Temp: 30.0°C | Humidity: 53.0% | Light: 88.7%[0m
+[0;32mI (240793) SENSOR: PPM: 36.45 | Temp: 30.0°C | Humidity: 52.0% | Light: 88.7%[0m
+[0;32mI (243783) SENSOR: PPM: 36.75 | Temp: 30.0°C | Humidity: 52.0% | Light: 88.1%[0m
+[0;32mI (246783) SENSOR: PPM: 36.65 | Temp: 30.0°C | Humidity: 52.0% | Light: 88.1%[0m
+[0;32mI (249783) SENSOR: PPM: 36.25 | Temp: 30.0°C | Humidity: 52.0% | Light: 88.7%[0m
+[0;32mI (252783) SENSOR: PPM: 36.15 | Temp: 30.0°C | Humidity: 52.0% | Light: 88.6%[0m
+[0;32mI (255783) SENSOR: PPM: 36.20 | Temp: 30.0°C | Humidity: 52.0% | Light: 88.6%[0m
+[0;32mI (258783) SENSOR: PPM: 36.10 | Temp: 30.0°C | Humidity: 52.0% | Light: 88.7%[0m
+[0;32mI (261783) SENSOR: PPM: 35.90 | Temp: 30.0°C | Humidity: 52.0% | Light: 88.1%[0m
+[0;32mI (264783) SENSOR: PPM: 35.70 | Temp: 30.0°C | Humidity: 52.0% | Light: 89.0%[0m
+[0;32mI (267783) SENSOR: PPM: 35.75 | Temp: 30.0°C | Humidity: 52.0% | Light: 88.9%[0m
+[0;32mI (270803) PPM LED: BLUE LED ON[0m
+[0;32mI (270803) SENSOR: PPM: 35.35 | Temp: 30.0°C | Humidity: 51.0% | Light: 88.7%[0m
+[0;32mI (273793) SENSOR: PPM: 35.75 | Temp: 30.0°C | Humidity: 52.0% | Light: 88.2%[0m
+[0;32mI (276783) SENSOR: PPM: 35.90 | Temp: 30.0°C | Humidity: 52.0% | Light: 88.0%[0m
+[0;32mI (279793) SENSOR: PPM: 35.55 | Temp: 30.0°C | Humidity: 53.0% | Light: 88.4%[0m
+[0;32mI (282793) SENSOR: PPM: 35.40 | Temp: 30.0°C | Humidity: 52.0% | Light: 88.6%[0m
+[0;32mI (285783) SENSOR: PPM: 35.55 | Temp: 30.0°C | Humidity: 52.0% | Light: 89.1%[0m
+[0;32mI (288783) SENSOR: PPM: 35.55 | Temp: 30.0°C | Humidity: 52.0% | Light: 88.3%[0m
+[0;32mI (291783) SENSOR: PPM: 35.50 | Temp: 30.0°C | Humidity: 52.0% | Light: 89.4%[0m
+[1;31mE (294793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (294803) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (294803) PPM LED: BLUE LED ON[0m
+[0;32mI (294803) SENSOR: PPM: 34.20 | Temp: 30.0°C | Humidity: 53.0% | Light: 89.5%[0m
+[1;31mE (297783) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (297783) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (297783) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (297793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (297803) PPM LED: BLUE LED ON[0m
+[0;32mI (297803) SENSOR: PPM: 35.30 | Temp: 30.0°C | Humidity: 53.0% | Light: 90.1%[0m
+[0;32mI (300783) SENSOR: PPM: 35.20 | Temp: 30.0°C | Humidity: 53.0% | Light: 90.1%[0m
+[0;32mI (303783) SENSOR: PPM: 35.05 | Temp: 30.0°C | Humidity: 53.0% | Light: 89.9%[0m
+[0;32mI (306793) SENSOR: PPM: 34.40 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.2%[0m
+[0;32mI (309783) SENSOR: PPM: 34.75 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.0%[0m
+[0;32mI (312783) SENSOR: PPM: 34.70 | Temp: 30.0°C | Humidity: 52.0% | Light: 89.9%[0m
+[0;32mI (315783) SENSOR: PPM: 34.95 | Temp: 30.0°C | Humidity: 52.0% | Light: 89.5%[0m
+[0;32mI (318783) SENSOR: PPM: 34.55 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.2%[0m
+[0;32mI (321803) PPM LED: BLUE LED ON[0m
+[0;32mI (321803) SENSOR: PPM: 33.95 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.3%[0m
+[0;32mI (324783) SENSOR: PPM: 33.65 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.2%[0m
+[0;32mI (327783) SENSOR: PPM: 33.65 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.2%[0m
+[0;32mI (330783) SENSOR: PPM: 33.75 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.4%[0m
+[0;32mI (333783) SENSOR: PPM: 33.65 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.3%[0m
+[0;32mI (336783) SENSOR: PPM: 33.75 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.3%[0m
+[0;32mI (339783) SENSOR: PPM: 33.50 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.3%[0m
+[0;32mI (342783) SENSOR: PPM: 33.70 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.3%[0m
+[0;32mI (345783) SENSOR: PPM: 33.55 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.3%[0m
+[0;32mI (348783) SENSOR: PPM: 33.50 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.3%[0m
+[0;32mI (351783) SENSOR: PPM: 33.60 | Temp: 30.0°C | Humidity: 52.0% | Light: 89.0%[0m
+[0;32mI (354783) SENSOR: PPM: 33.75 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.0%[0m
+[0;32mI (357783) SENSOR: PPM: 33.55 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.0%[0m
+[0;32mI (360783) SENSOR: PPM: 33.45 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.0%[0m
+[0;32mI (363783) SENSOR: PPM: 33.25 | Temp: 30.0°C | Humidity: 52.0% | Light: 90.0%[0m
+[0;32mI (366803) PPM LED: YELLOW LED ON[0m
+[0;32mI (366803) SENSOR: PPM: 60.00 | Temp: 30.0°C | Humidity: 52.0% | Light: 89.3%[0m
+[0;32mI (369803) PPM LED: YELLOW LED ON[0m
+[0;32mI (369803) SENSOR: PPM: 78.95 | Temp: 30.0°C | Humidity: 52.0% | Light: 89.4%[0m
+[1;31mE (372793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (372793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (372793) PPM LED: RED LED ON[0m
+[0;32mI (372803) SENSOR: PPM: 131.25 | Temp: 30.0°C | Humidity: 52.0% | Light: 89.4%[0m
+[1;31mE (375793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (375793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[1;31mE (375793) esp_rmaker_mqtt: Out of MQTT Budget. Dropping publish message.[0m
+[0;32mI (375803) PPM LED: YELLOW LED ON[0m
+[0;32mI (375803) SENSOR: PPM: 90.10 | Temp: 30.0°C | Humidity: 52.0% | Light: 89.7%[0m
+[1;31mE (378783) esp_rmaker_mqtt: Out of MQTT

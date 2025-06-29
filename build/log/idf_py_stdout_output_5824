@@ -1,0 +1,338 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15796
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 19 2025 14:52:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (66) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (73) boot:  2 nvs              WiFi data        01 02 00010000 00006000[0m
+[0;32mI (79) boot:  3 otadata          OTA data         01 00 00016000 00002000[0m
+[0;32mI (86) boot:  4 phy_init         RF data          01 01 00018000 00001000[0m
+[0;32mI (92) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (99) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (105) boot:  7 reserved         unknown          06 06 003e0000 0001a000[0m
+[0;32mI (112) boot:  8 fctry            WiFi data        01 02 003fa000 00006000[0m
+[0;32mI (119) boot: End of partition table[0m
+[0;32mI (122) boot: No factory image, trying OTA 0[0m
+[0;32mI (126) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=4135ch (267100) map[0m
+[0;32mI (225) esp_image: segment 1: paddr=00061384 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=000613a8 vaddr=3ffbdb60 size=05e38h ( 24120) load[0m
+[0;32mI (238) esp_image: segment 3: paddr=000671e8 vaddr=40080000 size=08e30h ( 36400) load[0m
+[0;32mI (252) esp_image: segment 4: paddr=00070020 vaddr=400d0020 size=fb248h (1028680) map[0m
+[0;32mI (604) esp_image: segment 5: paddr=0016b270 vaddr=40088e30 size=13f30h ( 81712) load[0m
+[0;32mI (650) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (650) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (651) boot: Disabling RNG early entropy source...[0m
+[0;32mI (665) cpu_start: Multicore app[0m
+[0;32mI (673) cpu_start: Pro cpu start user code[0m
+[0;32mI (673) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (673) app_init: Application information:[0m
+[0;32mI (673) app_init: Project name:     HTN_project[0m
+[0;32mI (677) app_init: App version:      1.0[0m
+[0;32mI (681) app_init: Compile time:     May  9 2025 12:56:35[0m
+[0;32mI (686) app_init: ELF file SHA256:  36ecdd568...[0m
+[0;32mI (690) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (694) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (698) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (702) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (706) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (713) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (717) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (723) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (728) heap_init: At 3FFCB4B0 len 00014B50 (82 KiB): DRAM[0m
+[0;32mI (733) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (738) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (744) heap_init: At 4009CD60 len 000032A0 (12 KiB): IRAM[0m
+[0;32mI (751) spi_flash: detected chip: generic[0m
+[0;32mI (753) spi_flash: flash io: dio[0m
+[0;32mI (757) coexist: coex firmware version: 49a8cdc[0m
+[0;32mI (761) main_task: Started on CPU0[0m
+[0;32mI (771) main_task: Calling app_main()[0m
+[0;32mI (771) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (811) wifi:wifi driver task: 3ffd4db0, prio:23, stack:6656, core=0[0m
+[0;32mI (821) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (821) wifi:wifi certification version: v7.0[0m
+[0;32mI (821) wifi:config NVS flash: enabled[0m
+[0;32mI (821) wifi:config nano formatting: disabled[0m
+[0;32mI (831) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (831) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (831) wifi:Init management short buffer num: 32[0m
+[0;32mI (841) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (841) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (851) wifi:Init static rx buffer num: 10[0m
+[0;32mI (851) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (861) wifi_init: rx ba win: 6[0m
+[0;32mI (861) wifi_init: accept mbox: 6[0m
+[0;32mI (861) wifi_init: tcpip mbox: 32[0m
+[0;32mI (861) wifi_init: udp mbox: 6[0m
+[0;32mI (871) wifi_init: tcp mbox: 6[0m
+[0;32mI (871) wifi_init: tcp tx win: 5760[0m
+[0;32mI (871) wifi_init: tcp rx win: 5760[0m
+[0;32mI (881) wifi_init: tcp mss: 1440[0m
+[0;32mI (881) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (881) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (901) esp_rmaker_work_queue: Work Queue created.[0m
+[0;32mI (911) esp_mqtt_glue: AWS PPI: ?Platform=APN3|A0|RM|EX00|RMDev|1x0|CCDBA734EECC[0m
+[0;32mI (921) esp_mqtt_glue: Initialising MQTT[0m
+[0;32mI (921) esp_rmaker_mqtt_budget: MQTT Budgeting initialised. Default: 100, Max: 1024, Revive count: 1, Revive period: 5[0m
+[0;32mI (931) esp_rmaker_node: Node ID ----- htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (931) esp_rmaker_ota_using_topics: OTA enabled with Topics[0m
+[0;32mI (941) esp_rmaker_ota: OTA state = 2[0m
+[0;32mI (941) esp_rmaker_time: Initializing SNTP. Using the SNTP server: pool.ntp.org[0m
+[0;32mI (951) app_insights: Enable CONFIG_ESP_INSIGHTS_ENABLED to get Insights.[0m
+[0;32mI (951) esp_rmaker_time: SNTP already initialized.[0m
+[0;32mI (961) esp_rmaker_core: Starting RainMaker Work Queue task[0m
+[0;32mI (961) esp_rmaker_work_queue: RainMaker Work Queue task started.[0m
+[0;32mI (971) network_prov_scheme_ble: BT memory released[0m
+[0;32mI (971) app_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (981) network_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (981) esp_rmaker_local: Event 6[0m
+[0;32mI (991) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1091) wifi:mode : sta (cc:db:a7:34:ee:cc)[0m
+[0;32mI (1091) wifi:enable tsf[0m
+[0;32mI (3511) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3511) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3531) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3541) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3561) wifi:connected with Wifi HHH, aid = 3, channel 1, BW20, bssid = 3e:9c:0f:e8:98:60[0m
+[0;32mI (3561) wifi:security: WPA2-PSK, phy: bgn, rssi: -47[0m
+[0;32mI (3561) wifi:pm start, type: 1[0m
+
+[0;32mI (3561) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3641) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[1;31mE (3791) dht: Initialization error, problem in phase 'B'[0m
+[0;33mW (3791) DHT: Failed to read from DHT11[0m
+[0;32mI (3791) SENSOR: PPM: 33.90 | Temp: 0.0°C | Humidity: 0.0% | Light: -108.5%[0m
+[0;32mI (3791) LIGHT: Raw ADC Light: 350 | Light %: 91.5[0m
+[0;32mI (4651) esp_netif_handlers: sta ip: 192.168.137.110, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (4651) app_network: Connected with IP Address:192.168.137.110[0m
+[0;32mI (4651) main_task: Returned from app_main()[0m
+[0;32mI (4651) esp_rmaker_cmd_resp: Enabling Command-Response Module.[0m
+[0;32mI (4661) esp_rmaker_node: Node attribute cmd-resp created[0m
+[0;32mI (4661) esp_rmaker_local: Enabling Local Control[0m
+[0;32mI (4671) esp_rmaker_local: Local Control Service Enabled[0m
+[0;32mI (4671) esp_rmaker_local: Starting ESP Local control with HTTP Transport and security version: 1[0m
+[0;32mI (4691) mdns_mem: mDNS task will be created from internal RAM[0m
+[0;32mI (4691) esp_https_server: Starting server[0m
+[0;32mI (4701) esp_https_server: Server listening on port 8080[0m
+[0;32mI (4701) esp_rmaker_local: esp_local_ctrl service started with name : htVVE7aBtXXsgnGh4yvLKr[0m
+[0;32mI (4711) esp_mqtt_glue: Connecting to a1p72mufdu6064-ats.iot.us-east-1.amazonaws.com[0m
+[0;32mI (4711) esp_rmaker_core: Waiting for MQTT connection[0m
+[0;32mI (6641) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (6801) wifi:<ba-add>idx:0 (ifx:0, 3e:9c:0f:e8:98:60), tid:0, ssn:7, winSize:64[0m
+[0;32mI (8161) SENSOR: PPM: 35.25 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (8161) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (9281) wifi:<ba-add>idx:1 (ifx:0, 3e:9c:0f:e8:98:60), tid:1, ssn:13, winSize:64[0m
+[0;32mI (9591) esp_mqtt_glue: MQTT Connected[0m
+[0;32mI (9591) esp_rmaker_cmd_resp: Checking for pending commands.[0m
+[0;32mI (9601) esp_rmaker_node_config: Generated Node config of length 1635[0m
+[0;32mI (9621) esp_rmaker_ota_using_topics: Subscribing to: node/htVVE7aBtXXsgnGh4yvLKr/otaurl[0m
+[0;32mI (9801) SENSOR: PPM: 32.80 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (9801) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (12791) SENSOR: PPM: 31.85 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (12791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (14621) esp_rmaker_ota_using_topics: Fetching OTA details, if any.[0m
+[0;32mI (15801) SENSOR: PPM: 42.40 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.4%[0m
+[0;32mI (15801) LIGHT: Raw ADC Light: 345 | Light %: 91.6[0m
+[0;32mI (18801) SENSOR: PPM: 29.95 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.4%[0m
+[0;32mI (18801) LIGHT: Raw ADC Light: 344 | Light %: 91.6[0m
+[0;32mI (21801) SENSOR: PPM: 32.65 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.4%[0m
+[0;32mI (21801) LIGHT: Raw ADC Light: 346 | Light %: 91.6[0m
+[0;32mI (24801) SENSOR: PPM: 37.85 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.4%[0m
+[0;32mI (24801) LIGHT: Raw ADC Light: 343 | Light %: 91.6[0m
+[0;32mI (27801) SENSOR: PPM: 29.35 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.4%[0m
+[0;32mI (27801) LIGHT: Raw ADC Light: 345 | Light %: 91.6[0m
+[0;32mI (30801) SENSOR: PPM: 35.75 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.4%[0m
+[0;32mI (30801) LIGHT: Raw ADC Light: 342 | Light %: 91.6[0m
+[0;32mI (31481) esp_rmaker_time: SNTP Synchronised.[0m
+[0;32mI (31481) esp_rmaker_time: The current time is: Tue May 27 13:19:32 2025 +0800[CST], DST: No.[0m
+[0;32mI (33801) SENSOR: PPM: 37.95 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.3%[0m
+[0;32mI (33801) LIGHT: Raw ADC Light: 341 | Light %: 91.7[0m
+[0;32mI (36801) SENSOR: PPM: 33.85 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.4%[0m
+[0;32mI (36801) LIGHT: Raw ADC Light: 342 | Light %: 91.6[0m
+[0;32mI (39791) SENSOR: PPM: 33.50 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (39791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (42791) SENSOR: PPM: 33.35 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (42791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (45791) SENSOR: PPM: 33.95 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (45791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (48791) SENSOR: PPM: 33.45 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (48791) LIGHT: Raw ADC Light: 347 | Light %: 91.5[0m
+[0;32mI (51791) SENSOR: PPM: 33.30 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (51791) LIGHT: Raw ADC Light: 347 | Light %: 91.5[0m
+[0;32mI (54791) SENSOR: PPM: 33.55 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (54791) LIGHT: Raw ADC Light: 347 | Light %: 91.5[0m
+[0;32mI (57791) SENSOR: PPM: 33.35 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (57791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (60791) SENSOR: PPM: 33.30 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (60791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (63791) SENSOR: PPM: 33.65 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (63791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (66791) SENSOR: PPM: 33.50 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (66791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (69791) SENSOR: PPM: 33.50 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.4%[0m
+[0;32mI (69791) LIGHT: Raw ADC Light: 342 | Light %: 91.6[0m
+[0;32mI (72791) SENSOR: PPM: 33.50 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (72791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (75791) SENSOR: PPM: 33.50 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (75791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (78791) SENSOR: PPM: 33.95 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (78791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (81791) SENSOR: PPM: 33.30 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (81791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (84791) SENSOR: PPM: 33.40 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (84791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (87791) SENSOR: PPM: 33.30 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (87791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (90791) SENSOR: PPM: 33.50 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (90791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (93791) SENSOR: PPM: 33.25 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.4%[0m
+[0;32mI (93791) LIGHT: Raw ADC Light: 346 | Light %: 91.6[0m
+[0;32mI (96791) SENSOR: PPM: 33.50 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (96791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (99791) SENSOR: PPM: 33.60 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (99791) LIGHT: Raw ADC Light: 350 | Light %: 91.5[0m
+[0;32mI (102791) SENSOR: PPM: 33.25 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (102791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (105791) SENSOR: PPM: 33.30 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (105791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (108791) SENSOR: PPM: 33.35 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (108791) LIGHT: Raw ADC Light: 347 | Light %: 91.5[0m
+[0;32mI (111791) SENSOR: PPM: 33.55 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (111791) LIGHT: Raw ADC Light: 350 | Light %: 91.5[0m
+[0;32mI (114791) SENSOR: PPM: 33.15 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (114791) LIGHT: Raw ADC Light: 350 | Light %: 91.5[0m
+[0;32mI (117791) SENSOR: PPM: 33.20 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (117791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (120791) SENSOR: PPM: 33.45 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.4%[0m
+[0;32mI (120791) LIGHT: Raw ADC Light: 346 | Light %: 91.6[0m
+[0;32mI (123791) SENSOR: PPM: 33.50 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (123791) LIGHT: Raw ADC Light: 347 | Light %: 91.5[0m
+[0;32mI (126791) SENSOR: PPM: 33.30 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (126791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (129791) SENSOR: PPM: 33.35 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (129791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (132791) SENSOR: PPM: 33.25 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (132791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (135791) SENSOR: PPM: 33.10 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (135791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (138791) SENSOR: PPM: 33.15 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (138791) LIGHT: Raw ADC Light: 347 | Light %: 91.5[0m
+[0;32mI (141791) SENSOR: PPM: 32.85 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (141791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (144791) SENSOR: PPM: 33.25 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (144791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (147791) SENSOR: PPM: 33.30 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (147791) LIGHT: Raw ADC Light: 350 | Light %: 91.5[0m
+[0;32mI (150791) SENSOR: PPM: 33.30 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (150791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (153801) SENSOR: PPM: 32.80 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.4%[0m
+[0;32mI (153801) LIGHT: Raw ADC Light: 344 | Light %: 91.6[0m
+[0;32mI (156791) SENSOR: PPM: 32.75 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (156791) LIGHT: Raw ADC Light: 347 | Light %: 91.5[0m
+[0;32mI (159791) SENSOR: PPM: 33.10 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (159791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (162791) SENSOR: PPM: 33.15 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (162791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (165791) SENSOR: PPM: 33.30 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (165791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (168791) SENSOR: PPM: 33.20 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (168791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (171791) SENSOR: PPM: 33.05 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (171791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (174791) SENSOR: PPM: 33.00 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (174791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (177791) SENSOR: PPM: 32.90 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (177791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (180791) SENSOR: PPM: 33.40 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (180791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (183791) SENSOR: PPM: 33.10 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (183791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (186791) SENSOR: PPM: 33.15 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (186791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (189791) SENSOR: PPM: 32.40 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (189791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (192791) SENSOR: PPM: 32.95 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (192791) LIGHT: Raw ADC Light: 347 | Light %: 91.5[0m
+[0;32mI (195791) SENSOR: PPM: 33.10 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (195791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (198791) SENSOR: PPM: 32.25 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (198791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (201791) SENSOR: PPM: 33.10 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (201791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (204791) SENSOR: PPM: 32.95 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (204791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (207791) SENSOR: PPM: 33.10 | Temp: 29.0°C | Humidity: 55.0% | Light: -108.5%[0m
+[0;32mI (207791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (210801) SENSOR: PPM: 32.80 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.4%[0m
+[0;32mI (210801) LIGHT: Raw ADC Light: 345 | Light %: 91.6[0m
+[0;32mI (213791) SENSOR: PPM: 32.85 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (213791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (216791) SENSOR: PPM: 32.90 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (216791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (219791) SENSOR: PPM: 32.30 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.4%[0m
+[0;32mI (219791) LIGHT: Raw ADC Light: 346 | Light %: 91.6[0m
+[0;32mI (222791) SENSOR: PPM: 32.85 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (222791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (225791) SENSOR: PPM: 32.90 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (225791) LIGHT: Raw ADC Light: 347 | Light %: 91.5[0m
+[0;32mI (228791) SENSOR: PPM: 32.25 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (228791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (231791) SENSOR: PPM: 32.40 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (231791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (234791) SENSOR: PPM: 32.95 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (234791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (237791) SENSOR: PPM: 32.80 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (237791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (240791) SENSOR: PPM: 33.10 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (240791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (243791) SENSOR: PPM: 32.80 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (243791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (246791) SENSOR: PPM: 33.30 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (246791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (249791) SENSOR: PPM: 32.80 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (249791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (252791) SENSOR: PPM: 32.80 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (252791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (255791) SENSOR: PPM: 32.85 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (255791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (258791) SENSOR: PPM: 32.05 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (258791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (261791) SENSOR: PPM: 32.40 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.4%[0m
+[0;32mI (261791) LIGHT: Raw ADC Light: 346 | Light %: 91.6[0m
+[0;32mI (264791) SENSOR: PPM: 32.90 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (264791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (267791) SENSOR: PPM: 32.80 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (267791) LIGHT: Raw ADC Light: 347 | Light %: 91.5[0m
+[0;32mI (270791) SENSOR: PPM: 32.80 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (270791) LIGHT: Raw ADC Light: 349 | Light %: 91.5[0m
+[0;32mI (273791) SENSOR: PPM: 33.30 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (273791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (276791) SENSOR: PPM: 32.05 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (276791) LIGHT: Raw ADC Light: 347 | Light %: 91.5[0m
+[0;32mI (279791) SENSOR: PPM: 32.80 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.4%[0m
+[0;32mI (279791) LIGHT: Raw ADC Light: 346 | Light %: 91.6[0m
+[0;32mI (282791) SENSOR: PPM: 32.30 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (282791) LIGHT: Raw ADC Light: 347 | Light %: 91.5[0m
+[0;32mI (285791) SENSOR: PPM: 32.60 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.4%[0m
+[0;32mI (285791) LIGHT: Raw ADC Light: 345 | Light %: 91.6[0m
+[0;32mI (288791) SENSOR: PPM: 32.65 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.5%[0m
+[0;32mI (288791) LIGHT: Raw ADC Light: 348 | Light %: 91.5[0m
+[0;32mI (291791) SENSOR: PPM: 32.80 | Temp: 29.0°C | Humidity: 54.0% | Light: -108.4%[0

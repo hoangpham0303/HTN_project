@@ -1,0 +1,114 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D D:\esp\HTN_project\build\bootloader\esp-idf\esptool_py && D:\esp\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe D:/esp/Espressif/frameworks/esp-idf-v5.4/components/partition_table/check_sizes.py --offset 0xc000 bootloader 0x1000 D:/esp/HTN_project/build/bootloader/bootloader.bin"
+Bootloader binary size 0x65b0 bytes. 0x4a50 bytes (42%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_driver.c.obj
+D:/esp/HTN_project/main/app_driver.c: In function 'lj12_task':
+D:/esp/HTN_project/main/app_driver.c:166:20: warning: unused variable 'event' [-Wunused-variable]
+  166 |     sensor_event_t event;
+      |                    ^~~~~
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable HTN_project.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/esp/HTN_project/build/HTN_project.bin
+[9/10] C:\Windows\system32\cmd.exe /C "cd /D D:\esp\HTN_project\build\esp-idf\esptool_py && D:\esp\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe D:/esp/Espressif/frameworks/esp-idf-v5.4/components/partition_table/check_sizes.py --offset 0xc000 partition --type app D:/esp/HTN_project/build/partition_table/partition-table.bin D:/esp/HTN_project/build/HTN_project.bin"
+HTN_project.bin binary size 0x15ef20 bytes. Smallest app partition is 0x1e0000 bytes. 0x810e0 bytes (27%) free.
+[9/10] C:\Windows\system32\cmd.exe /C "cd /D D:\esp\Espressif\frameworks\esp-idf-v5.4\components\esptool_py && D:\esp\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=D:/esp/Espressif/frameworks/esp-idf-v5.4 -D SERIAL_TOOL=D:/esp/Espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe;;D:/esp/Espressif/frameworks/esp-idf-v5.4/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/esp/HTN_project/build -P D:/esp/Espressif/frameworks/esp-idf-v5.4/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM7 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x20000 HTN_project.bin 0xc000 partition_table/partition-table.bin 0x16000 ota_data_initial.bin
+esptool.py v4.8.1
+Serial port COM7
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: cc:db:a7:34:ee:cc
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00020000 to 0x0017efff...
+Flash will be erased from 0x0000c000 to 0x0000cfff...
+Flash will be erased from 0x00016000 to 0x00017fff...
+SHA digest in image updated
+Compressed 26032 bytes to 16447...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000755d... (100 %)
+Wrote 26032 bytes (16447 compressed) at 0x00001000 in 0.8 seconds (effective 276.6 kbit/s)...
+Hash of data verified.
+Compressed 1437472 bytes to 878083...
+Writing at 0x00020000... (1 %)
+Writing at 0x0002edc7... (3 %)
+Writing at 0x0003b5e8... (5 %)
+Writing at 0x0004755f... (7 %)
+Writing at 0x00050497... (9 %)
+Writing at 0x0005809c... (11 %)
+Writing at 0x000610e6... (12 %)
+Writing at 0x0006ab4c... (14 %)
+Writing at 0x00070733... (16 %)
+Writing at 0x000764b3... (18 %)
+Writing at 0x0007c6cf... (20 %)
+Writing at 0x0008213e... (22 %)
+Writing at 0x00087d5e... (24 %)
+Writing at 0x0008d7e2... (25 %)
+Writing at 0x00093b24... (27 %)
+Writing at 0x0009a150... (29 %)
+Writing at 0x000a0236... (31 %)
+Writing at 0x000a61a7... (33 %)
+Writing at 0x000abd5f... (35 %)
+Writing at 0x000b224c... (37 %)
+Writing at 0x000b81ac... (38 %)
+Writing at 0x000bdb51... (40 %)
+Writing at 0x000c39c7... (42 %)
+Writing at 0x000c975a... (44 %)
+Writing at 0x000cf35c... (46 %)
+Writing at 0x000d584c... (48 %)
+Writing at 0x000db864... (50 %)
+Writing at 0x000e1490... (51 %)
+Writing at 0x000e7389... (53 %)
+Writing at 0x000eda2e... (55 %)
+Writing at 0x000f37d0... (57 %)
+Writing at 0x000f9526... (59 %)
+Writing at 0x000feabb... (61 %)
+Writing at 0x00103c48... (62 %)
+Writing at 0x00109338... (64 %)
+Writing at 0x0010e9af... (66 %)
+Writing at 0x00113ee0... (68 %)
+Writing at 0x001192c2... (70 %)
+Writing at 0x0011ea75... (72 %)
+Writing at 0x0012488f... (74 %)
+Writing at 0x0012a3ad... (75 %)
+Writing at 0x001300e9... (77 %)
+Writing at 0x00135c5f... (79 %)
+Writing at 0x0013b799... (81 %)
+Writing at 0x00141b89... (83 %)
+Writing at 0x00147c1b... (85 %)
+Writing at 0x0014d0d0... (87 %)
+Writing at 0x0015507f... (88 %)
+Writing at 0x0015e734... (90 %)
+Writing at 0x0016496d... (92 %)
+Writing at 0x0016add8... (94 %)
+Writing at 0x00170379... (96 %)
+Writing at 0x001764d6... (98 %)
+Writing at 0x0017b7e5... (100 %)
+Wrote 1437472 bytes (878083 compressed) at 0x00020000 in 20.2 seconds (effective 570.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 198...
+Writing at 0x0000c000... (100 %)
+Wrote 3072 bytes (198 compressed) at 0x0000c000 in 0.0 seconds (effective 513.1 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x00016000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x00016000 in 0.1 seconds (effective 1175.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
